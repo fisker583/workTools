@@ -1,0 +1,43 @@
+{
+
+    "res":"image/resources.file",
+    "avatar":"hero",
+
+    "heroProperty":[
+            {"name":"生命","value":"main.hp"},
+            {"name":"攻击","value":"main.damage"},
+            {"name":"防御","value":"main.defense"},
+            {"name":"金钱","value":"main.money"}],
+
+    "enemyProperty":["生命","攻击","防御","金钱","损失"],
+
+    "flyTool":{"name":"飞行器","image":"fly", "value":"main.fly"},
+    "propertySeeker":{"name":"怪物图鉴","image":"help_book", "value":"main.help"},
+
+    "tools":{
+            "note_book":{"name":"记事本",   "image":"notepad", "value":"note_book", "state":"active", "timeLimit":-1},
+            "cross":{"name":"十字架",   "image":"cross", "value":"cross", "state":"passive", "tips":"攻击兽人和吸血鬼时你的攻击力加倍"},
+            "holy_bottle":{"name":"圣水瓶", "image":"holy_bottle", "value":"holy_bottle", "state":"active","timeLimit":1, "action":"main.hp+=main.damage+main.defense", "tips":"它将按你的攻击和防御力的总和增加你的生命点数"},
+            "hoe_senior":{"name":"镐", "image":"hoe_senior", "value":"hoe_senior", "state":"active","timeLimit":1, "action":"tool:hoe", "tips":"镐能破坏你面前的墙壁."},
+            "snow":{"name":"冰冻魔法", "image":"snow", "value":"snow", "state":"passive", "tips":"冰冻魔法可以将熔岩变为道路。"},
+            "explosive":{"name":"炸弹", "image":"explosive", "value":"explosive", "state":"active","timeLimit":1, "action":"tool:explosive", "tips":"炸弹可以炸掉周围的墙壁和敌人。"},
+            "swing":{"name":"对称飞行器", "image":"swing", "value":"swing", "state":"active","timeLimit":3, "action":"tool:swing", "tips":"你可以移动到中心对称的位置上。"},
+            "swing_down":{"name":"下楼器", "image":"swing_down", "value":"swing_down", "state":"active","timeLimit":1, "action":"tool:swing_down", "tips":"你可以向下移动一个楼层。"},
+            "swing_up":{"name":"上楼器", "image":"swing_up", "value":"swing_up", "state":"active","timeLimit":1, "action":"tool:swing_up", "tips":"你可以向上移动一个楼层。"},
+            "yellow_big_key":{"name":"魔法钥匙", "image":"yellow_big_key", "value":"yellow_big_key", "state":"active","timeLimit":1, "action":"tool:yellow_big_key", "tips":"它可以打开一层楼上的所有黄门。"},
+            "kraft":{"name":"地震卷轴", "image":"kraft", "value":"kraft", "state":"active","timeLimit":1, "action":"tool:kraft", "tips":"它可以摧毁一层楼的所有墙。"},
+            "knife":{"name":"屠龙匕", "image":"knife", "value":"knife", "state":"passive", "tips":"打魔龙时攻击翻倍。"},
+            "gold":{"name":"幸运币", "image":"gold", "value":"gold", "state":"passive", "tips":"打败敌人获得双倍金钱。"}
+            },
+
+    "keys":[
+            {"name":"黄钥匙", "image":"yellow_key", "value":"yellowKey"},
+            {"name":"蓝钥匙", "image":"blue_key", "value":"blueKey"},
+            {"name":"红钥匙", "image":"red_key", "value":"redKey"}],
+
+    "showMapMin":1,
+    "showMapMax":50,
+    "realMapMin":0,
+    "realMapMax":50
+
+}

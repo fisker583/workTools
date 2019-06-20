@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?><xml>
+<all>
+  <damage>100</damage>
+  <defense>100</defense>
+  <floor>1</floor>
+  <fly>False</fly>
+  <gameArgs>
+    <floor_23_wall>0</floor_23_wall>
+    <shop_buy_times>0</shop_buy_times>
+    <shop_last_price>20</shop_last_price>
+    <st_shield_state>0</st_shield_state>
+  </gameArgs>
+  <help>False</help>
+  <hp>1000</hp>
+  <isFinish>False</isFinish>
+  <isIntroduce>False</isIntroduce>
+  <keys>
+    <blueKey>0</blueKey>
+    <redKey>0</redKey>
+    <yellowKey>0</yellowKey>
+  </keys>
+  <mapOpen>1</mapOpen>
+  <money>0</money>
+  <position>
+    <direction>down</direction>
+    <x>5</x>
+    <y>10</y>
+  </position>
+  <tools>
+    <note_book>None</note_book>
+  </tools>
+</all>
+</xml>

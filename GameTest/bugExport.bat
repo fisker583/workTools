@@ -1,0 +1,2 @@
+python bugExport.py
+pause
