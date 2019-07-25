@@ -159,7 +159,7 @@ class BugWriter:
 
 		rowImage = 0
 		for i, rows in enumerate(csvData):
-			rows['Bug标题'] = '【SH】'+ str(rows['Bug编号']) + '-' + rows['Bug标题']
+			# rows['Bug标题'] = '【SH】'+ str(rows['Bug编号']) + '-' + rows['Bug标题']
 			rows['重现步骤'] = rows['Bug标题'] + '\n' +rows['重现步骤']
 
 			print(rows['Bug标题'])
@@ -192,29 +192,29 @@ class BugXLsx:
 		for v in xlsxSheets.items():
 			ws.update(dict([(v[0],wb.add_worksheet(v[1]))]))
 
-		total = TotalWriter(sheetsThead['total'], dataList)
-		total.write(wb, ws['total'], sheetsThead['total'])
+		# total = TotalWriter(sheetsThead['total'], dataList)
+		# total.write(wb, ws['total'], sheetsThead['total'])
 		bug = BugWriter()
 		bug.write(dataList, wb, ws['bug'], ws['image'], sheetsThead['bug'], sheetsThead['image'],imagePath)
-		# print('wb.close()...')
+		print('wb.close()...')
 		wb.close()
 		os.startfile(self.path)
 		os.startfile(self.file)
 
 xlsxSheets = {'bug':'Bug', 'image':'截图', 'total':'统计'}
 sheetsThead = {
-			'bug': [{'Bug编号':8,'影响版本':8,'所属模块':12,'严重程度':8,'Bug标题':35,'重现步骤':70,'Bug状态':8,'附件':8}],
+			'bug': [{'Bug编号':8,'Bug标题':35,'重现步骤':70,'附件':8}],
 			'image':[{'Bug标题':35,'Bug截图':102}],
 			'total': [{'所属模块': 15, '计数': 8},{'严重程度': 15, '计数': 8},{'Bug状态': 15, '计数': 8}]
 		}
 
 xlsxPath = 'E:/yjmj/test/'
-xlsxName = '《无限激战》测试信息-' + datetime.datetime.now().strftime('%Y%m%d') + '.xlsx'
+xlsxName = '《yjmj》测试信息-' + datetime.datetime.now().strftime('%Y%m%d') + '.xlsx'
 
-bugImagePath = 'F:/Fisker/Pictures/bug/'
+bugImagePath = 'F:/Fisker/Pictures/bug/Cube/'
 
 csvPath = 'F:/Fisker/Downloads/'
-csvName = 's1'
+csvName = 'ss'
 
 dataList = csvReader(csvPath, csvName)
 test = BugXLsx(xlsxPath,xlsxName)
