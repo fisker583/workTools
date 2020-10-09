@@ -1,22 +1,15 @@
-
-import xlsxwriter
+import requests
+import datetime
+import time
+import pandas as pd
 import json
+from pandas.io.json import json_normalize
+import numpy as np
 
-def json_to_excel(test,data):
-    if isinstance(data, list):
-        for value in data:
-            test = json_to_excel(test,value)
-    elif isinstance(data, dict):
-        for key, value in data.items():
-            if key in test:
-                pass
-            else:
-                test.append(key)
-            test = json_to_excel(test,value)
-    return test
-
-
-data = json.loads(text)
-test = []
-test = json_to_excel(test,data)
-print(test)
+t = 1595174400000
+df = pd.DataFrame(np.random.randn(6, 2),columns=list('AB'))
+df['B'] =  t
+df['time'] = pd.to_datetime(df['B'], unit='ms')
+df['time'] = df['time'].apply(
+            lambda x: format(x, x.strftime('%Y-%m-%d')))
+print(df)

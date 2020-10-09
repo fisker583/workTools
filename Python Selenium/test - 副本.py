@@ -15,31 +15,49 @@ def openChrome():
 	option = webdriver.ChromeOptions()
 	option.add_argument('--start-maximized')	# 窗口最大化启动
 	driver = webdriver.Chrome(chrome_options = option)
-	# driver = webdriver.Firefox(firefox_options = option)
 	return(driver)
 
-def getUrl(driver,url):
-	driver.get(url)
-	return(driver)
 
 # element_to_be_clickable		DOM上是否存在元素并且可点击。可点击意味着enable
 # visibility_of_element_located	DOM上是否存在元素并且可见。 可见性意味着元素不仅显示，而且高度和宽度也大于0.
 # presence_of_element_located	DOM上是否存在元素,并不一定意味着该元素是可见的
 
 def authlogin(driver):
-	wait = WebDriverWait(driver, 5)	# 等待超时5秒
+	wait = WebDriverWait(driver, 15)	# 等待超时5秒
 	# 清理输入账号密码
-	elementName = wait.until(EC.presence_of_element_located((By.NAME,'username')))
+	elementName = wait.until(EC.visibility_of_element_located((By.ID,'loginname')))
 	elementName.clear()
 	elementName.send_keys('admin')
-	elementPassword = wait.until(EC.presence_of_element_located((By.NAME,'password')))
+	elementPassword = wait.until(EC.visibility_of_element_located((By.ID,'password')))
 	elementPassword.clear()
-	elementPassword.send_keys('admin')
-
+	elementPassword.send_keys('MLN123456mln')
+	elementComnum = wait.until(EC.visibility_of_element_located((By.ID,'comnum')))
+	elementComnum.clear()
+	elementComnum.send_keys('3101000001')
+	
+	time.sleep(30)
 	# 点击提交登录
-	submitXpath = '//button[contains(@type, "submit") and contains(text(), "Login")]'
-	elementLogin = wait.until(EC.element_to_be_clickable((By.XPATH, submitXpath)))
-	elementLogin.click()
+	# submitXpath = '//button[contains(@type, "submit") and contains(text(), "Login")]'
+	# elementLogin = wait.until(EC.element_to_be_clickable((By.XPATH, submitXpath)))
+	# elementLogin.click()
+
+def authClue(driver):
+	wait = WebDriverWait(driver, 10)
+	elementTab = wait.until(EC.presence_of_element_located((By.ID,'tool-1037')))
+	elementTab.click()
+
+	tabSubXpath = '//span[contains(text(), "客户信息")]'
+	elementTabSub = wait.until(EC.visibility_of_element_located((By.XPATH, tabSubXpath)))
+	elementTabSub.click()
+	time.sleep(15)
+
+	elementAllBtn = wait.until(EC.presence_of_element_located((By.ID,'button-1017')))
+	elementAllBtn.click()
+
+	# checkeXpath  = '//td/div/input[(@type, "button")]'
+	# elementChecke = wait.until(EC.visibility_of_element_located((By.XPATH, checkeXpath)))
+	# elementchecke.click()
+
 def authSubmitMail(driver,mailDict):
 	wait = WebDriverWait(driver, 5)	# 等待超时5秒
 
@@ -220,106 +238,13 @@ def authRedcode(driver,codeDict):
 	elementSubmit = wait.until(EC.visibility_of_element_located((By.XPATH, codeSubmitXpath)))
 	elementSubmit.click()
 
-def getTimeStr():
-	ymd = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
-	week = '_星期_' + datetime.datetime.now().strftime('%w')
-	timeStr = ymd + week
-	return(timeStr)
 
-def getMailDict():
-	mailDict = {
-		'e_title': 		getTimeStr(),
-		'e_content': 	getTimeStr(),
-		'e_server': 	3,
-		'e_send': 		'tester',
-		'e_accept': 	'',
-		'r_gold': 		random.randrange(500, 5000, 100),
-		'r_diamond': 	random.randrange(10, 100, 10),
-		'r_exp': 		random.randrange(50, 500, 50),
-		'r_prop_id':	random.randint(12, 45),
-		'r_prop_num': 	random.randint(1, 10)
-	}
-	return(mailDict)
-
-def getMailDictTest(testId):
-	mailDict = {
-		'e_title': 		getTimeStr(),
-		'e_content': 	testId['itemName'] + '' + str(1),
-		'e_server': 	3,
-		'e_send': 		'testX',
-		'e_accept': 	343,
-		'r_gold': 		100,
-		'r_diamond': 	10,
-		'r_exp': 		5,
-		'r_prop_id':	testId['itemOption'],
-		'r_prop_num': 	1
-	}
-	return(mailDict)
-
-def getCodeDict():
-	codeDict = {
-		'r_code': 		''.join(random.sample(string.ascii_uppercase, 8)),
-		'r_title': 		getTimeStr(),
-		'r_times': 		1,
-		'create_num': 	random.randrange(5, 50, 5),
-		'expired_time': '2019-12-30 00:00:00',
-		'server_id': 	3,
-		'server_channel': 1,
-		'r_gold': 		random.randrange(500, 5000, 100),
-		'r_diamond': 	random.randrange(10, 100, 10),
-		'r_exp': 		random.randrange(50, 500, 50),
-		'r_prop_id':	random.randint(12, 45),
-		'r_prop_num': 	random.randint(1, 10)
-	}
-	return(codeDict)
-
-test = [
-		{'itemName':'格兰特碎片','itemOption':1},
-		{'itemName':'暴君碎片','itemOption':12},
-		{'itemName':'红雀碎片','itemOption':13},
-		{'itemName':'深蓝碎片','itemOption':14},
-		{'itemName':'尤娜碎片','itemOption':15},
-		{'itemName':'黑火药碎片','itemOption':16},
-		{'itemName':'艾米丽碎片','itemOption':17},
-		{'itemName':'再不斩碎片','itemOption':18},
-		{'itemName':'闪灵碎片','itemOption':19},
-		{'itemName':'凯恩碎片','itemOption':20},
-		{'itemName':'莱因哈特碎片','itemOption':21},
-		{'itemName':'狂虫碎片','itemOption':22},
-		{'itemName':'格兰特皮肤1','itemOption':23},
-		{'itemName':'普通宝箱','itemOption':24},
-		{'itemName':'大宝箱','itemOption':25},
-		{'itemName':'超级宝箱','itemOption':26},
-		{'itemName':'钻石宝箱','itemOption':28},
-		{'itemName':'王者宝箱','itemOption':29},
-		{'itemName':'赛季选卡宝箱','itemOption':30},
-		{'itemName':'普通选卡宝箱','itemOption':31},
-		{'itemName':'复活币','itemOption':32},
-		{'itemName':'任务活跃度','itemOption':33},
-		{'itemName':'格兰特','itemOption':34},
-		{'itemName':'暴君','itemOption':35},
-		{'itemName':'红雀','itemOption':36},
-		{'itemName':'深蓝','itemOption':37},
-		{'itemName':'尤娜','itemOption':38},
-		{'itemName':'黑火药','itemOption':39},
-		{'itemName':'艾米丽','itemOption':40},
-		{'itemName':'再不斩','itemOption':41},
-		{'itemName':'闪灵','itemOption':42},
-		{'itemName':'凯恩','itemOption':43},
-		{'itemName':'莱因哈特','itemOption':44},
-		{'itemName':'狂虫','itemOption':45}
-]
-
-url = "http://106.14.186.5/admin/auth/login"
+url = "http://crm.mlnacc.com/Home/Index"
 driver = openChrome()
-driver = getUrl(driver,url)
-authlogin(driver)
-for i in range(1):
-	mailDict = getMailDictTest(test[0])
-	authSubmitMail(driver,mailDict)
-	# codeDict = getCodeDict()
-	# authRedcode(driver,codeDict)
-	print('Over')
-	time.sleep(2)
+driver.get(url)
 
-authChckMail(driver,'2019-04-15_17:33:24_星期_1')
+authlogin(driver)
+authClue(driver)
+
+
+# authChckMail(driver,'2019-04-15_17:33:24_星期_1')
