@@ -8,6 +8,7 @@ import csv
 import shutil
 from PIL import Image
 
+
 def csvReader(fPath, fName):
 	file = fPath + fName + '.csv'
 	data = []
