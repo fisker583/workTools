@@ -1,0 +1,258 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -1479141240519657200
+  },
+  "m_Name": "DecoStoreMockConfig",
+  "ResponseDelay": 0.0,
+  "ErrorOnPurchase": 0,
+  "ErrorCodeOnPurchase": -104,
+  "ErrorOnClaimMilestone": 0,
+  "ErrorCodeOnClaimMilestone": 0,
+  "ErrorOnExchange": 0,
+  "ErrorCodeOnExchange": 0,
+  "DecoItemProgressCost": 10,
+  "StateResponse": {
+    "Status": 1,
+    "DecoCurrency": 10020,
+    "EventId": 1,
+    "CollectionId": 101,
+    "EndTimeSpan": 1697016850000,
+    "StoreItems": [
+      {
+        "DecoId": 101107,
+        "Cost": 720,
+        "Type": 1,
+        "State": 2,
+        "MetaEventData": {
+          "Type": 0,
+          "EventStartTimeSpan": 0,
+          "EventEndTimeSpan": 0,
+          "Name": ""
+        }
+      },
+      {
+        "DecoId": 101108,
+        "Cost": 1000,
+        "Type": 1,
+        "State": 2,
+        "MetaEventData": {
+          "Type": 0,
+          "EventStartTimeSpan": 0,
+          "EventEndTimeSpan": 0,
+          "Name": ""
+        }
+      },
+      {
+        "DecoId": 101109,
+        "Cost": 1250,
+        "Type": 1,
+        "State": 2,
+        "MetaEventData": {
+          "Type": 0,
+          "EventStartTimeSpan": 0,
+          "EventEndTimeSpan": 0,
+          "Name": ""
+        }
+      }
+    ],
+    "Progress": {
+      "Current": 300,
+      "Total": 300,
+      "Milestones": [
+        {
+          "Threshold": 75,
+          "Rewards": [
+            {
+              "SkuId": 0,
+              "SkuData": {
+                "Amount": 1000,
+                "Multiplier": 1.0,
+                "Rounds": 0,
+                "DiscountPercent": 0.0,
+                "DecoId": 0,
+                "MissionPoints": 0,
+                "Duration": 0,
+                "EndDate": 0.0,
+                "ConfigName": "",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            }
+          ]
+        },
+        {
+          "Threshold": 300,
+          "Rewards": [
+            {
+              "SkuId": 0,
+              "SkuData": {
+                "Amount": 55000,
+                "Multiplier": 0.0,
+                "Rounds": 0,
+                "DiscountPercent": 0.0,
+                "DecoId": 0,
+                "MissionPoints": 0,
+                "Duration": 0,
+                "EndDate": 0.0,
+                "ConfigName": "",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            },
+            {
+              "SkuId": 4200273,
+              "SkuData": {
+                "Amount": 320000,
+                "Multiplier": 0.0,
+                "Rounds": 0,
+                "DiscountPercent": 0.0,
+                "DecoId": 101119,
+                "MissionPoints": 0,
+                "Duration": 0,
+                "EndDate": 0.0,
+                "ConfigName": "",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            }
+          ]
+        },
+        {
+          "Threshold": 75,
+          "Rewards": [
+            {
+              "SkuId": 0,
+              "SkuData": {
+                "Amount": 1000,
+                "Multiplier": 1.0,
+                "Rounds": 0,
+                "DiscountPercent": 0.0,
+                "DecoId": 0,
+                "MissionPoints": 0,
+                "Duration": 0,
+                "EndDate": 0.0,
+                "ConfigName": "",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            }
+          ]
+        },
+        {
+          "Threshold": 300,
+          "Rewards": [
+            {
+              "SkuId": 0,
+              "SkuData": {
+                "Amount": 55000,
+                "Multiplier": 0.0,
+                "Rounds": 0,
+                "DiscountPercent": 0.0,
+                "DecoId": 0,
+                "MissionPoints": 0,
+                "Duration": 0,
+                "EndDate": 0.0,
+                "ConfigName": "",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            },
+            {
+              "SkuId": 4200273,
+              "SkuData": {
+                "Amount": 320000,
+                "Multiplier": 0.0,
+                "Rounds": 0,
+                "DiscountPercent": 0.0,
+                "DecoId": 101119,
+                "MissionPoints": 0,
+                "Duration": 0,
+                "EndDate": 0.0,
+                "ConfigName": "",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "PendingPrizes": [
+      {
+        "Id": 0,
+        "Rewards": [
+          {
+            "SkuId": 0,
+            "SkuData": {
+              "Amount": 55000,
+              "Multiplier": 0.0,
+              "Rounds": 0,
+              "DiscountPercent": 0.0,
+              "DecoId": 0,
+              "MissionPoints": 0,
+              "Duration": 0,
+              "EndDate": 0.0,
+              "ConfigName": "",
+              "PackIds": "",
+              "Rarity": 0,
+              "GameType": "",
+              "SubgroupId": "",
+              "GameId": ""
+            }
+          },
+          {
+            "SkuId": 4200273,
+            "SkuData": {
+              "Amount": 320000,
+              "Multiplier": 0.0,
+              "Rounds": 0,
+              "DiscountPercent": 0.0,
+              "DecoId": 101119,
+              "MissionPoints": 0,
+              "Duration": 0,
+              "EndDate": 0.0,
+              "ConfigName": "",
+              "PackIds": "",
+              "Rarity": 0,
+              "GameType": "",
+              "SubgroupId": "",
+              "GameId": ""
+            }
+          }
+        ],
+        "SourceUuid": ""
+      }
+    ],
+    "BiEventSourceUid": "",
+    "ExchangePrize": {
+      "Id": 0,
+      "Rewards": [],
+      "SourceUuid": ""
+    },
+    "AutoClaimedItems": []
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 434082193738490267
+  },
+  "m_Name": "MapResourcesMapper",
+  "MapResourcesMapperConfig": {
+    "ConnectedMapsPairs": [
+      {
+        "LogicalMapIndex": 50,
+        "VisualMapIndex": 17
+      },
+      {
+        "LogicalMapIndex": 51,
+        "VisualMapIndex": 18
+      },
+      {
+        "LogicalMapIndex": 53,
+        "VisualMapIndex": 19
+      },
+      {
+        "LogicalMapIndex": 54,
+        "VisualMapIndex": 20
+      },
+      {
+        "LogicalMapIndex": 55,
+        "VisualMapIndex": 21
+      },
+      {
+        "LogicalMapIndex": 56,
+        "VisualMapIndex": 22
+      },
+      {
+        "LogicalMapIndex": 57,
+        "VisualMapIndex": 23
+      },
+      {
+        "LogicalMapIndex": 58,
+        "VisualMapIndex": 24
+      },
+      {
+        "LogicalMapIndex": 59,
+        "VisualMapIndex": 25
+      },
+      {
+        "LogicalMapIndex": 60,
+        "VisualMapIndex": 26
+      },
+      {
+        "LogicalMapIndex": 62,
+        "VisualMapIndex": 27
+      },
+      {
+        "LogicalMapIndex": 63,
+        "VisualMapIndex": 28
+      },
+      {
+        "LogicalMapIndex": 64,
+        "VisualMapIndex": 29
+      }
+    ]
+  }
+}

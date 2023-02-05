@@ -1,0 +1,34 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -7656289410672577534
+  },
+  "m_Name": "SamBubblesConfig",
+  "SamBubbles": [
+    {
+      "LastCompletedLevel": 1,
+      "LocalizationKey": "SamTooltipLevel1"
+    },
+    {
+      "LastCompletedLevel": 2,
+      "LocalizationKey": "SamTooltipLevel2"
+    },
+    {
+      "LastCompletedLevel": 3,
+      "LocalizationKey": "SamTooltipLevel3"
+    },
+    {
+      "LastCompletedLevel": 4,
+      "LocalizationKey": "SamTooltipLevel4"
+    },
+    {
+      "LastCompletedLevel": 6,
+      "LocalizationKey": "SamTooltipLevel6"
+    }
+  ]
+}

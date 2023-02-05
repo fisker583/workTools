@@ -1,0 +1,1209 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -3097252898756009435
+  },
+  "m_Name": "FirstMapProgressLevelsCost",
+  "ProgressLevelCostData": {
+    "GemsFactors": [
+      {
+        "Level": 1,
+        "Value": 1.0
+      }
+    ],
+    "FirstModeCostsConfig": {
+      "LevelStartCosts": [
+        {
+          "Level": 1,
+          "Value": 1000.0
+        },
+        {
+          "Level": 20,
+          "Value": 1500.0
+        },
+        {
+          "Level": 35,
+          "Value": 1800.0
+        },
+        {
+          "Level": 58,
+          "Value": 2000.0
+        },
+        {
+          "Level": 100,
+          "Value": 2200.0
+        },
+        {
+          "Level": 168,
+          "Value": 2500.0
+        }
+      ],
+      "LevelWonPrizes": [
+        {
+          "Level": 1,
+          "Value": 1110.0
+        },
+        {
+          "Level": 20,
+          "Value": 1665.0
+        },
+        {
+          "Level": 35,
+          "Value": 2100.0
+        },
+        {
+          "Level": 58,
+          "Value": 2221.0
+        },
+        {
+          "Level": 100,
+          "Value": 2442.0
+        },
+        {
+          "Level": 168,
+          "Value": 2775.0
+        }
+      ],
+      "WildCosts": [
+        {
+          "Level": 1,
+          "Value": 500.0
+        },
+        {
+          "Level": 13,
+          "Value": 1000.0
+        },
+        {
+          "Level": 20,
+          "Value": 2000.0
+        },
+        {
+          "Level": 35,
+          "Value": 3000.0
+        },
+        {
+          "Level": 47,
+          "Value": 4500.0
+        },
+        {
+          "Level": 58,
+          "Value": 6000.0
+        },
+        {
+          "Level": 100,
+          "Value": 6600.0
+        },
+        {
+          "Level": 168,
+          "Value": 7500.0
+        }
+      ],
+      "UndoCosts": [
+        {
+          "Level": 1,
+          "Value": 100.0
+        },
+        {
+          "Level": 20,
+          "Value": 200.0
+        },
+        {
+          "Level": 35,
+          "Value": 300.0
+        },
+        {
+          "Level": 47,
+          "Value": 400.0
+        },
+        {
+          "Level": 58,
+          "Value": 500.0
+        },
+        {
+          "Level": 100,
+          "Value": 550.0
+        },
+        {
+          "Level": 168,
+          "Value": 625.0
+        }
+      ],
+      "Plus5Costs": [
+        {
+          "Level": 1,
+          "Value": 500.0
+        },
+        {
+          "Level": 20,
+          "Value": 900.0
+        },
+        {
+          "Level": 27,
+          "Value": 1500.0
+        },
+        {
+          "Level": 35,
+          "Value": 2000.0
+        },
+        {
+          "Level": 47,
+          "Value": 3000.0
+        },
+        {
+          "Level": 58,
+          "Value": 4000.0
+        },
+        {
+          "Level": 100,
+          "Value": 4400.0
+        },
+        {
+          "Level": 168,
+          "Value": 5000.0
+        }
+      ],
+      "RemoveCardsCosts": [
+        {
+          "Level": 1,
+          "Value": 1700.0
+        },
+        {
+          "Level": 20,
+          "Value": 2500.0
+        },
+        {
+          "Level": 58,
+          "Value": 3300.0
+        },
+        {
+          "Level": 100,
+          "Value": 3700.0
+        },
+        {
+          "Level": 168,
+          "Value": 4200.0
+        }
+      ],
+      "ClearPlayablesCosts": [
+        {
+          "Level": 1,
+          "Value": 2000.0
+        },
+        {
+          "Level": 20,
+          "Value": 3000.0
+        },
+        {
+          "Level": 58,
+          "Value": 4000.0
+        },
+        {
+          "Level": 100,
+          "Value": 4400.0
+        },
+        {
+          "Level": 168,
+          "Value": 5000.0
+        }
+      ],
+      "WildDropCosts": [
+        {
+          "Level": 1,
+          "Value": 2700.0
+        },
+        {
+          "Level": 20,
+          "Value": 4000.0
+        },
+        {
+          "Level": 58,
+          "Value": 5300.0
+        },
+        {
+          "Level": 100,
+          "Value": 5900.0
+        },
+        {
+          "Level": 168,
+          "Value": 6700.0
+        }
+      ],
+      "RemoveBombsCosts": [
+        {
+          "Level": 1,
+          "Value": 1700.0
+        },
+        {
+          "Level": 20,
+          "Value": 2500.0
+        },
+        {
+          "Level": 58,
+          "Value": 3300.0
+        },
+        {
+          "Level": 100,
+          "Value": 3700.0
+        },
+        {
+          "Level": 168,
+          "Value": 4200.0
+        }
+      ],
+      "RemoveValueChangersCosts": [
+        {
+          "Level": 1,
+          "Value": 1700.0
+        },
+        {
+          "Level": 20,
+          "Value": 2500.0
+        },
+        {
+          "Level": 58,
+          "Value": 3300.0
+        },
+        {
+          "Level": 100,
+          "Value": 3700.0
+        },
+        {
+          "Level": 168,
+          "Value": 4200.0
+        }
+      ],
+      "RemoveCodeBreakersCosts": [
+        {
+          "Level": 1,
+          "Value": 2000.0
+        },
+        {
+          "Level": 20,
+          "Value": 3000.0
+        },
+        {
+          "Level": 58,
+          "Value": 4000.0
+        },
+        {
+          "Level": 100,
+          "Value": 4400.0
+        },
+        {
+          "Level": 168,
+          "Value": 5000.0
+        }
+      ],
+      "TriggerProbabilities": [
+        {
+          "Level": 1,
+          "Value": 0.15
+        }
+      ],
+      "LevelCostWithFreeRoundDiscounts": []
+    },
+    "SecondModeCostsConfig": {
+      "LevelStartCosts": [
+        {
+          "Level": 1,
+          "Value": 2000.0
+        },
+        {
+          "Level": 20,
+          "Value": 3000.0
+        },
+        {
+          "Level": 35,
+          "Value": 3600.0
+        },
+        {
+          "Level": 58,
+          "Value": 4000.0
+        },
+        {
+          "Level": 100,
+          "Value": 4400.0
+        },
+        {
+          "Level": 168,
+          "Value": 5000.0
+        }
+      ],
+      "LevelWonPrizes": [
+        {
+          "Level": 1,
+          "Value": 2221.0
+        },
+        {
+          "Level": 20,
+          "Value": 3330.0
+        },
+        {
+          "Level": 35,
+          "Value": 4200.0
+        },
+        {
+          "Level": 58,
+          "Value": 4440.0
+        },
+        {
+          "Level": 100,
+          "Value": 4884.0
+        },
+        {
+          "Level": 168,
+          "Value": 5551.0
+        }
+      ],
+      "WildCosts": [
+        {
+          "Level": 1,
+          "Value": 900.0
+        },
+        {
+          "Level": 13,
+          "Value": 1750.0
+        },
+        {
+          "Level": 20,
+          "Value": 3500.0
+        },
+        {
+          "Level": 35,
+          "Value": 5250.0
+        },
+        {
+          "Level": 47,
+          "Value": 7900.0
+        },
+        {
+          "Level": 58,
+          "Value": 10500.0
+        },
+        {
+          "Level": 100,
+          "Value": 11550.0
+        },
+        {
+          "Level": 168,
+          "Value": 13150.0
+        }
+      ],
+      "UndoCosts": [
+        {
+          "Level": 1,
+          "Value": 200.0
+        },
+        {
+          "Level": 20,
+          "Value": 350.0
+        },
+        {
+          "Level": 35,
+          "Value": 550.0
+        },
+        {
+          "Level": 47,
+          "Value": 700.0
+        },
+        {
+          "Level": 58,
+          "Value": 900.0
+        },
+        {
+          "Level": 100,
+          "Value": 950.0
+        },
+        {
+          "Level": 168,
+          "Value": 1100.0
+        }
+      ],
+      "Plus5Costs": [
+        {
+          "Level": 1,
+          "Value": 900.0
+        },
+        {
+          "Level": 20,
+          "Value": 1600.0
+        },
+        {
+          "Level": 27,
+          "Value": 2650.0
+        },
+        {
+          "Level": 35,
+          "Value": 3500.0
+        },
+        {
+          "Level": 47,
+          "Value": 5250.0
+        },
+        {
+          "Level": 58,
+          "Value": 7000.0
+        },
+        {
+          "Level": 100,
+          "Value": 7700.0
+        },
+        {
+          "Level": 168,
+          "Value": 8750.0
+        }
+      ],
+      "RemoveCardsCosts": [
+        {
+          "Level": 1,
+          "Value": 3000.0
+        },
+        {
+          "Level": 20,
+          "Value": 4400.0
+        },
+        {
+          "Level": 58,
+          "Value": 5800.0
+        },
+        {
+          "Level": 100,
+          "Value": 6500.0
+        },
+        {
+          "Level": 168,
+          "Value": 7350.0
+        }
+      ],
+      "ClearPlayablesCosts": [
+        {
+          "Level": 1,
+          "Value": 3500.0
+        },
+        {
+          "Level": 20,
+          "Value": 5250.0
+        },
+        {
+          "Level": 58,
+          "Value": 7000.0
+        },
+        {
+          "Level": 100,
+          "Value": 7700.0
+        },
+        {
+          "Level": 168,
+          "Value": 8750.0
+        }
+      ],
+      "WildDropCosts": [
+        {
+          "Level": 1,
+          "Value": 4750.0
+        },
+        {
+          "Level": 20,
+          "Value": 7000.0
+        },
+        {
+          "Level": 58,
+          "Value": 9300.0
+        },
+        {
+          "Level": 100,
+          "Value": 10350.0
+        },
+        {
+          "Level": 168,
+          "Value": 11750.0
+        }
+      ],
+      "RemoveBombsCosts": [
+        {
+          "Level": 1,
+          "Value": 3000.0
+        },
+        {
+          "Level": 20,
+          "Value": 4400.0
+        },
+        {
+          "Level": 58,
+          "Value": 5800.0
+        },
+        {
+          "Level": 100,
+          "Value": 6500.0
+        },
+        {
+          "Level": 168,
+          "Value": 7350.0
+        }
+      ],
+      "RemoveValueChangersCosts": [
+        {
+          "Level": 1,
+          "Value": 3000.0
+        },
+        {
+          "Level": 20,
+          "Value": 4400.0
+        },
+        {
+          "Level": 58,
+          "Value": 5800.0
+        },
+        {
+          "Level": 100,
+          "Value": 6500.0
+        },
+        {
+          "Level": 168,
+          "Value": 7350.0
+        }
+      ],
+      "RemoveCodeBreakersCosts": [
+        {
+          "Level": 1,
+          "Value": 3500.0
+        },
+        {
+          "Level": 20,
+          "Value": 5250.0
+        },
+        {
+          "Level": 58,
+          "Value": 7000.0
+        },
+        {
+          "Level": 100,
+          "Value": 7700.0
+        },
+        {
+          "Level": 168,
+          "Value": 8750.0
+        }
+      ],
+      "TriggerProbabilities": [
+        {
+          "Level": 1,
+          "Value": 0.2
+        }
+      ],
+      "LevelCostWithFreeRoundDiscounts": []
+    },
+    "ThirdModeCostsConfig": {
+      "LevelStartCosts": [
+        {
+          "Level": 1,
+          "Value": 4000.0
+        },
+        {
+          "Level": 20,
+          "Value": 6000.0
+        },
+        {
+          "Level": 35,
+          "Value": 7200.0
+        },
+        {
+          "Level": 58,
+          "Value": 8000.0
+        },
+        {
+          "Level": 100,
+          "Value": 8800.0
+        },
+        {
+          "Level": 168,
+          "Value": 10000.0
+        }
+      ],
+      "LevelWonPrizes": [
+        {
+          "Level": 1,
+          "Value": 4440.0
+        },
+        {
+          "Level": 20,
+          "Value": 6661.0
+        },
+        {
+          "Level": 35,
+          "Value": 8200.0
+        },
+        {
+          "Level": 58,
+          "Value": 8881.0
+        },
+        {
+          "Level": 100,
+          "Value": 9770.0
+        },
+        {
+          "Level": 168,
+          "Value": 11101.0
+        }
+      ],
+      "WildCosts": [
+        {
+          "Level": 1,
+          "Value": 1350.0
+        },
+        {
+          "Level": 13,
+          "Value": 2650.0
+        },
+        {
+          "Level": 20,
+          "Value": 5350.0
+        },
+        {
+          "Level": 35,
+          "Value": 8000.0
+        },
+        {
+          "Level": 47,
+          "Value": 12000.0
+        },
+        {
+          "Level": 58,
+          "Value": 16000.0
+        },
+        {
+          "Level": 100,
+          "Value": 17600.0
+        },
+        {
+          "Level": 168,
+          "Value": 20050.0
+        }
+      ],
+      "UndoCosts": [
+        {
+          "Level": 1,
+          "Value": 250.0
+        },
+        {
+          "Level": 20,
+          "Value": 550.0
+        },
+        {
+          "Level": 35,
+          "Value": 800.0
+        },
+        {
+          "Level": 47,
+          "Value": 1050.0
+        },
+        {
+          "Level": 58,
+          "Value": 1350.0
+        },
+        {
+          "Level": 100,
+          "Value": 1450.0
+        },
+        {
+          "Level": 168,
+          "Value": 1650.0
+        }
+      ],
+      "Plus5Costs": [
+        {
+          "Level": 1,
+          "Value": 1350.0
+        },
+        {
+          "Level": 20,
+          "Value": 2400.0
+        },
+        {
+          "Level": 27,
+          "Value": 4000.0
+        },
+        {
+          "Level": 35,
+          "Value": 5350.0
+        },
+        {
+          "Level": 47,
+          "Value": 8000.0
+        },
+        {
+          "Level": 58,
+          "Value": 10700.0
+        },
+        {
+          "Level": 100,
+          "Value": 11750.0
+        },
+        {
+          "Level": 168,
+          "Value": 13350.0
+        }
+      ],
+      "RemoveCardsCosts": [
+        {
+          "Level": 1,
+          "Value": 4550.0
+        },
+        {
+          "Level": 20,
+          "Value": 6700.0
+        },
+        {
+          "Level": 58,
+          "Value": 8800.0
+        },
+        {
+          "Level": 100,
+          "Value": 9900.0
+        },
+        {
+          "Level": 168,
+          "Value": 11200.0
+        }
+      ],
+      "ClearPlayablesCosts": [
+        {
+          "Level": 1,
+          "Value": 5350.0
+        },
+        {
+          "Level": 20,
+          "Value": 8000.0
+        },
+        {
+          "Level": 58,
+          "Value": 10700.0
+        },
+        {
+          "Level": 100,
+          "Value": 11750.0
+        },
+        {
+          "Level": 168,
+          "Value": 13350.0
+        }
+      ],
+      "WildDropCosts": [
+        {
+          "Level": 1,
+          "Value": 7200.0
+        },
+        {
+          "Level": 20,
+          "Value": 10700.0
+        },
+        {
+          "Level": 58,
+          "Value": 14150.0
+        },
+        {
+          "Level": 100,
+          "Value": 15750.0
+        },
+        {
+          "Level": 168,
+          "Value": 17900.0
+        }
+      ],
+      "RemoveBombsCosts": [
+        {
+          "Level": 1,
+          "Value": 4550.0
+        },
+        {
+          "Level": 20,
+          "Value": 6700.0
+        },
+        {
+          "Level": 58,
+          "Value": 8800.0
+        },
+        {
+          "Level": 100,
+          "Value": 9900.0
+        },
+        {
+          "Level": 168,
+          "Value": 11200.0
+        }
+      ],
+      "RemoveValueChangersCosts": [
+        {
+          "Level": 1,
+          "Value": 4550.0
+        },
+        {
+          "Level": 20,
+          "Value": 6700.0
+        },
+        {
+          "Level": 58,
+          "Value": 8800.0
+        },
+        {
+          "Level": 100,
+          "Value": 9900.0
+        },
+        {
+          "Level": 168,
+          "Value": 11200.0
+        }
+      ],
+      "RemoveCodeBreakersCosts": [
+        {
+          "Level": 1,
+          "Value": 5350.0
+        },
+        {
+          "Level": 20,
+          "Value": 8000.0
+        },
+        {
+          "Level": 58,
+          "Value": 10700.0
+        },
+        {
+          "Level": 100,
+          "Value": 11750.0
+        },
+        {
+          "Level": 168,
+          "Value": 13350.0
+        }
+      ],
+      "TriggerProbabilities": [
+        {
+          "Level": 1,
+          "Value": 0.25
+        }
+      ],
+      "LevelCostWithFreeRoundDiscounts": []
+    },
+    "FourthModeCostsConfig": {
+      "LevelStartCosts": [
+        {
+          "Level": 1,
+          "Value": 8000.0
+        },
+        {
+          "Level": 20,
+          "Value": 12000.0
+        },
+        {
+          "Level": 35,
+          "Value": 14400.0
+        },
+        {
+          "Level": 58,
+          "Value": 16000.0
+        },
+        {
+          "Level": 100,
+          "Value": 17600.0
+        },
+        {
+          "Level": 168,
+          "Value": 20000.0
+        }
+      ],
+      "LevelWonPrizes": [
+        {
+          "Level": 1,
+          "Value": 8880.0
+        },
+        {
+          "Level": 20,
+          "Value": 13320.0
+        },
+        {
+          "Level": 35,
+          "Value": 15984.0
+        },
+        {
+          "Level": 58,
+          "Value": 17760.0
+        },
+        {
+          "Level": 100,
+          "Value": 19536.0
+        },
+        {
+          "Level": 168,
+          "Value": 22200.0
+        }
+      ],
+      "WildCosts": [
+        {
+          "Level": 1,
+          "Value": 1700.0
+        },
+        {
+          "Level": 13,
+          "Value": 3300.0
+        },
+        {
+          "Level": 20,
+          "Value": 6700.0
+        },
+        {
+          "Level": 35,
+          "Value": 10000.0
+        },
+        {
+          "Level": 47,
+          "Value": 15000.0
+        },
+        {
+          "Level": 58,
+          "Value": 20000.0
+        },
+        {
+          "Level": 100,
+          "Value": 22000.0
+        },
+        {
+          "Level": 168,
+          "Value": 25100.0
+        }
+      ],
+      "UndoCosts": [
+        {
+          "Level": 1,
+          "Value": 300.0
+        },
+        {
+          "Level": 20,
+          "Value": 700.0
+        },
+        {
+          "Level": 35,
+          "Value": 1000.0
+        },
+        {
+          "Level": 47,
+          "Value": 1300.0
+        },
+        {
+          "Level": 58,
+          "Value": 1700.0
+        },
+        {
+          "Level": 100,
+          "Value": 1800.0
+        },
+        {
+          "Level": 168,
+          "Value": 2100.0
+        }
+      ],
+      "Plus5Costs": [
+        {
+          "Level": 1,
+          "Value": 1700.0
+        },
+        {
+          "Level": 20,
+          "Value": 3000.0
+        },
+        {
+          "Level": 27,
+          "Value": 5000.0
+        },
+        {
+          "Level": 35,
+          "Value": 6700.0
+        },
+        {
+          "Level": 47,
+          "Value": 10000.0
+        },
+        {
+          "Level": 58,
+          "Value": 13400.0
+        },
+        {
+          "Level": 100,
+          "Value": 14700.0
+        },
+        {
+          "Level": 168,
+          "Value": 16700.0
+        }
+      ],
+      "RemoveCardsCosts": [
+        {
+          "Level": 1,
+          "Value": 5700.0
+        },
+        {
+          "Level": 20,
+          "Value": 8400.0
+        },
+        {
+          "Level": 58,
+          "Value": 11000.0
+        },
+        {
+          "Level": 100,
+          "Value": 12400.0
+        },
+        {
+          "Level": 168,
+          "Value": 14000.0
+        }
+      ],
+      "ClearPlayablesCosts": [
+        {
+          "Level": 1,
+          "Value": 6700.0
+        },
+        {
+          "Level": 20,
+          "Value": 10000.0
+        },
+        {
+          "Level": 58,
+          "Value": 13400.0
+        },
+        {
+          "Level": 100,
+          "Value": 14700.0
+        },
+        {
+          "Level": 168,
+          "Value": 16700.0
+        }
+      ],
+      "WildDropCosts": [
+        {
+          "Level": 1,
+          "Value": 9000.0
+        },
+        {
+          "Level": 20,
+          "Value": 13400.0
+        },
+        {
+          "Level": 58,
+          "Value": 17700.0
+        },
+        {
+          "Level": 100,
+          "Value": 19700.0
+        },
+        {
+          "Level": 168,
+          "Value": 22400.0
+        }
+      ],
+      "RemoveBombsCosts": [
+        {
+          "Level": 1,
+          "Value": 5700.0
+        },
+        {
+          "Level": 20,
+          "Value": 8400.0
+        },
+        {
+          "Level": 58,
+          "Value": 11000.0
+        },
+        {
+          "Level": 100,
+          "Value": 12400.0
+        },
+        {
+          "Level": 168,
+          "Value": 14000.0
+        }
+      ],
+      "RemoveValueChangersCosts": [
+        {
+          "Level": 1,
+          "Value": 5700.0
+        },
+        {
+          "Level": 20,
+          "Value": 8400.0
+        },
+        {
+          "Level": 58,
+          "Value": 11000.0
+        },
+        {
+          "Level": 100,
+          "Value": 12400.0
+        },
+        {
+          "Level": 168,
+          "Value": 14000.0
+        }
+      ],
+      "RemoveCodeBreakersCosts": [
+        {
+          "Level": 1,
+          "Value": 6700.0
+        },
+        {
+          "Level": 20,
+          "Value": 10000.0
+        },
+        {
+          "Level": 58,
+          "Value": 13400.0
+        },
+        {
+          "Level": 100,
+          "Value": 14700.0
+        },
+        {
+          "Level": 168,
+          "Value": 16700.0
+        }
+      ],
+      "TriggerProbabilities": [
+        {
+          "Level": 1,
+          "Value": 0.3
+        }
+      ],
+      "LevelCostWithFreeRoundDiscounts": []
+    }
+  },
+  "Harvest": {
+    "BaseHash": 0,
+    "BaseConfig": {
+      "HarvestBaseCredits": 2000,
+      "CropHarvestPrizes": [
+        {
+          "Level": 5,
+          "Value": 50.0
+        }
+      ]
+    }
+  },
+  "ShopFactor": {
+    "BaseHash": 0,
+    "BaseConfig": [
+      {
+        "Level": 1,
+        "Value": 7.5
+      },
+      {
+        "Level": 168,
+        "Value": 8.5
+      }
+    ]
+  }
+}

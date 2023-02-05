@@ -1,0 +1,18 @@
+{
+    "queue": [
+        {
+            "name": "mode4_event",
+            "userId": "91463887",
+            "value": {
+                "active": false
+            },
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "963fe55f087d1894bb4ea0428e60afc3",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "78e48cecf5f4379f46319facbd614957"
+        }
+    ]
+}

@@ -1,0 +1,159 @@
+{
+    "queue": [
+        {
+            "name": "happy_sam_multipliers_v2",
+            "userId": "91463887",
+            "value": [
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                }
+            ],
+            "segment": {
+                "segmentId": 10000077019
+            },
+            "configHash": "4d2f7ce5468ea40d4c96eb11bfd78194",
+            "startTimestamp": 1657015200.0,
+            "endTimestamp": 1720173600.0,
+            "queueHash": "e87741d441a2837d7e424edc452e0045"
+        },
+        {
+            "name": "happy_sam_multipliers_v2",
+            "userId": "91463887",
+            "value": [
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.0,
+                    "weight": 500
+                }
+            ],
+            "segment": {
+                "segmentId": 10000071232
+            },
+            "configHash": "d193d78a79ce85519f731af3ef968046",
+            "startTimestamp": 1651053600.0,
+            "endTimestamp": 1714212000.0,
+            "queueHash": "e87741d441a2837d7e424edc452e0045"
+        },
+        {
+            "name": "happy_sam_multipliers_v2",
+            "userId": "91463887",
+            "value": [
+                {
+                    "multiplier": 0.5,
+                    "weight": 100
+                },
+                {
+                    "multiplier": 0.7,
+                    "weight": 200
+                },
+                {
+                    "multiplier": 1,
+                    "weight": 500
+                },
+                {
+                    "multiplier": 1.4,
+                    "weight": 150
+                },
+                {
+                    "multiplier": 2,
+                    "weight": 50
+                }
+            ],
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "c097318bc09de784fe85872c6ae6faba",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "e87741d441a2837d7e424edc452e0045"
+        }
+    ]
+}

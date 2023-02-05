@@ -1,0 +1,18 @@
+{
+    "queue": [
+        {
+            "name": "terms_of_service_link_en",
+            "userId": "91463887",
+            "value": {
+                "value": "https://www.supertreat.net/support/terms-of-service/index.html"
+            },
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "1ff085b2c7c3f0ddfe2284e646876ff4",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "8d9316524e9ac08b4ca1afd968049405"
+        }
+    ]
+}

@@ -1,0 +1,1484 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -1989210641703190853
+  },
+  "m_Name": "FarmV2MockConfig",
+  "ProgressResponse": {
+    "FarmName": "Farm 2.0",
+    "Gems": 1000,
+    "XP": {
+      "Level": 1,
+      "Percent": 0
+    },
+    "DeliveryBonus": 3000,
+    "HouseArea": {
+      "Placeholders": [
+        {
+          "Id": 101,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100101,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100101,
+              "State": 0
+            },
+            {
+              "CollectionId": 100,
+              "DecoId": 2,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 102,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100102,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100102,
+              "State": 0
+            },
+            {
+              "CollectionId": 100,
+              "DecoId": 100101,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 103,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100103,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100103,
+              "State": 0
+            },
+            {
+              "CollectionId": 101,
+              "DecoId": 101103,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 104,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100104,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100104,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 105,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100105,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100105,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 106,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100106,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100106,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 107,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100107,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100107,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 108,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100108,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100108,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 109,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100109,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100109,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 110,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100110,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100110,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 111,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100111,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100111,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 112,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100112,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100112,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 113,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100113,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100113,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 114,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100114,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100114,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 115,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100115,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100115,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 116,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100116,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100116,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 117,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100117,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100117,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 118,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100118,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100118,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 119,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100119,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100119,
+              "State": 0
+            },
+            {
+              "CollectionId": 100,
+              "DecoId": 100102,
+              "State": 1
+            }
+          ]
+        },
+        {
+          "Id": 120,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100120,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100120,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 121,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100121,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100121,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 122,
+          "DecoCollectionType": 0,
+          "Types": [],
+          "SelectedDecoId": 100122,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100122,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 201,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100201,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100201,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606201,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 202,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100202,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100202,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606202,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 203,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100203,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100203,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606203,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 204,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100204,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100204,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606204,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 205,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100205,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100205,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606205,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 206,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100206,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100206,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606206,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 207,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100207,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100207,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606207,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 208,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100208,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100208,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606208,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 209,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100209,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100209,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606209,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 210,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100210,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100210,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606210,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 211,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100211,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100211,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606211,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 212,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100212,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100212,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606212,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 213,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100213,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100213,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606213,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 214,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100214,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100214,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606214,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 215,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100215,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100215,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606215,
+              "State": 2
+            }
+          ]
+        },
+        {
+          "Id": 216,
+          "DecoCollectionType": 1,
+          "Types": [],
+          "SelectedDecoId": 100216,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100216,
+              "State": 0
+            },
+            {
+              "CollectionId": 606,
+              "DecoId": 606216,
+              "State": 4
+            }
+          ]
+        },
+        {
+          "Id": 301,
+          "DecoCollectionType": 2,
+          "Types": [],
+          "SelectedDecoId": 100301,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100301,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 302,
+          "DecoCollectionType": 2,
+          "Types": [],
+          "SelectedDecoId": 100302,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100302,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 303,
+          "DecoCollectionType": 2,
+          "Types": [],
+          "SelectedDecoId": 100303,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100303,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 304,
+          "DecoCollectionType": 2,
+          "Types": [],
+          "SelectedDecoId": 100304,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100304,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 305,
+          "DecoCollectionType": 2,
+          "Types": [],
+          "SelectedDecoId": 100305,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100305,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 306,
+          "DecoCollectionType": 2,
+          "Types": [],
+          "SelectedDecoId": 100306,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100306,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 307,
+          "DecoCollectionType": 2,
+          "Types": [],
+          "SelectedDecoId": 100307,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100307,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 308,
+          "DecoCollectionType": 2,
+          "Types": [],
+          "SelectedDecoId": 100308,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100308,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 309,
+          "DecoCollectionType": 2,
+          "Types": [],
+          "SelectedDecoId": 100309,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100309,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 310,
+          "DecoCollectionType": 2,
+          "Types": [],
+          "SelectedDecoId": 100310,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100310,
+              "State": 0
+            }
+          ]
+        },
+        {
+          "Id": 311,
+          "DecoCollectionType": 2,
+          "Types": [],
+          "SelectedDecoId": 100311,
+          "DecoItems": [
+            {
+              "CollectionId": 100,
+              "DecoId": 100311,
+              "State": 0
+            }
+          ]
+        }
+      ]
+    },
+    "TutorialArea": {
+      "State": 0,
+      "StarterKit": 124,
+      "Progression": {
+        "Id": 0,
+        "State": 1,
+        "TaskGroups": [
+          {
+            "Id": 31,
+            "State": 1,
+            "Tasks": [
+              {
+                "Id": 1,
+                "State": 1,
+                "Price": 75,
+                "XpReward": 50
+              }
+            ]
+          },
+          {
+            "Id": 32,
+            "State": 0,
+            "Tasks": [
+              {
+                "Id": 2,
+                "State": 0,
+                "Price": 80,
+                "XpReward": 50
+              }
+            ]
+          },
+          {
+            "Id": 33,
+            "State": 0,
+            "Tasks": [
+              {
+                "Id": 3,
+                "State": 0,
+                "Price": 90,
+                "XpReward": 50
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "SkuId": 132,
+            "SkuData": {
+              "Amount": 999,
+              "Multiplier": 0.0,
+              "Rounds": 0,
+              "DiscountPercent": 0.0,
+              "DecoId": 0,
+              "MissionPoints": 0,
+              "Duration": 0,
+              "EndDate": 0.0,
+              "ConfigName": "",
+              "PackIds": "",
+              "Rarity": 0,
+              "GameType": "",
+              "SubgroupId": "",
+              "GameId": ""
+            }
+          }
+        ]
+      }
+    },
+    "PermanentAreas": [
+      {
+        "Id": 1,
+        "Type": 0,
+        "State": 3,
+        "XpLevelThreshold": 1,
+        "Upgrades": [
+          {
+            "Id": 1,
+            "State": 3,
+            "Rewards": []
+          }
+        ],
+        "Rewards": []
+      },
+      {
+        "Id": 2,
+        "Type": 0,
+        "State": 1,
+        "XpLevelThreshold": 2,
+        "Upgrades": [
+          {
+            "Id": 1,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 2,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 3,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 4,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 5,
+            "State": 0,
+            "Rewards": []
+          }
+        ],
+        "Rewards": []
+      },
+      {
+        "Id": 3,
+        "Type": 0,
+        "State": 0,
+        "XpLevelThreshold": 3,
+        "Upgrades": [
+          {
+            "Id": 1,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 2,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 3,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 4,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 5,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 6,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 7,
+            "State": 0,
+            "Rewards": []
+          }
+        ],
+        "Rewards": []
+      },
+      {
+        "Id": 4,
+        "Type": 0,
+        "State": 0,
+        "XpLevelThreshold": 4,
+        "Upgrades": [
+          {
+            "Id": 1,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 2,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 3,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 4,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 5,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 6,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 7,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 8,
+            "State": 0,
+            "Rewards": []
+          }
+        ],
+        "Rewards": []
+      },
+      {
+        "Id": 5,
+        "Type": 0,
+        "State": 0,
+        "XpLevelThreshold": 5,
+        "Upgrades": [
+          {
+            "Id": 1,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 2,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 3,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 4,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 5,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 6,
+            "State": 0,
+            "Rewards": []
+          },
+          {
+            "Id": 7,
+            "State": 0,
+            "Rewards": []
+          }
+        ],
+        "Rewards": []
+      }
+    ],
+    "SeasonArea": {
+      "SeasonId": 1,
+      "SeasonEndDateMs": 1658766247091,
+      "SeasonState": 0,
+      "RecompletionLoopCount": 0,
+      "ChaptersCount": 2,
+      "StarterKitGems": 0,
+      "CurrentChapter": {
+        "Id": 1,
+        "State": 1,
+        "TaskGroups": [
+          {
+            "Id": 1,
+            "State": 1,
+            "Tasks": [
+              {
+                "Id": 1,
+                "State": 1,
+                "Price": 15,
+                "XpReward": 20
+              },
+              {
+                "Id": 2,
+                "State": 1,
+                "Price": 20,
+                "XpReward": 30
+              },
+              {
+                "Id": 3,
+                "State": 1,
+                "Price": 25,
+                "XpReward": 30
+              }
+            ]
+          },
+          {
+            "Id": 2,
+            "State": 0,
+            "Tasks": [
+              {
+                "Id": 4,
+                "State": 0,
+                "Price": 35,
+                "XpReward": 25
+              },
+              {
+                "Id": 5,
+                "State": 0,
+                "Price": 40,
+                "XpReward": 35
+              },
+              {
+                "Id": 6,
+                "State": 0,
+                "Price": 45,
+                "XpReward": 40
+              }
+            ]
+          }
+        ],
+        "Rewards": [
+          {
+            "SkuId": 0,
+            "SkuData": {
+              "Amount": 2000,
+              "Multiplier": 0.0,
+              "Rounds": 0,
+              "DiscountPercent": 0.0,
+              "DecoId": 0,
+              "MissionPoints": 0,
+              "Duration": 0,
+              "EndDate": 0.0,
+              "ConfigName": "",
+              "PackIds": "",
+              "Rarity": 0,
+              "GameType": "",
+              "SubgroupId": "",
+              "GameId": ""
+            }
+          }
+        ]
+      },
+      "SeasonCompleteRewards": [
+        {
+          "SkuId": 0,
+          "SkuData": {
+            "Amount": 9999,
+            "Multiplier": 0.0,
+            "Rounds": 0,
+            "DiscountPercent": 0.0,
+            "DecoId": 0,
+            "MissionPoints": 0,
+            "Duration": 0,
+            "EndDate": 0.0,
+            "ConfigName": "",
+            "PackIds": "",
+            "Rarity": 0,
+            "GameType": "",
+            "SubgroupId": "",
+            "GameId": ""
+          }
+        }
+      ],
+      "BiEventSourceUuid": ""
+    },
+    "UnclaimedRewards": [],
+    "FarmV2DecoItemsInfo": {
+      "Hash": "",
+      "FarmV2DecoItemInfos": []
+    }
+  },
+  "ThrowErrorOnPermanentAreaActivation": 0,
+  "ThrowErrorOnPermanentAreaUpgradeCompletion": 0,
+  "ThrowErrorOnCompleteSeasonTask": 0,
+  "ReturnNotEnoughtGemsOnCompleteSeasonTask": 0,
+  "_seasonChapters": [
+    {
+      "Id": 1,
+      "State": 1,
+      "TaskGroups": [
+        {
+          "Id": 1,
+          "State": 1,
+          "Tasks": [
+            {
+              "Id": 1,
+              "State": 1,
+              "Price": 15,
+              "XpReward": 0
+            },
+            {
+              "Id": 2,
+              "State": 1,
+              "Price": 20,
+              "XpReward": 0
+            },
+            {
+              "Id": 3,
+              "State": 1,
+              "Price": 25,
+              "XpReward": 0
+            }
+          ]
+        },
+        {
+          "Id": 2,
+          "State": 0,
+          "Tasks": [
+            {
+              "Id": 4,
+              "State": 0,
+              "Price": 35,
+              "XpReward": 0
+            },
+            {
+              "Id": 5,
+              "State": 0,
+              "Price": 40,
+              "XpReward": 0
+            },
+            {
+              "Id": 6,
+              "State": 0,
+              "Price": 45,
+              "XpReward": 0
+            }
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "SkuId": 0,
+          "SkuData": {
+            "Amount": 2000,
+            "Multiplier": 0.0,
+            "Rounds": 0,
+            "DiscountPercent": 0.0,
+            "DecoId": 0,
+            "MissionPoints": 0,
+            "Duration": 0,
+            "EndDate": 0.0,
+            "ConfigName": "",
+            "PackIds": "",
+            "Rarity": 0,
+            "GameType": "",
+            "SubgroupId": "",
+            "GameId": ""
+          }
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "State": 0,
+      "TaskGroups": [
+        {
+          "Id": 1,
+          "State": 0,
+          "Tasks": [
+            {
+              "Id": 1,
+              "State": 0,
+              "Price": 30,
+              "XpReward": 0
+            },
+            {
+              "Id": 2,
+              "State": 0,
+              "Price": 35,
+              "XpReward": 0
+            },
+            {
+              "Id": 3,
+              "State": 0,
+              "Price": 40,
+              "XpReward": 0
+            }
+          ]
+        },
+        {
+          "Id": 2,
+          "State": 0,
+          "Tasks": [
+            {
+              "Id": 4,
+              "State": 0,
+              "Price": 45,
+              "XpReward": 0
+            },
+            {
+              "Id": 5,
+              "State": 0,
+              "Price": 50,
+              "XpReward": 0
+            },
+            {
+              "Id": 6,
+              "State": 0,
+              "Price": 55,
+              "XpReward": 0
+            }
+          ]
+        },
+        {
+          "Id": 3,
+          "State": 0,
+          "Tasks": [
+            {
+              "Id": 7,
+              "State": 0,
+              "Price": 55,
+              "XpReward": 0
+            },
+            {
+              "Id": 8,
+              "State": 0,
+              "Price": 60,
+              "XpReward": 0
+            }
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "SkuId": 0,
+          "SkuData": {
+            "Amount": 5000,
+            "Multiplier": 0.0,
+            "Rounds": 0,
+            "DiscountPercent": 0.0,
+            "DecoId": 0,
+            "MissionPoints": 0,
+            "Duration": 0,
+            "EndDate": 0.0,
+            "ConfigName": "",
+            "PackIds": "",
+            "Rarity": 0,
+            "GameType": "",
+            "SubgroupId": "",
+            "GameId": ""
+          }
+        }
+      ]
+    },
+    {
+      "Id": 1,
+      "State": 1,
+      "TaskGroups": [
+        {
+          "Id": 1,
+          "State": 1,
+          "Tasks": [
+            {
+              "Id": 1,
+              "State": 1,
+              "Price": 15,
+              "XpReward": 20
+            },
+            {
+              "Id": 2,
+              "State": 1,
+              "Price": 20,
+              "XpReward": 30
+            },
+            {
+              "Id": 3,
+              "State": 1,
+              "Price": 25,
+              "XpReward": 30
+            }
+          ]
+        },
+        {
+          "Id": 2,
+          "State": 0,
+          "Tasks": [
+            {
+              "Id": 4,
+              "State": 0,
+              "Price": 35,
+              "XpReward": 25
+            },
+            {
+              "Id": 5,
+              "State": 0,
+              "Price": 40,
+              "XpReward": 35
+            },
+            {
+              "Id": 6,
+              "State": 0,
+              "Price": 45,
+              "XpReward": 40
+            }
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "SkuId": 0,
+          "SkuData": {
+            "Amount": 2000,
+            "Multiplier": 0.0,
+            "Rounds": 0,
+            "DiscountPercent": 0.0,
+            "DecoId": 0,
+            "MissionPoints": 0,
+            "Duration": 0,
+            "EndDate": 0.0,
+            "ConfigName": "",
+            "PackIds": "",
+            "Rarity": 0,
+            "GameType": "",
+            "SubgroupId": "",
+            "GameId": ""
+          }
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "State": 0,
+      "TaskGroups": [
+        {
+          "Id": 1,
+          "State": 0,
+          "Tasks": [
+            {
+              "Id": 1,
+              "State": 0,
+              "Price": 30,
+              "XpReward": 10
+            },
+            {
+              "Id": 2,
+              "State": 0,
+              "Price": 35,
+              "XpReward": 10
+            },
+            {
+              "Id": 3,
+              "State": 0,
+              "Price": 40,
+              "XpReward": 10
+            }
+          ]
+        },
+        {
+          "Id": 2,
+          "State": 0,
+          "Tasks": [
+            {
+              "Id": 4,
+              "State": 0,
+              "Price": 45,
+              "XpReward": 10
+            },
+            {
+              "Id": 5,
+              "State": 0,
+              "Price": 50,
+              "XpReward": 10
+            },
+            {
+              "Id": 6,
+              "State": 0,
+              "Price": 55,
+              "XpReward": 10
+            }
+          ]
+        },
+        {
+          "Id": 3,
+          "State": 0,
+          "Tasks": [
+            {
+              "Id": 7,
+              "State": 0,
+              "Price": 55,
+              "XpReward": 10
+            },
+            {
+              "Id": 8,
+              "State": 0,
+              "Price": 60,
+              "XpReward": 10
+            }
+          ]
+        }
+      ],
+      "Rewards": [
+        {
+          "SkuId": 0,
+          "SkuData": {
+            "Amount": 5000,
+            "Multiplier": 0.0,
+            "Rounds": 0,
+            "DiscountPercent": 0.0,
+            "DecoId": 0,
+            "MissionPoints": 0,
+            "Duration": 0,
+            "EndDate": 0.0,
+            "ConfigName": "",
+            "PackIds": "",
+            "Rarity": 0,
+            "GameType": "",
+            "SubgroupId": "",
+            "GameId": ""
+          }
+        }
+      ]
+    }
+  ],
+  "_recompletionSeasonData": {
+    "SeasonId": 0,
+    "SeasonEndDateMs": 0,
+    "SeasonState": 0,
+    "RecompletionLoopCount": 0,
+    "ChaptersCount": 0,
+    "StarterKitGems": 0,
+    "CurrentChapter": {
+      "Id": 0,
+      "State": 0,
+      "TaskGroups": [],
+      "Rewards": []
+    },
+    "SeasonCompleteRewards": [],
+    "BiEventSourceUuid": ""
+  }
+}

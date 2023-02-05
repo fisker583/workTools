@@ -1,0 +1,18 @@
+{
+    "queue": [
+        {
+            "name": "version_force_update_v2",
+            "userId": "91463887",
+            "value": {
+                "min_version": "1.18.0"
+            },
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "2b7c0a9049577399a1dfe4815999748b",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "b9512752c96ec9790b92af0ce7953533"
+        }
+    ]
+}

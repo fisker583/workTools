@@ -1,0 +1,1560 @@
+{
+    "queue": [
+        {
+            "name": "happy_sam_v2",
+            "userId": "91463887",
+            "value": {
+                "tolerance": 7,
+                "dailyConfigs": [
+                    {
+                        "day": 1,
+                        "value": 1.5,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 2,
+                        "value": 1.75,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 3,
+                        "value": 1.0,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 100
+                            }
+                        ]
+                    },
+                    {
+                        "day": 4,
+                        "value": 1.3,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 5,
+                        "value": 1.0,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 6,
+                        "value": 1.3,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 7,
+                        "value": 1.5,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 8,
+                        "value": 1.5,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 9,
+                        "value": 1.0,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 100
+                            }
+                        ]
+                    },
+                    {
+                        "day": 10,
+                        "value": 1.2,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 11,
+                        "value": 1.0,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 12,
+                        "value": 1.5,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 13,
+                        "value": 1.0,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 14,
+                        "value": 1.5,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 15,
+                        "value": 1.2,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 100
+                            }
+                        ]
+                    },
+                    {
+                        "day": 16,
+                        "value": 1.5,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 17,
+                        "value": 1.2,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 18,
+                        "value": 1.0,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 19,
+                        "value": 1.5,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 20,
+                        "value": 1.2,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 21,
+                        "value": 2.0,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 22,
+                        "value": 2.0,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 23,
+                        "value": 1.0,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 24,
+                        "value": 1.5,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 25,
+                        "value": 0.5,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 26,
+                        "value": 1.1,
+                        "quantity": 2,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 27,
+                        "value": 2.0,
+                        "quantity": 1,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "day": 28,
+                        "value": 1.2,
+                        "quantity": 3,
+                        "bonuses": [
+                            {
+                                "skuId": 253,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 132,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 140,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 130,
+                                "weight": 100
+                            },
+                            {
+                                "skuId": 139,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 245,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 246,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 244,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 249,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 248,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 247,
+                                "weight": 0
+                            },
+                            {
+                                "skuId": 252,
+                                "weight": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 10000071232
+            },
+            "configHash": "35fbf0df13d9e7cab97413d1f6600f19",
+            "startTimestamp": 1651053600.0,
+            "endTimestamp": 1714212000.0,
+            "queueHash": "44c6a3c28e6bfdbd433c4f603f97e44e"
+        }
+    ]
+}

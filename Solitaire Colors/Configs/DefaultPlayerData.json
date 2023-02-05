@@ -1,0 +1,667 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7291282166126851931
+  },
+  "m_Name": "DefaultPlayerData",
+  "PlayerData": {
+    "_version": 0,
+    "_appVersion": "",
+    "_credits": 10000,
+    "_firstStartTimestamp": 0.0,
+    "_timestamp": 0.0,
+    "_vipPoints": 0,
+    "_gems": 0,
+    "_testGroupValue": "",
+    "_arePowerUpsEnabled": 0,
+    "_powerUpEnableThreshold": 0,
+    "_eventStreamThreshold": 0,
+    "_samAndBonesGroup": 0,
+    "_lootModeIndex": 0,
+    "_mapIndex": 0,
+    "_gladeMapIndex": 0,
+    "_maxCropIndex": 0,
+    "_lastPlayedLevelIndex": {
+      "CropIndex": 0,
+      "Index": 0
+    },
+    "_levelIndex": {
+      "CropIndex": 0,
+      "Index": 0
+    },
+    "_gladeIndex": {
+      "CropIndex": 0,
+      "Index": 0
+    },
+    "_lastPlayedVipIndex": {
+      "CropIndex": 0,
+      "Index": 0
+    },
+    "_vipIndex": {
+      "CropIndex": 0,
+      "Index": 0
+    },
+    "_showWhatsNewPopup": 0,
+    "_gladeScreenIndex": -1,
+    "_numberOfGladeStarts": 0,
+    "_numberOfCollects": 0,
+    "_numberOfAdditional5Cards": 0,
+    "_lastHarvestTime": 0.0,
+    "_isAppRated": 0,
+    "_appRatedData": {
+      "AppRatedTime": 0,
+      "AppRatedWheels": 0,
+      "WasRecognitionShown": 0
+    },
+    "_whatsNewVipPoints": 0,
+    "_supportVipExtraPoints": 0,
+    "_additionalVipPoints": 0,
+    "_lastDailyStreakTime": 0.0,
+    "_dailyStreakDay": 0,
+    "_daysSinceLastSession": 0,
+    "_dailyBonus": 0,
+    "_superLuckyWheelRestoreData": {
+      "SuperLuckyWheelRestoreState": -1,
+      "SuperLuckyWheelPurchaseTransactionTicket": "",
+      "SuperLuckyWheelPurchaseId": "",
+      "SuperLuckyWheelSegmentId": 0,
+      "SuperLuckyWheelLastValidConfig": {
+        "Wedges": [],
+        "PromoImageUrl": ""
+      },
+      "SuperLuckyWheelSegmentedLastValidConfigV2": {
+        "Wedges": []
+      },
+      "SuperLuckyWheelRespinWinIndex": 0,
+      "SuperLuckyWheelEstimatedCostInUsd": 0.0
+    },
+    "_cropMasterRestoreData": {
+      "MapIndex": 0,
+      "CropIndex": 0,
+      "TotalPicks": 0,
+      "CrateType": 0,
+      "Rewards": [],
+      "IsInProgress": 0,
+      "PlayerWatchedVideoAd": 0
+    },
+    "_starChasePlayerData": {
+      "ExtraPicks": 0
+    },
+    "_diceQuestPlayerData": {
+      "Energy": 0,
+      "IsLastShowUsed": 0,
+      "LevelCost": 0,
+      "DiceQuestCount": 0,
+      "IsActivatedForUser": 0,
+      "LevelCostUpdatedForNewEvent": 0,
+      "NewEventInfoPopupShown": 0,
+      "StarterKitCollected": 0,
+      "BoardTutorialFinished": 0,
+      "JackpotRewardTutorialFinished": 0,
+      "JackpotKeyTutorialFinished": 0,
+      "ActivationTimestamp": 0.0,
+      "UpdateTimestamp": 0.0
+    },
+    "_easierLevelCounter": 0,
+    "_lastLevelLost": 0,
+    "_cropsPlayed": {
+      "_list": []
+    },
+    "_vipPlayed": [],
+    "_purchaseDataV2": [],
+    "_purchasesCount": 0,
+    "_freeUndo": 0,
+    "_freeRounds": 0,
+    "_freeRoundsMode2": 0,
+    "_freeRoundsMode3": 0,
+    "_freePlus5": 0,
+    "_freeWild": 0,
+    "_powerUpRemoveCardsAtStart": 0,
+    "_powerUpClearPlayables": 0,
+    "_powerUpWildDrop": 0,
+    "_powerUpRemoveCodeBreaker": 0,
+    "_powerUpRemoveSuicide": 0,
+    "_powerUpRemoveValueChanger": 0,
+    "_creditsMultiplierFactor": 1.0,
+    "_harvestMultiplier": 1.0,
+    "_creditsMultiplierRounds": 0,
+    "_harvestMultiplierRounds": 0,
+    "_doubleHarvestTimeStarttime": 0.0,
+    "_doubleHarvestEndTime": 0.0,
+    "_levelsWonSinceLastPurchase": 0,
+    "_levelsWonSinceLastSupportHelpingHand": 0,
+    "_supportNumberOfHelpingHands": 0,
+    "_progressLevelsLostOnFirstPlaySinceLastWonOnFirstPlay": 0,
+    "_progressLevelsNotWonOnFirstTryCounter": 0,
+    "_progressLevelsDrawWinningGames": 0,
+    "_firstTimeOfferStateCounter": 0,
+    "_firstTimeOfferActiveTime": -1.0,
+    "_firstTimeOfferWaitTime": -1.0,
+    "_activeMissionIdentifiers": [],
+    "_samLockTimestamp": 0.0,
+    "_samCoinsSinceLastLock": 0,
+    "_samTotalCoinsCollected": 0,
+    "_samCollectedCounter": 0,
+    "_secretGoldenCarrotShown": 0,
+    "_waitingForHarvestClockOnNewMap": 0,
+    "_tutorialWelcomeShown": 0,
+    "_tutorialHarvestShown": 0,
+    "_tutorialLevel5HelpShown": 0,
+    "_tutorialGladeButtonIntroShown": 0,
+    "_tutorialVipButtonNotPlayableShown": 0,
+    "_tutorialVipButtonPlayableShown": 0,
+    "_tutorialVipWorldIntroShown": 0,
+    "_tutorialForcedUndoUsed": 0,
+    "_tutorialStreakPureShown": 0,
+    "_tutorialGladeMoreChallengesCounter": 0,
+    "_tutorialGladeChallenge1Shown": 0,
+    "_tutorialGladeChallengeFirstGoldShown": 0,
+    "_tutorialMastersLeagueFirstIntroShown": 0,
+    "_tutorialBigCardShown": 0,
+    "_tutorialLadderShown": 0,
+    "_tutorialConnectedCardsShown": 0,
+    "_tutorialWildCardShown": 0,
+    "_tutorialSquirrelShown": 0,
+    "_tutorialMouseShown": 0,
+    "_tutorialSamAndBonesShown": 0,
+    "_tutorialFrogShown": 0,
+    "_tutorialPowerUpRemoveCardsAtStartShown": 0,
+    "_tutorialPowerUpClearPlayablesShown": 0,
+    "_tutorialPowerUpWildDropShown": 0,
+    "_tutorialBigMeProfileWithInventoryShown": 0,
+    "_tutorialCropMasterShown": 0,
+    "_tutorialHappySamShown": 0,
+    "_tutorialSurpriseCardShown": 0,
+    "_tutorialDiceQuestLevelShown": 0,
+    "_tutorialDiceQuestLobbyShown": 0,
+    "_teaser1NewLevelsShown": 0,
+    "_invitedTodayWhatsapp": 0,
+    "_invitedTodayMail": 0,
+    "_invitedTodayMessenger": 0,
+    "_invitedTodaySms": 0,
+    "_likedFacebook": 0,
+    "_outOfCreditsFirstEvent": 0,
+    "_hasMap1CompletedShown": 0,
+    "_facebookWasLoggedIn": 0,
+    "_facebookLoginRewardReceived": 0,
+    "_numberOfFacebookRequestsSent": 0,
+    "_facebookRequestSentTimestamp": 0.0,
+    "_numberOfFacebookRequestsReceived": 0,
+    "_supportContactedLastTimestamp": 0.0,
+    "_showNewShopBadge": 0,
+    "_gdprVersionAccepted": -1,
+    "_clubMember": {
+      "LeagueScore": 0
+    },
+    "_leagueRegion": "",
+    "_leagueHistory": [],
+    "_leagueInfo": {
+      "Round": 0,
+      "FirstStartPerLeague": 0
+    },
+    "_masterLeagueLuckyWheelInfo": {
+      "Progress": 0
+    },
+    "_tournamentProperties": {
+      "RemainingCardTutorialRequired": 1,
+      "GoldenGladeRemainingCardTutorialRequired": 1,
+      "IsRulesPopupRequired": 1,
+      "IsLeaderboardPopupRequired": 1,
+      "IsBadgeTutorialRequired": 1,
+      "IsFirstLuckyCardRulePopupTutorial": 1,
+      "IsFirstLuckyCardLevelTutorial": 1,
+      "AdditionalData": {
+        "Scope": {
+          "LevelTypes": [],
+          "Replay": 0
+        },
+        "Triggers": [],
+        "ModeMultipliers": {
+          "_keyData": [],
+          "_valueData": []
+        }
+      },
+      "EndTime": 0.0,
+      "TournamentLuckyCard": {
+        "CardValue": {
+          "CardColor": -1,
+          "CardSuit": -1,
+          "CardFace": -1
+        }
+      },
+      "IsTooltipInfoPopupTutorial": 1,
+      "OpenTooltipCounter": 0,
+      "IsInfoButtonLeaderboardPopupTutorial": 1,
+      "IsSelectLuckyCardButtonInfoPopupTutorial": 1,
+      "IsDecoItemTutorialRequired": 1
+    },
+    "_tournamentResultProperties": {
+      "Rank": 0,
+      "RunId": "",
+      "ProcessRequired": 0
+    },
+    "_usedFreeCreditsLinkIds": [],
+    "_missionsData": {
+      "LastUpdateTimestamp": 0.0,
+      "RegularGroupData0": {
+        "RegularMissionsRow": [],
+        "CurrentMissionIndex": 0
+      },
+      "RegularGroupData1": {
+        "RegularMissionsRow": [],
+        "CurrentMissionIndex": 0
+      },
+      "RegularGroupData2": {
+        "RegularMissionsRow": [],
+        "CurrentMissionIndex": 0
+      },
+      "CachedDynamicEnergyJourneyConfig": {
+        "StartTime": 0.0,
+        "EndTime": 0.0,
+        "JourneyEventName": "",
+        "JourneyMaxProgress": 0,
+        "Active": 0,
+        "SegmentedConfigHash": ""
+      },
+      "IsCollectionFlowInterrupted": 0
+    },
+    "_farmerPassData": {
+      "IsActive": 0,
+      "ConfigName": "",
+      "ConfigHash": "",
+      "StartTime": 0.0,
+      "EndTime": 0.0,
+      "MissionPointsViewedFreemium": 0,
+      "MissionPointsViewedPremium": 0,
+      "MissionPointsBalance": 0,
+      "RegularMilestonesTrail": [],
+      "MysteryDoorsData": [],
+      "MysteryDoorsTrail": [],
+      "GoldenTicketAmount": 0,
+      "IsGoldenTrailActive": 0,
+      "IsPremiumTrailValid": 0,
+      "GoldenTicketTransactionTicket": "",
+      "Progress": 0
+    },
+    "_narrativeData": {
+      "EnergyViewed": 0,
+      "EnergyBalance": 0,
+      "WasPopupOpenedForCurrentEvent": 0,
+      "WasCompletedStateShown": 0,
+      "MissionV3UIdsArray": [],
+      "Config": {
+        "EventName": "",
+        "EnergyCap": 0,
+        "AssetKey": "",
+        "HeadlineEn": "",
+        "HeadlineDe": "",
+        "DescriptionEn": "",
+        "DescriptionDe": "",
+        "NarrativeType": "",
+        "Milestones": [],
+        "FinalRewardsDict": {
+          "_keyData": [],
+          "_valueData": []
+        },
+        "EventEndTime": 0.0
+      },
+      "EventId": ""
+    },
+    "_verificationCode": "",
+    "_luckyWheelsToShow": 0,
+    "_payback": {
+      "ActiveConfig": {
+        "MinPrice": 0.0,
+        "MaxPrice": 0.0,
+        "Duration": 0,
+        "Paybacks": [],
+        "Analytics": {
+          "SegmentId": 0,
+          "PromotionId": "",
+          "PromotionName": ""
+        },
+        "ProductIndex": 0,
+        "CoinsCap": 0,
+        "SegmentId": 0,
+        "PurchaseCount": 0,
+        "PackageCoinsCap": 0,
+        "PromotionId": "",
+        "PromotionName": "",
+        "PsfPaymentTransactionTicket": "",
+        "ClientPurchaseId": "",
+        "EstimatedPackageCostInUsd": 0.0
+      },
+      "NotActivatedConfig": {
+        "MinPrice": 0.0,
+        "MaxPrice": 0.0,
+        "Duration": 0,
+        "Paybacks": [],
+        "Analytics": {
+          "SegmentId": 0,
+          "PromotionId": "",
+          "PromotionName": ""
+        },
+        "ProductIndex": 0,
+        "CoinsCap": 0,
+        "SegmentId": 0,
+        "PurchaseCount": 0,
+        "PackageCoinsCap": 0,
+        "PromotionId": "",
+        "PromotionName": "",
+        "PsfPaymentTransactionTicket": "",
+        "ClientPurchaseId": "",
+        "EstimatedPackageCostInUsd": 0.0
+      },
+      "EndTimestamp": 0.0,
+      "SeenCoins": 0,
+      "CoinsCollected": 0,
+      "LevelType": 0,
+      "CoinsWaitingForCalculation": 0
+    },
+    "_recognitionPopup": {
+      "WasRecognitionPopupLevelTriggered": 0,
+      "LastNumberOfLevelPopupWasShown": 0
+    },
+    "_happySamV2": {
+      "LastDailyStreakTime": 0.0,
+      "UtcDifference": 0.0,
+      "DailyStreak": 0,
+      "DaysMissed": 0,
+      "Tolerance": 0,
+      "ConfigSegmentId": 0,
+      "CollectedRewards": {
+        "_keyData": [],
+        "_valueData": []
+      },
+      "Rewards": []
+    },
+    "_piggy": {
+      "Active": 0,
+      "Purchased": 0,
+      "Credits": 0,
+      "AppearanceId": "",
+      "CachedConfig": {
+        "Active": 0,
+        "Name": "",
+        "StartTimestamp": 0.0,
+        "EndTimestamp": 0.0,
+        "Seed": 0,
+        "Cap": 0,
+        "Multipliers": [],
+        "Scopes": {
+          "Map": 0,
+          "Glade": 0,
+          "Vip": 0,
+          "Mastersleague": 0
+        },
+        "ComparePackage": "",
+        "Version": 0,
+        "SegmentId": 0
+      },
+      "CachedPromoConfig": {
+        "Active": 0,
+        "StartTimestamp": 0.0,
+        "EndTimestamp": 0.0,
+        "AdditionalRewards": {
+          "Credits": 0,
+          "Gems": 0,
+          "CreditsFactor": 0.0,
+          "Wilds": 0,
+          "Undos": 0,
+          "Plus5": 0,
+          "FreeRounds": 0,
+          "RemoveCardsAtStart": 0,
+          "ClearPlayables": 0,
+          "WildDrop": 0,
+          "SuicideRemover": 0,
+          "ValueChangerRemover": 0,
+          "CodeBreakRemover": 0,
+          "CropMasterExtraPicks": 0,
+          "DiceQuestDice": 0,
+          "TurboHarvest": 0,
+          "DoubleCredits": 0,
+          "FreeRoundsMode2": 0,
+          "FreeRoundsMode3": 0
+        },
+        "PiggyMultiplier": 0.0,
+        "BannerUrl": "",
+        "Version": 0,
+        "SegmentId": 0
+      },
+      "CachedPrice": "",
+      "IsShowProgressSavedPopup": 0,
+      "PlayerLastSeeFatPiggy": 0,
+      "IsFirstTimeImpression": 0,
+      "PlayerHadActivePiggy": 0,
+      "Purchases": [],
+      "CachedCredits": 0,
+      "LastFreemiumPickedTime": 0.0
+    },
+    "_chestMiniGames": {
+      "MiniGames": []
+    },
+    "_winStreak": {
+      "Active": 0,
+      "AppearanceId": "",
+      "CurrentProgress": 0,
+      "ActiveState": -1,
+      "ActiveConfigHash": "",
+      "IsPermanent": 0,
+      "WinStreakGameCount": 0,
+      "IsFirstTooltipShown": 0,
+      "WinStreakEventFromRewardData": {
+        "IsRewardsFreezed": 0,
+        "FreezeEndTimestamp": 0.0,
+        "IsRewardFtueShown": 0
+      },
+      "IsStartedInSession": 0
+    },
+    "_videoAd": {
+      "LastVideoTimestamps": {
+        "_keyData": [],
+        "_valueData": []
+      },
+      "LastVideoTimestamp": 0.0,
+      "VideoPerDayAmounts": {
+        "_keyData": [],
+        "_valueData": []
+      },
+      "VideoPerDayAmount": 0,
+      "LastUpdateTime": 0.0,
+      "PersonalizedVideoAdEnabled": 0,
+      "ConsentWasOpenedNoActions": 0,
+      "ConsentPopupWasShown": 0,
+      "ConsentWasAccepted": 0,
+      "PreparationPopupWasAccepted": 0,
+      "LastPreparationPopupWheelIndex": -100,
+      "LastConsentPopupWheelIndex": -100,
+      "CommonLuckyWheelCounter": 0,
+      "StartedPlacement": 0,
+      "StartedPlacementTimestamp": 0,
+      "PersonalizedAdsPatchApplied": 0
+    },
+    "_levelCostDiscount": {
+      "EndTimestamp": 0.0,
+      "DiscountTimerWasStarted": 0,
+      "DiscountTimerIsFrozen": 0,
+      "DiscountCoef": 0.0,
+      "AnticheatLevelCountLeft": 0,
+      "DepositTimeLeft": 0.0
+    },
+    "_tutorialFlags": {
+      "Farm": {
+        "SeasonId": 0,
+        "DailyHarvest": {
+          "DailyHarvestPopupComplete": 0,
+          "DailyHarvestIntroPopupComplete": 0,
+          "DailyHarvestGiftBoxPopupComplete": 0,
+          "DailyHarvestButtonComplete": 0
+        },
+        "GemsInLevelComplete": 0,
+        "FirstTaskComplete": 0,
+        "IntroPopupComplete": 0,
+        "ProgressBarComplete": 0,
+        "MeetTheGemsComplete": 0,
+        "SecondTaskComplete": 0,
+        "ThirdTaskComplete": 0,
+        "OutOfGemsComplete": 0,
+        "LobbyBadgeComplete": 0,
+        "IntroduceGemsComplete": 0,
+        "NamingComplete": 0,
+        "BigPrizeComplete": 0
+      },
+      "FarmV2": {
+        "FirstLobbyBadgeComplete": 0,
+        "IntroPopupComplete": 0,
+        "NamingComplete": 0,
+        "MeetTheGemsComplete": 0,
+        "OutOfGemsComplete": 0,
+        "TaskManagerBadgeComplete": 0,
+        "TaskManagerBadgeSecondComplete": 0,
+        "OpenTaskManagerAfterFirstTaskComplete": 0,
+        "SecondLobbyBadgeComplete": 0,
+        "TaskManagerSecondTaskTutorialComplete": 0,
+        "XpComplete": 0,
+        "StarterKitDecoItemComplete": 0,
+        "OpenTaskManagerAfterDeliveryBonusFlowComplete": 0,
+        "DeliveryBonusComplete": 0,
+        "XpInfoPopupComplete": 0
+      },
+      "DecoCollection": {
+        "DecoBarPart1Complete": 0,
+        "DecoBarPart2Complete": 0,
+        "DecoStoreLobbyBadgeComplete": 0,
+        "DecoStorePopup1Completed": 0,
+        "DecoStoreStarterKitCompleted": 0,
+        "DecoStorePopup2Completed": 0,
+        "DecoStoreInfoPopupCompleted": 0
+      },
+      "DecoCollectionV2": {
+        "CollectionId": 0,
+        "DecoStoreLobbyBadgeComplete": 0,
+        "DecoStoreLaunchLobbyBadgeComplete": 0,
+        "DecoStoreLaunchNewEnergyComplete": 0,
+        "DecoStoreStarterKitComplete": 0,
+        "DecoStoreLaunchNotification": 0,
+        "DecoStoreOpenAnimationComplete": 0,
+        "DecoStoreHintComplete": 0,
+        "ShowCollectedArea": 0,
+        "ShowCurrentHouseArea": 0,
+        "SamPresentNewCollection": 0,
+        "ShowLaunchCollectedArea": 0
+      },
+      "Collectibles": {
+        "TutorialCollectiblesAlbumInfoCompleted": 0,
+        "TutorialCollectiblesInfoPopupCompleted": 0,
+        "TutorialCollectiblesLevelAttemptRewardCompleted": 0,
+        "TutorialCollectiblesRedirectionToLevelCompleted": 0,
+        "TutorialCollectiblesLevelProposalCompleted": 0,
+        "TutorialCollectiblesPackPresentationCompleted": 0,
+        "TutorialCollectiblesPackAcquisitionCompleted": 0,
+        "TutorialDuplicateCenterCompleted": 0,
+        "TutorialDuplicateCenterOfferCompleted": 0
+      },
+      "TutorialMainPiggyShown": 0,
+      "TutorialMaxedoutPiggyShown": 0,
+      "TutorialNotAGoodDealPiggyShown": 0,
+      "TutorialFirstTimePiggyShown": 0,
+      "TutorialFreemiumPiggyShown": 0,
+      "TutorialVideoAdHarvestShown": 0,
+      "TutorialVideoAdHarvestShown2": 0,
+      "TutorialVideoAdLevelStartShown": 0,
+      "TutorialVideoAdCropMasterShown": 0,
+      "TutorialVideoAdLevelStartFrozenShown": 0,
+      "TutorialVideoAdLevelStartV2Shown": 0,
+      "TutorialVideoAdLevelStartV3Shown": 0,
+      "TutorialVideoAdStorePlacementShown": 0,
+      "TutorialFreeRoundsMode2": 0,
+      "TutorialFreeRoundsMode3": 0,
+      "TutorialFreeRoundsMode4": 0,
+      "TutorialMode2Info": 0,
+      "TutorialMode3Info": 0,
+      "TutorialMode4Info": 0,
+      "TutorialMode2ResetComplete": 0,
+      "TutorialMode3ResetComplete": 0,
+      "TutorialMode4ResetComplete": 0,
+      "TutorialGameModeVersion": 0,
+      "TutorialPowerUpRemoveCodeBreakerShown": 0,
+      "TutorialPowerUpRemoveSuicideShown": 0,
+      "TutorialPowerUpRemoveValueChangerShown": 0,
+      "TutorialColorCardShown": 0,
+      "TutorialReflectionShown": 0,
+      "TutorialWinStreakFirstImpressionShown": 0,
+      "TutorialWinStreakAfterFirstWinShown": 0,
+      "TutorialWinStreakAfterCarrotWinShown": 0,
+      "TutorialWinStreakAfterFifthWinShown": 0,
+      "TutorialWinStreakLevel1": 0,
+      "TutorialWinStreakLevel2": 0,
+      "TutorialWinStreakCarrotCardShown": 0,
+      "TutorialWinStreakMeterShown": 0,
+      "TutorialWinStreakOnHighModeShown": 0,
+      "LevelStartFreeRoundsMode2": 0,
+      "LevelStartFreeRoundsMode3": 0,
+      "LevelStartMode2Info": 0,
+      "LevelStartMode3Info": 0,
+      "LevelStartTutorialVersion": 0,
+      "TutorialFarmerPassPopupShown": 0,
+      "TutorialFarmerPassFirstPremiumUnlocked": 0,
+      "HallOfFarmsLobbyBadgeComplete": 0,
+      "HallOfFarmsFarmBadgeComplete": 0,
+      "TutorialMissionsV4NarrativeCompleted": 0,
+      "TutorialMissionsV4NarrativeFirstCollectionCompleted": 0,
+      "TutorialMissionsV4NarrativeOneByOneCompleted": 0,
+      "TutorialMissionsV4NarrativeOneByOneFirstCollectionCompleted": 0,
+      "TutorialFarmerPassHighlightPremiumMilestonesAndGoldenTicketCompleted": 0,
+      "GoldBlastFirstStepCompleted": 0,
+      "GoldBlastTutorialCompleted": 0,
+      "GoldBlastTimerTutorialCompleted": 0,
+      "ModeFourActiveConfigHash": "",
+      "CreditsTutorialCompleted": 0,
+      "InitialCreditsTutorialCompleted": 0,
+      "StarMeterTutorialFirstPart": 0,
+      "StarMeterTutorialSecondPart": 0,
+      "DecoCurrencyBoosterActivationTutorialCompleted": 0
+    },
+    "_helpingHandAfterPurchase": {
+      "LevelMultipliers": []
+    },
+    "_farmProgressLegacy": {},
+    "_farmHarvestMultiplier": 0.0,
+    "_farmHarvestLastUsedTime": 0.0,
+    "_isMigratedToUnity": 0,
+    "_deliveryBonusLastUsedTime": 0.0,
+    "_promotions": {
+      "Data": {
+        "_keyData": []
+      }
+    },
+    "_purchasedPowerUpsOnSession": {
+      "PowerUpsPerMode": {
+        "_keyData": []
+      }
+    },
+    "_levelsWithShownSamMessages": [],
+    "_luckyWheelContainer": {
+      "LuckyWheelSpinConfigs": {
+        "_keyData": []
+      }
+    },
+    "_lastCropDataHash": ""
+  },
+  "references": {
+    "version": 1,
+    "00000000": {
+      "type": {
+        "class": "Terminus",
+        "ns": "UnityEngine.DMAT",
+        "asm": "FAKE_ASM"
+      },
+      "data": {}
+    }
+  }
+}

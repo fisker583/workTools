@@ -1,0 +1,16 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 150883450832432942
+  },
+  "m_Name": "OctopusVideoAdSettings",
+  "_octopusSdkAppKey": "1088073059",
+  "_adMobKey": "",
+  "_isDebug": 0,
+  "_forceUnlockTimeout": 30
+}

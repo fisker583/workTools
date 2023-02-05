@@ -1,0 +1,392 @@
+{
+    "queue": [
+        {
+            "name": "super_lucky_wheel_v2",
+            "userId": "91463887",
+            "value": {
+                "wedges": [
+                    {
+                        "wedgeIndex": 0,
+                        "weight": 3,
+                        "wedgeMode": "BLACK",
+                        "rewards": {
+                            "253": {
+                                "skuData": {
+                                    "multiplier": 85.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 1,
+                        "weight": 5,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "252": {
+                                "skuData": {
+                                    "rounds": 10
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 2,
+                        "weight": 20,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "253": {
+                                "skuData": {
+                                    "multiplier": 30.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 3,
+                        "weight": 19,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "139": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            },
+                            "140": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 4,
+                        "weight": 3,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "253": {
+                                "skuData": {
+                                    "multiplier": 21.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 5,
+                        "weight": 10,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "140": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            },
+                            "130": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 6,
+                        "weight": 20,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "253": {
+                                "skuData": {
+                                    "multiplier": 16.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 7,
+                        "weight": 20,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "251": {
+                                "skuData": {
+                                    "duration": 86400000
+                                }
+                            },
+                            "130": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 99918502
+            },
+            "configHash": "512674e4673214fdc7a84a20d08e6ab1",
+            "startTimestamp": 1625054400.0,
+            "endTimestamp": 1751284800.0,
+            "queueHash": "1252a20bf78373e142e2ac065ece5526"
+        },
+        {
+            "name": "super_lucky_wheel_v2",
+            "userId": "91463887",
+            "value": {
+                "wedges": [
+                    {
+                        "wedgeIndex": 0,
+                        "weight": 3,
+                        "wedgeMode": "BLACK",
+                        "rewards": {
+                            "253": {
+                                "skuData": {
+                                    "multiplier": 85.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 1,
+                        "weight": 5,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "252": {
+                                "skuData": {
+                                    "rounds": 10
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 2,
+                        "weight": 20,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "253": {
+                                "skuData": {
+                                    "multiplier": 30.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 3,
+                        "weight": 19,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "139": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            },
+                            "140": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 4,
+                        "weight": 10,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "253": {
+                                "skuData": {
+                                    "multiplier": 21.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 5,
+                        "weight": 10,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "140": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            },
+                            "130": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 6,
+                        "weight": 20,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "253": {
+                                "skuData": {
+                                    "multiplier": 16.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 7,
+                        "weight": 20,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "251": {
+                                "skuData": {
+                                    "duration": 86400000
+                                }
+                            },
+                            "130": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 99919140
+            },
+            "configHash": "7b48121b5da0874d56827e60e0a49d10",
+            "startTimestamp": 1627725600.0,
+            "endTimestamp": 1753956000.0,
+            "queueHash": "1252a20bf78373e142e2ac065ece5526"
+        },
+        {
+            "name": "super_lucky_wheel_v2",
+            "userId": "91463887",
+            "value": {
+                "wedges": [
+                    {
+                        "wedgeIndex": 0,
+                        "weight": 20,
+                        "wedgeMode": "BLACK",
+                        "rewards": {
+                            "253": {
+                                "skuData": {
+                                    "multiplier": 25.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 1,
+                        "weight": 50,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "252": {
+                                "skuData": {
+                                    "rounds": 15
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 2,
+                        "weight": 18,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "253": {
+                                "skuData": {
+                                    "multiplier": 5.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 3,
+                        "weight": 150,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "139": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            },
+                            "140": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 4,
+                        "weight": 120,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "251": {
+                                "skuData": {
+                                    "duration": 43200000
+                                }
+                            },
+                            "130": {
+                                "skuData": {
+                                    "amount": 12
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 5,
+                        "weight": 238,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "140": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            },
+                            "130": {
+                                "skuData": {
+                                    "amount": 10
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 6,
+                        "weight": 160,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "253": {
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "wedgeIndex": 7,
+                        "weight": 156,
+                        "wedgeMode": "BASE",
+                        "rewards": {
+                            "245": {
+                                "skuData": {
+                                    "amount": 4
+                                }
+                            },
+                            "246": {
+                                "skuData": {
+                                    "amount": 4
+                                }
+                            },
+                            "244": {
+                                "skuData": {
+                                    "amount": 4
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "4feda80147aa56d2d02c9db98b463c1c",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "1252a20bf78373e142e2ac065ece5526"
+        }
+    ]
+}

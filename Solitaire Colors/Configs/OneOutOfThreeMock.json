@@ -1,0 +1,195 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 2210784118618858143
+  },
+  "m_Name": "OneOutOfThreeMock",
+  "GetConfigsResponse": {
+    "Game": {
+      "Option": "option1",
+      "SkuData": {
+        "GameType": 1,
+        "SubgroupId": "wooden_1",
+        "GameId": "gameId1"
+      },
+      "Stands": [
+        {
+          "StandType": "stand1",
+          "Cover": 0,
+          "Rewards": [
+            {
+              "SkuId": 4200300,
+              "SkuData": {
+                "Amount": 0,
+                "Multiplier": 0.0,
+                "Rounds": 0,
+                "DiscountPercent": 0.0,
+                "DecoId": 0,
+                "MissionPoints": 0,
+                "Duration": 3600000,
+                "EndDate": 0.0,
+                "ConfigName": "gems_promotions_3",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            }
+          ]
+        },
+        {
+          "StandType": "stand2",
+          "Cover": 0,
+          "Rewards": [
+            {
+              "SkuId": 4200288,
+              "SkuData": {
+                "Amount": 1500,
+                "Multiplier": 0.0,
+                "Rounds": 0,
+                "DiscountPercent": 0.0,
+                "DecoId": 0,
+                "MissionPoints": 0,
+                "Duration": 0,
+                "EndDate": 0.0,
+                "ConfigName": "",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            }
+          ]
+        },
+        {
+          "StandType": "stand3",
+          "Cover": 0,
+          "Rewards": [
+            {
+              "SkuId": 252,
+              "SkuData": {
+                "Amount": 0,
+                "Multiplier": 0.0,
+                "Rounds": 3,
+                "DiscountPercent": 0.0,
+                "DecoId": 0,
+                "MissionPoints": 0,
+                "Duration": 0,
+                "EndDate": 0.0,
+                "ConfigName": "",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AdditionalGame": {
+      "Option": "option1",
+      "SkuData": {
+        "GameType": 3,
+        "SubgroupId": "purple_1",
+        "GameId": "gameid2"
+      },
+      "Stands": [
+        {
+          "StandType": "stand1",
+          "Cover": 0,
+          "Rewards": [
+            {
+              "SkuId": 0,
+              "SkuData": {
+                "Amount": 1000,
+                "Multiplier": 0.0,
+                "Rounds": 0,
+                "DiscountPercent": 0.0,
+                "DecoId": 0,
+                "MissionPoints": 0,
+                "Duration": 0,
+                "EndDate": 0.0,
+                "ConfigName": "",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            }
+          ]
+        },
+        {
+          "StandType": "stand2",
+          "Cover": 0,
+          "Rewards": [
+            {
+              "SkuId": 0,
+              "SkuData": {
+                "Amount": 1000,
+                "Multiplier": 0.0,
+                "Rounds": 0,
+                "DiscountPercent": 0.0,
+                "DecoId": 0,
+                "MissionPoints": 0,
+                "Duration": 0,
+                "EndDate": 0.0,
+                "ConfigName": "",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            }
+          ]
+        },
+        {
+          "StandType": "stand3",
+          "Cover": 0,
+          "Rewards": [
+            {
+              "SkuId": 0,
+              "SkuData": {
+                "Amount": 1000,
+                "Multiplier": 0.0,
+                "Rounds": 0,
+                "DiscountPercent": 0.0,
+                "DecoId": 0,
+                "MissionPoints": 0,
+                "Duration": 0,
+                "EndDate": 0.0,
+                "ConfigName": "",
+                "PackIds": "",
+                "Rarity": 0,
+                "GameType": "",
+                "SubgroupId": "",
+                "GameId": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "GetRecoveredResponse": {
+    "RestoreGames": [
+      {
+        "GameType": 1,
+        "SubgroupId": "subgroup1",
+        "GameId": "gameid1",
+        "SourceType": "sourceType1",
+        "SourceUUID": "SourceUUID1111"
+      }
+    ]
+  }
+}

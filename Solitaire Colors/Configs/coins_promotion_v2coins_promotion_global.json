@@ -1,0 +1,38 @@
+{
+    "queue": [
+        {
+            "subGroupName": "coins_promotion_global",
+            "name": "coins_promotion_v2",
+            "userId": "91463887",
+            "value": {
+                "levelResult": "BOTH",
+                "modeMultipliers": [
+                    {
+                        "mode": 1,
+                        "multiplier": 0
+                    },
+                    {
+                        "mode": 2,
+                        "multiplier": 0
+                    },
+                    {
+                        "mode": 3,
+                        "multiplier": 0
+                    },
+                    {
+                        "mode": 4,
+                        "multiplier": 0
+                    }
+                ],
+                "isDefault": true
+            },
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "d982735cdbe3044207d17807d3a15194",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "8b8a22f02c19a22134905e9745f55fea"
+        }
+    ]
+}

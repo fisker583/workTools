@@ -1,0 +1,4540 @@
+{
+    "queue": [
+        {
+            "name": "recognition_popups",
+            "userId": "91463887",
+            "value": {
+                "popups": [
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 10,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 25,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 50,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 100,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 300,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 700,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 1000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 1500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 2000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 2500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 3000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 3500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 4000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 4500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 5000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 5500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 248,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 6000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 6500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 7000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 7500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 8000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 8500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 248,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 9000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 9500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 10000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 4
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 10500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 11000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 11500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 12000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 12500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 13000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 13500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 14000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 14500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 15000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 4
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 15500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 16000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 16500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 17000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 17500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 18000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 18500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 19000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 19500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 20000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 4
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 20500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 21000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 21500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 22000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 22500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 23000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 23500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 24000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 24500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 25000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 4
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 25500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 26000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 26500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 27000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 27500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 28000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 28500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 29000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 29500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 30000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 4
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 30500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 31000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 31500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 32000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 32500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 33000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 33500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 34000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 34500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 35000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 4
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 8000143
+            },
+            "configHash": "c0766a00224edad28fd718ea8bcf7f65",
+            "startTimestamp": 1675071600.0,
+            "endTimestamp": 1864461600.0,
+            "queueHash": "65ff51ebb34d0e096ce11909699035a6"
+        },
+        {
+            "name": "recognition_popups",
+            "userId": "91463887",
+            "value": {
+                "popups": [
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 10,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 25,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 50,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 100,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 300,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 700,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 1000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 1500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 2000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 2500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 3000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 3500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 4000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 4500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 5000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 5500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 248,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 6000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 6500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 7000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 7500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 8000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 8500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 248,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 9000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 9500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 10000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 4.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 10500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 11000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 11500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 12000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 12500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 13000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 13500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 14000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 3.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 14500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 15000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 4.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 8000143
+            },
+            "configHash": "fdd0bdb15b00d9256caea9b9331ab038",
+            "startTimestamp": 1636722000.0,
+            "endTimestamp": 1795687200.0,
+            "queueHash": "65ff51ebb34d0e096ce11909699035a6"
+        },
+        {
+            "name": "recognition_popups",
+            "userId": "91463887",
+            "value": {
+                "popups": [
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 10,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 25,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 50,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 100,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 300,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 700,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 1000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 1500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 2000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 2500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 3000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 3500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 4000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 4500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 5000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 5500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 248,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 6000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 6500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 7000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 7500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 8000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 8500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 248,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 9000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 9500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 10000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 8000143
+            },
+            "configHash": "aaa3da0ff56f00a817b665bfecce1761",
+            "startTimestamp": 1586167200.0,
+            "endTimestamp": 1888135200.0,
+            "queueHash": "65ff51ebb34d0e096ce11909699035a6"
+        },
+        {
+            "name": "recognition_popups",
+            "userId": "91463887",
+            "value": {
+                "popups": [
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 10,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 25,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 50,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 100,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 300,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 1.0
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 700,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 1000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 1500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 2000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 2500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 3000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 3500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 4000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 4500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 5000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 5500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 248,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 6000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 6500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 7000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 132,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 7500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 252,
+                                "skuData": {
+                                    "rounds": 3
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 8000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 245,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 8500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 244,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            },
+                            {
+                                "skuId": 248,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 9000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 246,
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 9500,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 247,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "triggerType": "LEVELS",
+                        "triggerTarget": 10000,
+                        "rewards": [
+                            {
+                                "skuId": 253,
+                                "skuData": {
+                                    "multiplier": 2.0
+                                }
+                            },
+                            {
+                                "skuId": 130,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            },
+                            {
+                                "skuId": 139,
+                                "skuData": {
+                                    "amount": 3
+                                }
+                            },
+                            {
+                                "skuId": 140,
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "f128b539bb9ffca5f2fb407851a10269",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "65ff51ebb34d0e096ce11909699035a6"
+        }
+    ]
+}
