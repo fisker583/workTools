@@ -1,1 +1,0 @@
-{"queue":[{"name":"ces_batching_config","userId":"91463887","value":{"log_file_max_size_kb":128,"flush_period_minutes":0.17,"max_allowed_total_size_mb":5},"segment":{"segmentId":0},"configHash":"6f89a0d03870cffcc1a9894a9bc2e5b8","startTimestamp":0.0,"endTimestamp":0.0,"queueHash":"b4290600496274e079a34a6dd0f4e866"}]}
