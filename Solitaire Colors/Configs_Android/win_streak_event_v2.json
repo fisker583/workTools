@@ -1,1 +1,15 @@
-{"queue":[{"name":"win_streak_event_v2","userId":"89337510","value":{"minMode":1,"startCarrots":0},"segment":{"segmentId":10000113889},"configHash":"281c2e364c1525eeec4e10a25cc110b7","startTimestamp":1675677600.0,"endTimestamp":1675764000.0,"queueHash":"20d94e99371a8822762f4efda0d2a8ae"},{"name":"win_streak_event_v2","userId":"89337510","segment":{"segmentId":0},"configHash":"344ee997060fc515f443bad5595e6b9d","startTimestamp":0.0,"endTimestamp":0.0,"queueHash":"20d94e99371a8822762f4efda0d2a8ae"}]}
+{
+    "queue": [
+        {
+            "name": "win_streak_event_v2",
+            "userId": "89337510",
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "344ee997060fc515f443bad5595e6b9d",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "c8508f4be447e557e6f7b9f970fe1b92"
+        }
+    ]
+}

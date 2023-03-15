@@ -1,15 +1,1 @@
-{
-    "queue": [
-        {
-            "name": "narrative",
-            "userId": "91463887",
-            "segment": {
-                "segmentId": 0
-            },
-            "configHash": "344ee997060fc515f443bad5595e6b9d",
-            "startTimestamp": 0.0,
-            "endTimestamp": 0.0,
-            "queueHash": "c8508f4be447e557e6f7b9f970fe1b92"
-        }
-    ]
-}
+{"queue":[{"name":"narrative","userId":"92306386","segment":{"segmentId":0},"configHash":"344ee997060fc515f443bad5595e6b9d","startTimestamp":0.0,"endTimestamp":0.0,"queueHash":"c8508f4be447e557e6f7b9f970fe1b92"}]}

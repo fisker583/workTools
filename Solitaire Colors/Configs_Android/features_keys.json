@@ -91,3 +91,5 @@ sgh-common.like-fb-page-button-enabled
 sgh-common.save-progress-popup-enabled
 sgh-common.piggy-lobby-badge-enabled
 sgh-common.device-tiers-cpu-test-allowed
+sgh-common.http-error-metrics-feature-enabled
+sgh-common.album-legendary-set-enabled

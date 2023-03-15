@@ -1,18 +1,1 @@
-{
-    "queue": [
-        {
-            "name": "consent_popup_configs",
-            "userId": "91463887",
-            "value": {
-                "level": 18
-            },
-            "segment": {
-                "segmentId": 0
-            },
-            "configHash": "9a62e9c175dc228b0d4f806ba0bfeb92",
-            "startTimestamp": 0.0,
-            "endTimestamp": 0.0,
-            "queueHash": "81d7906a3c95b0ad122cf1b7925d9263"
-        }
-    ]
-}
+{"queue":[{"name":"consent_popup_configs","userId":"92306386","value":{"level":18},"segment":{"segmentId":0},"configHash":"9a62e9c175dc228b0d4f806ba0bfeb92","startTimestamp":0.0,"endTimestamp":0.0,"queueHash":"81d7906a3c95b0ad122cf1b7925d9263"}]}

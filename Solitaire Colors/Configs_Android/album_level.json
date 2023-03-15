@@ -1,1 +1,254 @@
-{"queue":[{"name":"album_level","userId":"89337510","value":{"modes":[{"type":0,"chances":[0.1],"packs":[{"packId":"P-2181r6hkb45eg","weight":75},{"packId":"P-2181r6h1fvrb4","weight":12},{"packId":"P-2181r6hkv3c74","weight":8},{"packId":"P-2181r6h0vwkjj","weight":0}]},{"type":1,"chances":[0.1],"packs":[{"packId":"P-2181r6h1fvrb5","weight":70},{"packId":"P-2181r6hkv3c70","weight":15},{"packId":"P-2181r6h1fvrba","weight":10},{"packId":"P-2181r6hjh5d84","weight":0}]},{"type":2,"chances":[0.1],"packs":[{"packId":"P-2181r6hkv3c71","weight":70},{"packId":"P-2181r6h1fvrb6","weight":15},{"packId":"P-2181r6hkv3c76","weight":10},{"packId":"P-2181r6hht7swv","weight":0}]},{"type":3,"chances":[0.1,1],"packs":[{"packId":"P-2181r6lflgbme","weight":85},{"packId":"P-2181r6lkl90it","weight":10},{"packId":"P-2181r6hjh5d85","weight":0}]}]},"segment":{"segmentId":999271881},"configHash":"3098762c38be327d4636d3bead57c0f7","startTimestamp":1674637200.0,"endTimestamp":1683799200.0,"queueHash":"d6185fe67648680015780c9a264d7118"},{"name":"album_level","userId":"89337510","value":{"modes":[]},"segment":{"segmentId":0},"configHash":"5ebb91e134564f9d6010d16a93b4c9e4","startTimestamp":0.0,"endTimestamp":0.0,"queueHash":"d6185fe67648680015780c9a264d7118"}]}
+{
+    "queue": [
+        {
+            "name": "album_level",
+            "userId": "89337510",
+            "value": {
+                "modes": [
+                    {
+                        "type": 0,
+                        "chances": [
+                            0.15
+                        ],
+                        "packs": [
+                            {
+                                "packId": "P-2181r6hkb45eg",
+                                "weight": 75
+                            },
+                            {
+                                "packId": "P-2181r6h1fvrb4",
+                                "weight": 5
+                            },
+                            {
+                                "packId": "P-2181r6hi37eao",
+                                "weight": 5
+                            },
+                            {
+                                "packId": "P-2181r6hkl3qsj",
+                                "weight": 10
+                            },
+                            {
+                                "packId": "P-2181r6h0vwkjj",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "chances": [
+                            0.15
+                        ],
+                        "packs": [
+                            {
+                                "packId": "P-2181r6h1fvrb5",
+                                "weight": 70
+                            },
+                            {
+                                "packId": "P-2181r6hkv3c70",
+                                "weight": 10
+                            },
+                            {
+                                "packId": "P-2181r6lixbg81",
+                                "weight": 5
+                            },
+                            {
+                                "packId": "P-2181r6h1fvrbe",
+                                "weight": 10
+                            },
+                            {
+                                "packId": "P-2181r6hjh5d84",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    {
+                        "type": 2,
+                        "chances": [
+                            0.15
+                        ],
+                        "packs": [
+                            {
+                                "packId": "P-2181r6hkv3c71",
+                                "weight": 65
+                            },
+                            {
+                                "packId": "P-2181r6h1fvrb6",
+                                "weight": 10
+                            },
+                            {
+                                "packId": "P-2181r6hkv3c72",
+                                "weight": 5
+                            },
+                            {
+                                "packId": "P-2181r6hkl3qso",
+                                "weight": 15
+                            },
+                            {
+                                "packId": "P-2181r6hht7swv",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    {
+                        "type": 3,
+                        "chances": [
+                            0.15,
+                            1
+                        ],
+                        "packs": [
+                            {
+                                "packId": "P-2181r6lflgbme",
+                                "weight": 50
+                            },
+                            {
+                                "packId": "P-2181r6lkl90it",
+                                "weight": 15
+                            },
+                            {
+                                "packId": "P-2181r6lgff3rv",
+                                "weight": 10
+                            },
+                            {
+                                "packId": "P-2181r6lflgbmb",
+                                "weight": 20
+                            },
+                            {
+                                "packId": "P-2181r6hjh5d85",
+                                "weight": 5
+                            }
+                        ]
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 999271990
+            },
+            "configHash": "ee10d39de63fca5deeacab11301ce6b0",
+            "startTimestamp": 1675843200.0,
+            "endTimestamp": 1683799200.0,
+            "queueHash": "2aaef53022c1297506c6f5a5827081d6"
+        },
+        {
+            "name": "album_level",
+            "userId": "89337510",
+            "value": {
+                "modes": [
+                    {
+                        "type": 0,
+                        "chances": [
+                            0.1
+                        ],
+                        "packs": [
+                            {
+                                "packId": "P-2181r6hkb45eg",
+                                "weight": 75
+                            },
+                            {
+                                "packId": "P-2181r6h1fvrb4",
+                                "weight": 12
+                            },
+                            {
+                                "packId": "P-2181r6hkv3c74",
+                                "weight": 8
+                            },
+                            {
+                                "packId": "P-2181r6h0vwkjj",
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "chances": [
+                            0.1
+                        ],
+                        "packs": [
+                            {
+                                "packId": "P-2181r6h1fvrb5",
+                                "weight": 70
+                            },
+                            {
+                                "packId": "P-2181r6hkv3c70",
+                                "weight": 15
+                            },
+                            {
+                                "packId": "P-2181r6h1fvrba",
+                                "weight": 10
+                            },
+                            {
+                                "packId": "P-2181r6hjh5d84",
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": 2,
+                        "chances": [
+                            0.1
+                        ],
+                        "packs": [
+                            {
+                                "packId": "P-2181r6hkv3c71",
+                                "weight": 70
+                            },
+                            {
+                                "packId": "P-2181r6h1fvrb6",
+                                "weight": 15
+                            },
+                            {
+                                "packId": "P-2181r6hkv3c76",
+                                "weight": 10
+                            },
+                            {
+                                "packId": "P-2181r6hht7swv",
+                                "weight": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": 3,
+                        "chances": [
+                            0.1,
+                            1
+                        ],
+                        "packs": [
+                            {
+                                "packId": "P-2181r6lflgbme",
+                                "weight": 85
+                            },
+                            {
+                                "packId": "P-2181r6lkl90it",
+                                "weight": 10
+                            },
+                            {
+                                "packId": "P-2181r6hjh5d85",
+                                "weight": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 999271881
+            },
+            "configHash": "3098762c38be327d4636d3bead57c0f7",
+            "startTimestamp": 1674637200.0,
+            "endTimestamp": 1683799200.0,
+            "queueHash": "2aaef53022c1297506c6f5a5827081d6"
+        },
+        {
+            "name": "album_level",
+            "userId": "89337510",
+            "value": {
+                "modes": []
+            },
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "5ebb91e134564f9d6010d16a93b4c9e4",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "2aaef53022c1297506c6f5a5827081d6"
+        }
+    ]
+}

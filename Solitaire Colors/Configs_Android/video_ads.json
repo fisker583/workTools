@@ -1,1 +1,117 @@
-{"queue":[{"name":"video_ads","userId":"89337510","value":{"placeConfigs":{"harvest":{"cap":0,"cooldown":0,"rewards":{"4200270":{"skuData":{"amount":0}}}},"cropMaster":{"cap":0,"cooldown":0,"rewards":{"255":{"skuData":{"amount":0}}}},"levelStart":{"cap":0,"cooldown":0,"rewards":{"4200265":{"skuData":{"discount":0,"duration":0}}}}},"totalCap":0,"totalCooldown":0},"segment":{"segmentId":9992695625},"configHash":"7335d83de4cb9b4690b0a1a46a3a0ca8","startTimestamp":1652802000.0,"endTimestamp":1715960400.0,"queueHash":"b23d7b9bfcc20632495ee5abd3af5804"},{"name":"video_ads","userId":"89337510","value":{"placeConfigs":{"levelStart":{"cap":3,"cooldown":0,"rewards":{"4200265":{"skuData":{"discount":15,"duration":600000}}}},"harvest":{"cap":2,"cooldown":0,"rewards":{"4200270":{"skuData":{"amount":1}}}},"cropMaster":{"cap":1000,"cooldown":0,"rewards":{"255":{"skuData":{"amount":1}}}}},"totalCap":5,"totalCooldown":0},"segment":{"segmentId":99917395},"configHash":"807547b920c4e6774413a0437a652bbe","startTimestamp":1621850400.0,"endTimestamp":1688205600.0,"queueHash":"b23d7b9bfcc20632495ee5abd3af5804"},{"name":"video_ads","userId":"89337510","segment":{"segmentId":0},"configHash":"344ee997060fc515f443bad5595e6b9d","startTimestamp":0.0,"endTimestamp":0.0,"queueHash":"b23d7b9bfcc20632495ee5abd3af5804"}]}
+{
+    "queue": [
+        {
+            "name": "video_ads",
+            "userId": "89337510",
+            "value": {
+                "placeConfigs": {
+                    "harvest": {
+                        "cap": 0,
+                        "cooldown": 0,
+                        "rewards": {
+                            "4200270": {
+                                "skuData": {
+                                    "amount": 0
+                                }
+                            }
+                        }
+                    },
+                    "cropMaster": {
+                        "cap": 0,
+                        "cooldown": 0,
+                        "rewards": {
+                            "255": {
+                                "skuData": {
+                                    "amount": 0
+                                }
+                            }
+                        }
+                    },
+                    "levelStart": {
+                        "cap": 0,
+                        "cooldown": 0,
+                        "rewards": {
+                            "4200265": {
+                                "skuData": {
+                                    "discount": 0,
+                                    "duration": 0
+                                }
+                            }
+                        }
+                    }
+                },
+                "totalCap": 0,
+                "totalCooldown": 0
+            },
+            "segment": {
+                "segmentId": 9992695625
+            },
+            "configHash": "7335d83de4cb9b4690b0a1a46a3a0ca8",
+            "startTimestamp": 1652802000.0,
+            "endTimestamp": 1715960400.0,
+            "queueHash": "b23d7b9bfcc20632495ee5abd3af5804"
+        },
+        {
+            "name": "video_ads",
+            "userId": "89337510",
+            "value": {
+                "placeConfigs": {
+                    "levelStart": {
+                        "cap": 3,
+                        "cooldown": 0,
+                        "rewards": {
+                            "4200265": {
+                                "skuData": {
+                                    "discount": 15,
+                                    "duration": 600000
+                                }
+                            }
+                        }
+                    },
+                    "harvest": {
+                        "cap": 2,
+                        "cooldown": 0,
+                        "rewards": {
+                            "4200270": {
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        }
+                    },
+                    "cropMaster": {
+                        "cap": 1000,
+                        "cooldown": 0,
+                        "rewards": {
+                            "255": {
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                "totalCap": 5,
+                "totalCooldown": 0
+            },
+            "segment": {
+                "segmentId": 99917395
+            },
+            "configHash": "807547b920c4e6774413a0437a652bbe",
+            "startTimestamp": 1621850400.0,
+            "endTimestamp": 1688205600.0,
+            "queueHash": "b23d7b9bfcc20632495ee5abd3af5804"
+        },
+        {
+            "name": "video_ads",
+            "userId": "89337510",
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "344ee997060fc515f443bad5595e6b9d",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "b23d7b9bfcc20632495ee5abd3af5804"
+        }
+    ]
+}

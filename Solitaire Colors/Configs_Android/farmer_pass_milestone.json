@@ -1,1 +1,711 @@
-{"queue":[{"name":"farmer_pass_milestone","userId":"89337510","value":{"eventType":"FARMER_PASS","configName":"farmer_pass_20230131","milestones":[{"target":30,"trailType":"FREE","rewards":{"139":{"skuData":{"amount":1}}},"isRegular":true},{"target":30,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":5.32,"amount":15000}}},"isRegular":true},{"target":90,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":3.8,"amount":11000}}},"isRegular":true},{"target":90,"trailType":"PREMIUM","rewards":{"245":{"skuData":{"amount":2}}},"isRegular":true},{"target":160,"trailType":"FREE","rewards":{"244":{"skuData":{"amount":1}}},"isRegular":true},{"target":160,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":7.45,"amount":21000}}},"isRegular":true},{"target":240,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":6.84,"amount":20000}}},"isRegular":true},{"target":240,"trailType":"PREMIUM","rewards":{"4200292":{"skuData":{"configName":"lucky_wheel_2"}}},"isRegular":true},{"target":360,"trailType":"FREE","rewards":{"4200298":{"skuData":{"packIds":"P-2181r6hkv3c71"}}},"isRegular":true},{"target":360,"trailType":"PREMIUM","rewards":{"4200289":{"skuData":{"decoId":102208}}},"isRegular":true},{"target":520,"trailType":"FREE","rewards":{"140":{"skuData":{"amount":1}}},"isRegular":true},{"target":520,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":9.69,"amount":28000}}},"isRegular":true},{"target":720,"trailType":"FREE","rewards":{"246":{"skuData":{"amount":2}}},"isRegular":true},{"target":720,"trailType":"PREMIUM","rewards":{"4200298":{"skuData":{"packIds":"P-2181r6isfblc3"}}},"isRegular":true},{"target":990,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":13.68,"amount":40000}}},"isRegular":true},{"target":990,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":17.44,"amount":50000}}},"isRegular":true},{"target":1270,"trailType":"FREE","rewards":{"4200292":{"skuData":{"configName":"lucky_wheel_2"}}},"isRegular":true},{"target":1270,"trailType":"PREMIUM","rewards":{"251":{"skuData":{"duration":86400000}}},"isRegular":true},{"target":1570,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":35.57,"amount":100000}}},"isRegular":true},{"target":1570,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":64.53,"amount":185000}}},"isRegular":true},{"target":90,"trailType":"FREE","rewards":{"139":{"skuData":{"amount":1}}},"isRegular":false,"weight":100},{"target":90,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":5.32,"amount":15000}}},"isRegular":false,"weight":100},{"target":160,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":3.8,"amount":11000}}},"isRegular":false,"weight":100},{"target":160,"trailType":"PREMIUM","rewards":{"245":{"skuData":{"amount":2}}},"isRegular":false,"weight":100},{"target":360,"trailType":"FREE","rewards":{"140":{"skuData":{"amount":1}}},"isRegular":false,"weight":100},{"target":360,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":9.69,"amount":28000}}},"isRegular":false,"weight":100}]},"segment":{"segmentId":9992703246},"configHash":"b97c17e79a2d24c233c0050156a0133a","startTimestamp":1675159200.0,"endTimestamp":1675764000.0,"queueHash":"ec3712863a522bd3bde7d2a2ab86d988"},{"name":"farmer_pass_milestone","userId":"89337510","value":{"eventType":"FARMER_PASS","configName":"farmer_pass_20230207","milestones":[{"target":30,"trailType":"FREE","rewards":{"132":{"skuData":{"amount":5}}},"isRegular":true},{"target":30,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":5.32,"amount":16000}}},"isRegular":true},{"target":90,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":3.8,"amount":12000}}},"isRegular":true},{"target":90,"trailType":"PREMIUM","rewards":{"140":{"skuData":{"amount":2}}},"isRegular":true},{"target":160,"trailType":"FREE","rewards":{"4200298":{"skuData":{"packIds":"P-2181r6h1fvrb5"}}},"isRegular":true},{"target":160,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":7.45,"amount":23000}}},"isRegular":true},{"target":240,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":6.84,"amount":21000}}},"isRegular":true},{"target":240,"trailType":"PREMIUM","rewards":{"4200297":{"skuData":{"amount":1}}},"isRegular":true},{"target":360,"trailType":"FREE","rewards":{"245":{"skuData":{"amount":2}}},"isRegular":true},{"target":360,"trailType":"PREMIUM","rewards":{"4200298":{"skuData":{"packIds":"P-2181r6isfblc4"}}},"isRegular":true},{"target":520,"trailType":"FREE","rewards":{"4200298":{"skuData":{"packIds":"P-2181r6hkv3c71"}}},"isRegular":true},{"target":520,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":9.69,"amount":30000}}},"isRegular":true},{"target":720,"trailType":"FREE","rewards":{"246":{"skuData":{"amount":2}}},"isRegular":true},{"target":720,"trailType":"PREMIUM","rewards":{"4200292":{"skuData":{"configName":"lucky_wheel_1"}}},"isRegular":true},{"target":990,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":13.68,"amount":45000}}},"isRegular":true},{"target":990,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":17.44,"amount":55000}}},"isRegular":true},{"target":1270,"trailType":"FREE","rewards":{"4200297":{"skuData":{"amount":1}}},"isRegular":true},{"target":1270,"trailType":"PREMIUM","rewards":{"4200298":{"skuData":{"packIds":"P-2181r6hjr4ymc"}}},"isRegular":true},{"target":1570,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":35.57,"amount":110000}}},"isRegular":true},{"target":1570,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":64.53,"amount":195000}}},"isRegular":true},{"target":90,"trailType":"FREE","rewards":{"132":{"skuData":{"amount":5}}},"isRegular":false,"weight":100},{"target":90,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":5.32,"amount":16000}}},"isRegular":false,"weight":100},{"target":160,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":3.8,"amount":12000}}},"isRegular":false,"weight":100},{"target":160,"trailType":"PREMIUM","rewards":{"140":{"skuData":{"amount":2}}},"isRegular":false,"weight":100},{"target":360,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":13.68,"amount":45000}}},"isRegular":false,"weight":100},{"target":360,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":17.44,"amount":55000}}},"isRegular":false,"weight":100}]},"segment":{"segmentId":9992703381},"configHash":"ffba5829051d7861a358ce7ea9544e85","startTimestamp":1675764000.0,"endTimestamp":1676368800.0,"queueHash":"ec3712863a522bd3bde7d2a2ab86d988"},{"name":"farmer_pass_milestone","userId":"89337510","value":{"eventType":"FARMER_PASS","configName":"farmer_pass_20230131","milestones":[{"target":30,"trailType":"FREE","rewards":{"139":{"skuData":{"amount":1}}},"isRegular":true},{"target":30,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":5.32,"amount":16000}}},"isRegular":true},{"target":90,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":3.8,"amount":12000}}},"isRegular":true},{"target":90,"trailType":"PREMIUM","rewards":{"245":{"skuData":{"amount":2}}},"isRegular":true},{"target":160,"trailType":"FREE","rewards":{"244":{"skuData":{"amount":1}}},"isRegular":true},{"target":160,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":7.45,"amount":23000}}},"isRegular":true},{"target":240,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":6.84,"amount":21000}}},"isRegular":true},{"target":240,"trailType":"PREMIUM","rewards":{"4200292":{"skuData":{"configName":"lucky_wheel_2"}}},"isRegular":true},{"target":360,"trailType":"FREE","rewards":{"4200298":{"skuData":{"packIds":"P-2181r6hkv3c71"}}},"isRegular":true},{"target":360,"trailType":"PREMIUM","rewards":{"4200289":{"skuData":{"decoId":102208}}},"isRegular":true},{"target":520,"trailType":"FREE","rewards":{"140":{"skuData":{"amount":1}}},"isRegular":true},{"target":520,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":9.69,"amount":30000}}},"isRegular":true},{"target":720,"trailType":"FREE","rewards":{"246":{"skuData":{"amount":2}}},"isRegular":true},{"target":720,"trailType":"PREMIUM","rewards":{"4200298":{"skuData":{"packIds":"P-2181r6isfblc3"}}},"isRegular":true},{"target":990,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":13.68,"amount":45000}}},"isRegular":true},{"target":990,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":17.44,"amount":55000}}},"isRegular":true},{"target":1270,"trailType":"FREE","rewards":{"4200292":{"skuData":{"configName":"lucky_wheel_2"}}},"isRegular":true},{"target":1270,"trailType":"PREMIUM","rewards":{"251":{"skuData":{"duration":86400000}}},"isRegular":true},{"target":1570,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":35.57,"amount":110000}}},"isRegular":true},{"target":1570,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":64.53,"amount":195000}}},"isRegular":true},{"target":90,"trailType":"FREE","rewards":{"139":{"skuData":{"amount":1}}},"isRegular":false,"weight":100},{"target":90,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":5.32,"amount":16000}}},"isRegular":false,"weight":100},{"target":160,"trailType":"FREE","rewards":{"0":{"skuData":{"multiplier":3.8,"amount":12000}}},"isRegular":false,"weight":100},{"target":160,"trailType":"PREMIUM","rewards":{"245":{"skuData":{"amount":2}}},"isRegular":false,"weight":100},{"target":360,"trailType":"FREE","rewards":{"140":{"skuData":{"amount":1}}},"isRegular":false,"weight":100},{"target":360,"trailType":"PREMIUM","rewards":{"0":{"skuData":{"multiplier":9.69,"amount":30000}}},"isRegular":false,"weight":100}]},"segment":{"segmentId":9992703246},"configHash":"50436bb55edcf2d33f8a58b23051c6a7","startTimestamp":1675159200.0,"endTimestamp":1675764000.0,"queueHash":"ec3712863a522bd3bde7d2a2ab86d988"},{"name":"farmer_pass_milestone","userId":"89337510","segment":{"segmentId":0},"configHash":"344ee997060fc515f443bad5595e6b9d","startTimestamp":0.0,"endTimestamp":0.0,"queueHash":"ec3712863a522bd3bde7d2a2ab86d988"}]}
+{
+    "queue": [
+        {
+            "name": "farmer_pass_milestone",
+            "userId": "89337510",
+            "value": {
+                "eventType": "FARMER_PASS",
+                "configName": "farmer_pass_20230207",
+                "milestones": [
+                    {
+                        "target": 30,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "132": {
+                                "skuData": {
+                                    "amount": 5
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 30,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 5.32,
+                                    "amount": 16000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 90,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 3.8,
+                                    "amount": 12000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 90,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "140": {
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 160,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "4200298": {
+                                "skuData": {
+                                    "packIds": "P-2181r6h1fvrb5"
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 160,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 7.45,
+                                    "amount": 23000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 240,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 6.84,
+                                    "amount": 21000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 240,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "4200297": {
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 360,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "245": {
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 360,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "4200298": {
+                                "skuData": {
+                                    "packIds": "P-2181r6isfblc4"
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 520,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "4200298": {
+                                "skuData": {
+                                    "packIds": "P-2181r6hkv3c71"
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 520,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 9.69,
+                                    "amount": 30000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 720,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "246": {
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 720,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "4200292": {
+                                "skuData": {
+                                    "configName": "lucky_wheel_1"
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 990,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 13.68,
+                                    "amount": 45000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 990,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 17.44,
+                                    "amount": 55000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 1270,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "4200297": {
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 1270,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "4200298": {
+                                "skuData": {
+                                    "packIds": "P-2181r6hjr4ymc"
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 1570,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 35.57,
+                                    "amount": 110000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 1570,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 64.53,
+                                    "amount": 195000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 90,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "132": {
+                                "skuData": {
+                                    "amount": 5
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    },
+                    {
+                        "target": 90,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 5.32,
+                                    "amount": 16000
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    },
+                    {
+                        "target": 160,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 3.8,
+                                    "amount": 12000
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    },
+                    {
+                        "target": 160,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "140": {
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    },
+                    {
+                        "target": 360,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 13.68,
+                                    "amount": 45000
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    },
+                    {
+                        "target": 360,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 17.44,
+                                    "amount": 55000
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 9992703381
+            },
+            "configHash": "ffba5829051d7861a358ce7ea9544e85",
+            "startTimestamp": 1675764000.0,
+            "endTimestamp": 1676368800.0,
+            "queueHash": "91701f0d6d8b90cb589dad1fbf8d9a34"
+        },
+        {
+            "name": "farmer_pass_milestone",
+            "userId": "89337510",
+            "value": {
+                "eventType": "FARMER_PASS",
+                "configName": "farmer_pass_20230207",
+                "milestones": [
+                    {
+                        "target": 30,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "132": {
+                                "skuData": {
+                                    "amount": 5
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 30,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 5.32,
+                                    "amount": 17000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 90,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 3.8,
+                                    "amount": 12000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 90,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "140": {
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 160,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "4200298": {
+                                "skuData": {
+                                    "packIds": "P-2181r6h1fvrb5"
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 160,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 7.45,
+                                    "amount": 24000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 240,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 6.84,
+                                    "amount": 22000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 240,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "4200297": {
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 360,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "245": {
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 360,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "4200298": {
+                                "skuData": {
+                                    "packIds": "P-2181r6isfblc4"
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 520,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "4200298": {
+                                "skuData": {
+                                    "packIds": "P-2181r6hkv3c71"
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 520,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 9.69,
+                                    "amount": 35000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 720,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "246": {
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 720,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "4200292": {
+                                "skuData": {
+                                    "configName": "lucky_wheel_1"
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 990,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 13.68,
+                                    "amount": 45000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 990,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 17.44,
+                                    "amount": 55000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 1270,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "4200297": {
+                                "skuData": {
+                                    "amount": 1
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 1270,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "4200298": {
+                                "skuData": {
+                                    "packIds": "P-2181r6hjr4ymc"
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 1570,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 35.57,
+                                    "amount": 115000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 1570,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 64.53,
+                                    "amount": 205000
+                                }
+                            }
+                        },
+                        "isRegular": true
+                    },
+                    {
+                        "target": 90,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "132": {
+                                "skuData": {
+                                    "amount": 5
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    },
+                    {
+                        "target": 90,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 5.32,
+                                    "amount": 17000
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    },
+                    {
+                        "target": 160,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 3.8,
+                                    "amount": 12000
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    },
+                    {
+                        "target": 160,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "140": {
+                                "skuData": {
+                                    "amount": 2
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    },
+                    {
+                        "target": 360,
+                        "trailType": "FREE",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 13.68,
+                                    "amount": 45000
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    },
+                    {
+                        "target": 360,
+                        "trailType": "PREMIUM",
+                        "rewards": {
+                            "0": {
+                                "skuData": {
+                                    "multiplier": 17.44,
+                                    "amount": 55000
+                                }
+                            }
+                        },
+                        "isRegular": false,
+                        "weight": 100
+                    }
+                ]
+            },
+            "segment": {
+                "segmentId": 9992703381
+            },
+            "configHash": "89ef1d3aa4e05bcbc6aee604cb77dd6a",
+            "startTimestamp": 1675764000.0,
+            "endTimestamp": 1676368800.0,
+            "queueHash": "91701f0d6d8b90cb589dad1fbf8d9a34"
+        },
+        {
+            "name": "farmer_pass_milestone",
+            "userId": "89337510",
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "344ee997060fc515f443bad5595e6b9d",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "91701f0d6d8b90cb589dad1fbf8d9a34"
+        }
+    ]
+}

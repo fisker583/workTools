@@ -1,1 +1,15 @@
-{"queue":[{"name":"win_streak_constraints","userId":"89337510","value":{"maxPlayfieldCards":11,"maxDeckCards":7,"stages":{"1":{"maxPlayfieldCards":2,"maxDeckCards":1},"2":{"maxPlayfieldCards":2,"maxDeckCards":2},"3":{"maxPlayfieldCards":4,"maxDeckCards":4},"4":{"maxPlayfieldCards":9,"maxDeckCards":6},"5":{"maxPlayfieldCards":14,"maxDeckCards":10}}},"segment":{"segmentId":10000113889},"configHash":"7dd7dad1b171377865025564f78c830f","startTimestamp":1675677600.0,"endTimestamp":1675764000.0,"queueHash":"52339ba949e8e4d80501b38f248ae46f"},{"name":"win_streak_constraints","userId":"89337510","segment":{"segmentId":0},"configHash":"344ee997060fc515f443bad5595e6b9d","startTimestamp":0.0,"endTimestamp":0.0,"queueHash":"52339ba949e8e4d80501b38f248ae46f"}]}
+{
+    "queue": [
+        {
+            "name": "win_streak_constraints",
+            "userId": "89337510",
+            "segment": {
+                "segmentId": 0
+            },
+            "configHash": "344ee997060fc515f443bad5595e6b9d",
+            "startTimestamp": 0.0,
+            "endTimestamp": 0.0,
+            "queueHash": "c8508f4be447e557e6f7b9f970fe1b92"
+        }
+    ]
+}

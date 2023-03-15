@@ -1,15 +1,1 @@
-{
-    "queue": [
-        {
-            "name": "farmer_pass_promo",
-            "userId": "91463887",
-            "segment": {
-                "segmentId": 0
-            },
-            "configHash": "344ee997060fc515f443bad5595e6b9d",
-            "startTimestamp": 0.0,
-            "endTimestamp": 0.0,
-            "queueHash": "c8508f4be447e557e6f7b9f970fe1b92"
-        }
-    ]
-}
+{"queue":[{"name":"farmer_pass_promo","userId":"92306386","value":{"assetImageId":"farmer_pass_promo-jabGPr2P2yyiDAf51PBHvVpSJi4e7L"},"segment":{"segmentId":10000114621},"configHash":"3b92157baec178d48a8599ff854f4d58","startTimestamp":1676368800.0,"endTimestamp":1676973600.0,"queueHash":"19c121dc08fc16cd4b5d5931d2054721"},{"name":"farmer_pass_promo","userId":"92306386","segment":{"segmentId":0},"configHash":"344ee997060fc515f443bad5595e6b9d","startTimestamp":0.0,"endTimestamp":0.0,"queueHash":"19c121dc08fc16cd4b5d5931d2054721"}]}
