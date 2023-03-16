@@ -707,5 +707,8 @@ b = {"Groups": [
     }
 ]}
 
-test = '1.2'
-print(test[2])
+df = pd.DataFrame({'A': ['1', None, '3'], 'B': ['4', '5', '6'], 'C': ['7', '8', '9']})
+
+# df['concat_col']=df.apply(lambda row: row.dropna().tolist(), axis=1)
+df['concat_col_2']=df.apply(lambda row: row.dropna().astype('string').str.cat(sep='|'), axis=1)
+print(df)
