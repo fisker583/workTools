@@ -11,7 +11,7 @@ logger = my_logger()
 logger.setLevel(logging.WARNING)
 
 out_xlsx_path = 'e:/project/desigin/Data/Excels/'
-test_xlsx_path = 'e:/project/desigin/Data/Test/'
+test_xlsx_path = 'e:/project/desigin/Data/Test/Excels/'
 in_xlsx_file = 'E:/Fisker/Documents/Solitaire Colors/Solitaire Colors数值.xlsx'
 
 
@@ -22,7 +22,7 @@ def write_xlxs(write_df, xlsx_name):
     targe_df_first_row = pd.read_excel(targe_file_name)
     targe_df_field = targe_df.columns.to_list()
 
-    #按实际配置整理配置字段
+    # 按实际配置整理配置字段
     write_df = write_df[targe_df_field]
     logger.warning(targe_df_field)
     if len(write_df.columns) != len(targe_df.columns):
@@ -30,14 +30,20 @@ def write_xlxs(write_df, xlsx_name):
         logger.warning(xlsx_name)
         logger.warning(targe_df.columns)
         logger.warning(write_df.columns)
-    #合并表头
+    # 合并表头
     write_df = pd.concat([targe_df[:3], write_df], ignore_index=True)
+    css_alt_rows = 'background-color: powderblue; color: black;'
+    css_indexes = 'background-color: steelblue; color: white;'
+    write_df.style.set_table_styles([
+        {'selector': 'tr:nth-child(even)', 'props': css_alt_rows},
+        {'selector': 'th', 'props': css_indexes},
+    ])
     with pd.ExcelWriter(out_file_name, engine='xlsxwriter') as writer:
         # 写入配置
         write_df.to_excel(excel_writer=writer,
                           sheet_name='data', index=False, startrow=1)
 
-        #写入字段描述
+        # 写入字段描述
         worksheet = writer.sheets['data']
         for k, v in enumerate(targe_df_first_row):
             worksheet.write_string(0, k, str(v))
@@ -75,8 +81,8 @@ def gen_ItemReward_xlsx(df, file_name):
     reward_default['ID'] = reward_default['ItemType']
     reward_default['ItemName'] = 'item.name.' + \
         reward_default['ItemType'].astype('str')
-    
-    #默认同itemID的itemRewardID
+
+    # 默认同itemID的itemRewardID
     reward_default['ItemDes'] = 'item.des.' + \
         reward_default['ItemType'].astype('str')
     reward_default['ItemIcon'] = 'icon_' + df['资源命名']+'_Medium'
@@ -472,4 +478,4 @@ gen_Purchase_xlsx(get_design_df('Purchase', 'C:J', 3), 'Purchase')
 gen_GiftBag_xlsx(get_design_df('GiftBag2', 'K:AD', 4),
                  get_design_df('GiftBag3', 'K:S', 4), 'GiftBag')
 
-gen_FunctionOpen_xlsx(get_design_df('FunctionOpen', 'D:H', 3), 'FunctionOpen')
+gen_FunctionOpen_xlsx(get_design_df('FunctionOpen', 'C:J', 3), 'FunctionOpen')

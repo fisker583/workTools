@@ -1,0 +1,4 @@
+@python.exe E:\github\workTools\SolitaireColors\exportExcel.py %*
+@pause
+"E:\project\desigin\Data\XlsxToLua-master\XlsxToLua\bin\Debug\XlsxToLua.exe" "E:\project\desigin\Data\Test\Excels" "-notExportLua" "-noClient" "-noLang" "-exportCsv($all)" "-exportCsvParam(exportPath=E:\project\desigin\Data\Test\DataTables|extension=txt|splitString=	|isExportColumnAddDesc=true|isExportColumnTip=true|isExportColumnName=true|isExportColumnDataType=true)" "-exportJson($all)" "-exportJsonParam(exportPath=E:\project\cardproject\project_card\Assets\GameMain\DataJson|extension=json|isFormat=false|isExportJsonArrayFormat=true|isMapIncludeKeyColumnValue=true)" 
+@pause
