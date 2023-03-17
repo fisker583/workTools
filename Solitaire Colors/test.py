@@ -7,7 +7,7 @@ import logging
 import sys
 import matplotlib.pyplot as plt
 import shutil
-
+import math
 import os
 
 df = pd.DataFrame([[1, 2, 3], [4, 5, 6]], columns=list('abc'))
@@ -707,8 +707,22 @@ b = {"Groups": [
     }
 ]}
 
-df = pd.DataFrame({'A': ['1', None, '3'], 'B': ['4', '5', '6'], 'C': ['7', '8', '9']})
+df = pd.DataFrame({'A': [1, 2, 3], 'B': ['tt', 'aa', 'bb']})
 
-# df['concat_col']=df.apply(lambda row: row.dropna().tolist(), axis=1)
-df['concat_col_2']=df.apply(lambda row: row.dropna().astype('string').str.cat(sep='|'), axis=1)
-print(df)
+test = [
+1.99,
+4.99,
+7.99,
+14.99,
+25.99,
+35.99,
+1.99,
+5.99,
+19.99,
+49.99,
+2.99,
+0.99,
+3.99]
+
+for i in test:
+    print(round(i*100))
