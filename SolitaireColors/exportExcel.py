@@ -7,9 +7,6 @@ import logging
 import xlsxwriter
 import math
 
-logger = my_logger()
-logger.setLevel(logging.WARNING)
-
 out_xlsx_path = 'e:/project/desigin/Data/Excels/'
 test_xlsx_path = 'e:/project/desigin/Data/Test/Excels/'
 in_xlsx_file = 'E:/Fisker/Documents/Solitaire Colors/Solitaire Colors数值.xlsx'
@@ -23,8 +20,8 @@ def write_xlxs(write_df, xlsx_name):
     targe_df_field = targe_df.columns.to_list()
 
     # 按实际配置整理配置字段
-    write_df = write_df[targe_df_field]
     logger.warning(targe_df_field)
+    write_df = write_df[targe_df_field]
     if len(write_df.columns) != len(targe_df.columns):
         logger.warning('写入字段数量不一致!')
         logger.warning(xlsx_name)
@@ -63,7 +60,7 @@ def gen_ItemReward_xlsx(df, file_name):
     df = df.iloc[:, 4:]
     result_df = df.drop(['道具名称', '资源命名'], axis=1).melt(
         id_vars='道具id', var_name='ShopID', value_name='RewardID')
-    result_df = result_df.sort_values(by=['道具id', 'RewardID'])
+    result_df.sort_values(by=['道具id', 'RewardID'], inplace=True)
     result_df['ItemName'] = 'item.name.' + result_df['道具id'].astype('str')
     result_df['ItemDes'] = 'item.des.' + result_df['道具id'].astype('str')
 
@@ -73,8 +70,8 @@ def gen_ItemReward_xlsx(df, file_name):
         id_vars='道具id', var_name='ShopID', value_name='RewardID')
 
     result_df['ItemIcon'] = item_icon_df['RewardID']
-    result_df = result_df.rename(
-        columns={'道具id': 'ItemType', 'RewardID': 'ID'})
+    result_df.rename(columns={'道具id': 'ItemType',
+                     'RewardID': 'ID'}, inplace=True)
 
     reward_default = result_df.drop(index=result_df.index)
     reward_default['ItemType'] = df['道具id']
@@ -130,6 +127,8 @@ def gen_Level_xlsx(df, desig_filed, target_filed, file_name):
     mode_1 = df[df.index % 3 == 0].astype('int').reset_index(drop=True)
     mode_2 = df[df.index % 3 == 1].astype('int').reset_index(drop=True)
     mode_3 = df[df.index % 3 == 2].astype('int').reset_index(drop=True)
+
+    # 合并3个模式的关卡配置
     for i_filed, filed in enumerate(target_filed):
         mode_1_str = mode_1[desig_filed[i_filed]].astype('string')
         mode_2_str = mode_2[desig_filed[i_filed]].astype('string')
@@ -151,6 +150,7 @@ def get_Turntable_reward(df, type_str):
     df.columns = pd.MultiIndex.from_arrays(
         df_columns_arrays, names=['reward_index', 'index'])
 
+    # 合并8个转盘位置奖励id 奖励数量
     for i in range(8):
         turntable_index = str(i+1)
 
@@ -225,6 +225,8 @@ def gen_Turntable_xlsx(df, file_name):
 
     pay_1_reward.insert(0, 'Level', df.iloc[3:, 5:6])
     pay_2_reward.insert(0, 'Level', df.iloc[3:, 5:6])
+
+    # 合并不同等级段付费转盘
     pay_reward = pd.concat([pay_1_reward[pay_1_reward['Level'] < 168],
                             pay_2_reward[pay_2_reward['Level'] >= 168]])
     pay_reward = pay_reward.drop(['Level'], axis=1)
@@ -258,6 +260,8 @@ def gen_DailyGiftMF_xlsx(df, file_name):
     result_df = pd.DataFrame()
     result_df = pd.concat([result_df, df.iloc[1:, 3:]], axis=1)
     config_id = get_config_id('DailyGift')
+
+    # rewardID 替换itemID
     result_df.rename(columns=lambda x: 'Item' + str(x)
                      [:-2] + '0' + str(config_id), inplace=True)
 
@@ -333,11 +337,17 @@ def gen_Purchase_xlsx(df, file_name):
 
 def get_reward_df(reward_df, df, config_id):
     reward_num = df
+
+    # 合并奖励道具数量
     reward_df['RewardNum'] = reward_num.apply(
         lambda row: row.dropna().astype('string').str.cat(sep='|'), axis=1)
+
     reward_item = df
+    # reward ID替换item ID
     reward_item.columns = [
-        int(float(column))*100 + config_id for column in reward_item.columns]
+        int(float(column))*100 + config_id if config_id > 0 else int(float(column)) for column in reward_item.columns]
+
+    # 合并rewardID
     reward_item[:] = np.where(reward_item.notnull(),
                               reward_item.columns, reward_item)
     reward_df['RewardItem'] = reward_item.apply(
@@ -348,6 +358,7 @@ def get_reward_df(reward_df, df, config_id):
 def gen_GiftBag_xlsx(gif_bag_level, gif_bag_time, file_name):
     result_df = pd.DataFrame()
 
+    # 免费进度礼包
     gif_bag_level_free_data = gif_bag_level.iloc[2:, :13]
     gif_bag_level_free_df = pd.DataFrame()
     config_id = get_config_id('GiftBag2')
@@ -359,6 +370,7 @@ def gen_GiftBag_xlsx(gif_bag_level, gif_bag_time, file_name):
     gif_bag_level_free_df['Type'] = 3
     gif_bag_level_free_df['Sort'] = 1
 
+    # 付费进度礼包
     gif_bag_level_pay_data = gif_bag_level.iloc[2:, 15:]
     gif_bag_level_PurchaseID = 12
     gif_bag_level_pay_df = pd.DataFrame()
@@ -376,6 +388,7 @@ def gen_GiftBag_xlsx(gif_bag_level, gif_bag_time, file_name):
     gif_bag_level_df = gif_bag_level_df.sort_values(
         by=['ConditionValue1', 'Sort'])
 
+    # 付费限时礼包
     gif_bag_time_pay_data = gif_bag_time.iloc[2:, 4:]
     gif_bag_time_PurchaseID = 13
     gif_bag_time_pay_df = pd.DataFrame()
@@ -401,6 +414,14 @@ def gen_GiftBag_xlsx(gif_bag_level, gif_bag_time, file_name):
 
     result_df.reset_index(drop=True, inplace=True)
     result_df.insert(0, 'ID', result_df.index+1)
+
+    # 下个免费进度礼包id
+    result_df['NextID'] = 0
+    result_df.loc[(result_df['PurchaseID'] == 0) & (
+        result_df['Type'] == 3), 'NextID'] = (result_df['ID'] + 2).astype('int')
+    result_df.loc[(result_df['NextID'] ==
+                   result_df['NextID'].max()), 'NextID'] = 0
+    # 不同类型礼包分组
     result_df['Group'] = result_df.apply(
         lambda row: math.floor((row.ID-1)/(row.Type-1))+1, axis=1)
     logger.warning(file_name)
@@ -423,6 +444,60 @@ def gen_FunctionOpen_xlsx(df, file_name):
     write_xlxs(result_df, file_name)
 
 
+def gen_DefaultPlayerItem_xlsx(df, file_name):
+    result_df = pd.DataFrame()
+    result_df = df.iloc[[1]].dropna(axis=1, how='any')
+    result_df = result_df.T
+    result_df.columns = ['ItemNum']
+    result_df['Item'] = result_df.index
+
+    result_df.reset_index(drop=True, inplace=True)
+    logger.warning(file_name)
+    logger.debug(result_df)
+    write_xlxs(result_df, file_name)
+
+
+def gen_LevelRewardFirst_xlsx(fuc_data, level_data, file_name):
+    result_df = pd.DataFrame()
+
+    # 功能引导奖励
+    fuc_df = fuc_data.iloc[1:,].dropna(
+        axis=1, how='all').set_index('配置关卡', drop=True)
+    fuc_df.drop(fuc_df.columns[0], axis=1, inplace=True)
+    fuc_df.dropna(axis=0, how='all', inplace=True)
+    fuc_df['ShowType'] = 0
+
+    # 首次通关奖励
+    level_df = level_data.iloc[1:,].dropna(
+        axis=1, how='all').set_index('配置关卡', drop=True)
+    level_df.drop(level_df.columns[:4], axis=1, inplace=True)
+    level_df['ShowType'] = 1
+
+    # 合并奖励
+    fuc_df = pd.concat([fuc_df, level_df], sort=True)
+    fuc_df['Level'] = fuc_df.index
+    fuc_df.reset_index(drop=True, inplace=True)
+    fuc_df.fillna(0, inplace=True)
+
+    # 关卡奖励去重
+    result_df = fuc_df.groupby(['Level']).sum()
+    result_df = result_df.astype('str')
+    result_df.replace('0', np.nan, inplace=True)
+    result_df['Level'] = result_df.index
+    result_df.reset_index(drop=True, inplace=True)
+    config_id = 0
+    result_df = get_reward_df(
+        result_df, result_df.iloc[0:, 0:-2], config_id)
+
+    result_df['ShowText'] = 'LevelRewardFirst.des'
+    result_df.reset_index(drop=True, inplace=True)
+    result_df.insert(0, 'ID', result_df.index+1)
+
+    logger.warning(file_name)
+    logger.debug(result_df)
+    write_xlxs(result_df, file_name)
+
+
 design_data_sheet = {
     'Offline': '离线奖励',
     'LevelCostNew': '关卡道具消耗',
@@ -438,8 +513,13 @@ design_data_sheet = {
     'ItemReward': '道具资源',
     'ItemIcon': '道具图标',
     'Purchase': '内购',
-    'FunctionOpen': '功能开启'
+    'FunctionOpen': '功能开启',
+    'DefaultPlayerItem': '初始资源',
+    'TutorialsReward': '功能开启奖励',
+    'LevelRewardFirst': '关卡进度奖励'
 }
+logger = my_logger()
+logger.setLevel(logging.DEBUG)
 
 level_cost_desig_filed = ['关卡消耗.1', '回退.1', '加5张.1',
                           '万能牌.1', '开局-消三张.1', '开局-全清.1', '开局-万能牌.1']
@@ -479,3 +559,9 @@ gen_GiftBag_xlsx(get_design_df('GiftBag2', 'K:AD', 4),
                  get_design_df('GiftBag3', 'K:S', 4), 'GiftBag')
 
 gen_FunctionOpen_xlsx(get_design_df('FunctionOpen', 'C:J', 3), 'FunctionOpen')
+
+gen_DefaultPlayerItem_xlsx(get_design_df(
+    'DefaultPlayerItem', 'D:AA', 3), 'DefaultPlayerItem')
+
+gen_LevelRewardFirst_xlsx(get_design_df('TutorialsReward', 'G:AA', 3),
+                          get_design_df('LevelRewardFirst', 'D:AA', 4), 'LevelRewardFirst')
