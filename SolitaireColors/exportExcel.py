@@ -29,6 +29,8 @@ def write_xlxs(write_df, xlsx_name):
         logger.warning(write_df.columns)
     # 合并表头
     write_df = pd.concat([targe_df[:3], write_df], ignore_index=True)
+
+    # 修改样式
     css_style = {
         'header': 'font-family: Microsoft YaHei UI;font-size: 13px;font-weight:Bold;border: 1px solid;',
         'index': 'font-family: Microsoft YaHei UI; font-size: 13px;font-weight:Bold;border: 1px solid;',
@@ -37,20 +39,28 @@ def write_xlxs(write_df, xlsx_name):
     write_df = write_df.style.apply(lambda col: np.where(
         col.index < 1, css_style['header'], css_style['rows'])).applymap_index(lambda _: css_style['index'], axis=1)
     with pd.ExcelWriter(out_file_name, engine='xlsxwriter') as writer:
-        # 写入配置
-        write_df.to_excel(excel_writer=writer,
-                          sheet_name='data', index=False, startrow=1)
+        _extracted_from_write_xlxs_29(write_df, writer, targe_df_first_row)
 
-        # 写入字段描述
-        workbook = writer.book
-        worksheet = writer.sheets['data']
-        merge_format = workbook.add_format({
-            'font_name': 'Microsoft YaHei UI',
-            'font_size': 10
-        })
-        for k, v in enumerate(targe_df_first_row):
-            worksheet.write_string(
-                0, k, str(v), merge_format)
+
+# TODO Rename this here and in `write_xlxs`
+def _extracted_from_write_xlxs_29(write_df, writer, targe_df_first_row):
+    # 写入配置
+    write_df.to_excel(excel_writer=writer,
+                      sheet_name='data', index=False, startrow=1)
+
+    # 写入字段描述
+    workbook = writer.book
+    worksheet = writer.sheets['data']
+    merge_format = workbook.add_format({
+        'font_name': 'Microsoft YaHei UI',
+        'font_size': 10
+    })
+    for k, v in enumerate(targe_df_first_row):
+        worksheet.write_string(
+            0, k, str(v), merge_format)
+    for k, v in enumerate(write_df.columns.to_list()):
+        w = (len(v) - 1)*1.3 + 3
+        worksheet.set_column(k, k, w)
 
 
 def get_design_df(xlsx_name, design_cols, design_header):
@@ -497,6 +507,7 @@ def gen_LevelRewardFirst_xlsx(fuc_data, level_data, file_name):
         result_df, result_df.iloc[0:, 0:-2], config_id)
 
     result_df['ShowText'] = 'LevelRewardFirst.des'
+    result_df.fillna(0, inplace=True)
     result_df.reset_index(drop=True, inplace=True)
     result_df.insert(0, 'ID', result_df.index+1)
 
@@ -526,7 +537,7 @@ design_data_sheet = {
     'LevelRewardFirst': '关卡进度奖励'
 }
 logger = my_logger()
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.WARNING)
 
 level_cost_desig_filed = ['关卡消耗.1', '回退.1', '加5张.1',
                           '万能牌.1', '开局-消三张.1', '开局-全清.1', '开局-万能牌.1']
