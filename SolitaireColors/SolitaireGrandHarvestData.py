@@ -30,9 +30,13 @@ def my_logger():
 
 def read_file(file):
     with open('./Configs/' + file + '.json', 'r') as f:
-        data = eval(f.read().replace('null', 'None').replace(
-            'true', 'True').replace('false', 'False'))
-        return data
+        logger.warning(file)
+        return eval(
+            f.read()
+            .replace('null', 'None')
+            .replace('true', 'True')
+            .replace('false', 'False')
+        )
 
 
 def replace_name(df):
@@ -422,11 +426,48 @@ def gen_map_xlsx(config_key):
     return (config_df_A, config_Playfield_df_A, config_df_B, config_Playfield_df_B, config_g_A, config_g_B)
 
 
+def gen_Streaks(config_key):
+    Streaks_A = pd.DataFrame()
+    Streaks_B = pd.DataFrame()
+    for v_config in config_key:
+        config_data = read_file(v_config)
+        for v_map in config_data['mapLevelData']['CropFields']:
+            for v_level in v_map['Levels']:
+                plan = v_level['Original']
+                Streaks_A = map_Streaks_BoneRewards(Streaks_A,  plan)
+                if len(v_level['Alternatives']) > 0:
+                    plan = v_level['Alternatives'][0]
+                    Streaks_B = map_Streaks_BoneRewards(Streaks_B, plan)
+    # Streaks_A = Streaks_A.loc[:,
+    #                           (Streaks_A != Streaks_A.iloc[0]).any()]
+    # Streaks_B = Streaks_B.loc[:,
+    #                           (Streaks_B != Streaks_B.iloc[0]).any()]
+    # logger.debug(config_df)
+    return (Streaks_A, Streaks_B)
+
+
+def map_Streaks_BoneRewards(config_df, data):
+    level_df = pd.DataFrame()
+    if len(data['BoneRewards']) > 0:
+        level_df = pd.json_normalize(data['BoneRewards'][0]['Rewards'])
+
+    level_df.insert(0, 'StackNum', len(data['Stack']))
+    level_df.insert(0, 'PlayfieldNum', len(data['Playfield']))
+    level_df.insert(0, 'Level', int(data['LevelIndex']))
+    level_df.insert(0, 'Task_index', level_df.index+1)
+    level_df['RestoredBoneRewards'] = pd.DataFrame(data['RestoredBoneRewards'])
+    logger.warning(int(data['LevelIndex']))
+    config_df = pd.concat(
+        [config_df, level_df])
+    return (config_df)
+
+
 def map_df_rename(df):
-    new_name = {}
-    for key in list(map_columns_names.keys()):
-        if key in list(df.columns):
-            new_name.update({key: map_columns_names[key]})
+    new_name = {
+        key: map_columns_names[key]
+        for key in list(map_columns_names.keys())
+        if key in list(df.columns)
+    }
     df = df.rename(columns=new_name)
     df = df[list(new_name.values())]
     return (df)
@@ -582,8 +623,9 @@ logger.setLevel(logging.WARNING)
 #         writer, sheet_name='宝石掉落', index=False)
 
 with pd.ExcelWriter('./Excel/'+'HarvestMap'+str(time.strftime("%Y-%m-%d %H_%M_%S", time.localtime()))+'.xlsx') as writer:
-    map_df_A, map_playfield_df_A, map_df_B, map_playfield_df_B,config_g_A,config_g_B = gen_map_xlsx(
-        map_config[:1]
+
+    map_df_A, map_playfield_df_A, map_df_B, map_playfield_df_B, config_g_A, config_g_B = gen_map_xlsx(
+        map_config[:3]
     )
     map_df_A = map_df_rename(map_df_A)
     map_df_B = map_df_rename(map_df_B)
@@ -595,3 +637,7 @@ with pd.ExcelWriter('./Excel/'+'HarvestMap'+str(time.strftime("%Y-%m-%d %H_%M_%S
     map_df_B.to_excel(writer, sheet_name='关卡概要_B', index=False)
     map_playfield_df_B.to_excel(writer, sheet_name='关卡场牌_B', index=False)
     config_g_B.to_excel(writer, sheet_name='关卡牌组_B', index=False)
+
+    Streaks_A, Streaks_B = gen_Streaks(map_config[:3])
+    Streaks_A.to_excel(writer, sheet_name='骨头关卡奖励_A', index=False)
+    Streaks_B.to_excel(writer, sheet_name='骨头关卡奖励_B', index=False)

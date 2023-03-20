@@ -29,21 +29,28 @@ def write_xlxs(write_df, xlsx_name):
         logger.warning(write_df.columns)
     # 合并表头
     write_df = pd.concat([targe_df[:3], write_df], ignore_index=True)
-    css_alt_rows = 'background-color: powderblue; color: black;'
-    css_indexes = 'background-color: steelblue; color: white;'
-    write_df.style.set_table_styles([
-        {'selector': 'tr:nth-child(even)', 'props': css_alt_rows},
-        {'selector': 'th', 'props': css_indexes},
-    ])
+    css_style = {
+        'header': 'font-family: Microsoft YaHei UI;font-size: 13px;font-weight:Bold;border: 1px solid;',
+        'index': 'font-family: Microsoft YaHei UI; font-size: 13px;font-weight:Bold;border: 1px solid;',
+        'rows': 'font-family: Microsoft YaHei UI;font-size: 13px;'
+    }
+    write_df = write_df.style.apply(lambda col: np.where(
+        col.index < 1, css_style['header'], css_style['rows'])).applymap_index(lambda _: css_style['index'], axis=1)
     with pd.ExcelWriter(out_file_name, engine='xlsxwriter') as writer:
         # 写入配置
         write_df.to_excel(excel_writer=writer,
                           sheet_name='data', index=False, startrow=1)
 
         # 写入字段描述
+        workbook = writer.book
         worksheet = writer.sheets['data']
+        merge_format = workbook.add_format({
+            'font_name': 'Microsoft YaHei UI',
+            'font_size': 10
+        })
         for k, v in enumerate(targe_df_first_row):
-            worksheet.write_string(0, k, str(v))
+            worksheet.write_string(
+                0, k, str(v), merge_format)
 
 
 def get_design_df(xlsx_name, design_cols, design_header):

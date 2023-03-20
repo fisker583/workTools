@@ -1,3 +1,4 @@
+from styleframe import StyleFrame
 from PIL import Image
 import pandas as pd
 import numpy as np
@@ -707,22 +708,27 @@ b = {"Groups": [
     }
 ]}
 
-df = pd.DataFrame({'A': [1, 2, 3], 'B': ['tt', 'aa', 'bb']})
+df = pd.json_normalize(a['Playfield'])
+print(df)
 
-test = [
-1.99,
-4.99,
-7.99,
-14.99,
-25.99,
-35.99,
-1.99,
-5.99,
-19.99,
-49.99,
-2.99,
-0.99,
-3.99]
 
-for i in test:
-    print(round(i*100))
+css_style = {
+    'header': 'background-color: powderblue; color: black;font-family: Microsoft YaHei UI;',
+    'index': 'background-color: #000000; color: white;font-family: Microsoft YaHei UI;',
+    'rows': 'font-family: Microsoft YaHei UI;'
+}
+
+targe_df_first_row = pd.DataFrame(df.columns)
+print(targe_df_first_row)
+# write_df = pd.concat()
+write_df = df.style.apply(lambda col: np.where(
+    col.index < 3, css_style['header'], css_style['rows'])).applymap_index(lambda _: css_style['index'], axis=1)
+with pd.ExcelWriter('styled.xlsx', engine='xlsxwriter') as writer:
+    # 写入配置
+    write_df.to_excel(excel_writer=writer,
+                        sheet_name='data', index=False, startrow=1)
+
+    # # 写入字段描述
+    # worksheet = writer.sheets['data']
+    # for k, v in enumerate(targe_df_first_row):
+    #     worksheet.write_string(0, k, str(v))
