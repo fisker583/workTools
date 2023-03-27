@@ -81,7 +81,7 @@ def gen_ItemReward_xlsx(df, file_name):
     result_df['ItemName'] = 'item.name.' + result_df['道具id'].astype('str')
     result_df['ItemDes'] = 'item.des.' + result_df['道具id'].astype('str')
 
-    item_icon_data = get_design_df('ItemIcon', 'B:AA', 3)
+    item_icon_data = get_design_df('ItemIcon', 'B:AA', 4)
     item_icon_data = item_icon_data.iloc[:, 4:]
     item_icon_df = item_icon_data.drop(['道具名称', '资源命名'], axis=1).melt(
         id_vars='道具id', var_name='ShopID', value_name='RewardID')
@@ -130,7 +130,19 @@ def gen_Offline_xlsx(df, file_name):
     result_df = pd.DataFrame()
     result_df['Level'] = df['配置关卡'].astype('int')
     result_df['Reward'] = ('101|') + df['免费奖励'].astype('int').astype('str')
-    result_df['ADReward'] = ('101|') + df['广告奖励'].astype('int').astype('str')
+
+    result_df['ADReward'] = result_df['Reward']
+
+    result_df.insert(0, 'ID', result_df.index+1)
+    logger.warning(file_name)
+    logger.debug(result_df)
+    write_xlxs(result_df, file_name)
+
+
+def gen_OfflineAD_xlsx(df, file_name):
+    result_df = pd.DataFrame()
+    result_df['Level'] = df.iloc[:, 0].astype('int')
+    result_df['ADRewardMF'] = df['奖励倍率'].astype('float')
     result_df.insert(0, 'ID', result_df.index+1)
     logger.warning(file_name)
     logger.debug(result_df)
@@ -518,6 +530,7 @@ def gen_LevelRewardFirst_xlsx(fuc_data, level_data, file_name):
 
 design_data_sheet = {
     'Offline': '离线奖励',
+    'OfflineAD': '离线奖励',
     'LevelCostNew': '关卡道具消耗',
     'LevelRewardNew': '关卡奖励',
     'Turntable': '转盘',
@@ -537,7 +550,7 @@ design_data_sheet = {
     'LevelRewardFirst': '关卡进度奖励'
 }
 logger = my_logger()
-logger.setLevel(logging.WARNING)
+logger.setLevel(logging.DEBUG)
 
 level_cost_desig_filed = ['关卡消耗.1', '回退.1', '加5张.1',
                           '万能牌.1', '开局-消三张.1', '开局-全清.1', '开局-万能牌.1']
@@ -547,39 +560,38 @@ level_reward_desig_filed = ['消除基础奖励', '消除递增奖励', '余牌�
 level_reward_target_filed = [
     'CardRewardBase', 'CardRewardAdd', 'LastCardRewardBase', 'ClearedRewardBase', 'ClearedRewardMF']
 
-config_df = get_design_df('ItemReward', 'B:C', 3)
+config_df = get_design_df('ItemReward', 'B:C', 4)
 
-gen_ItemReward_xlsx(get_design_df('ItemReward', 'B:AA', 3), 'ItemReward')
+gen_ItemReward_xlsx(get_design_df('ItemReward', 'B:AA', 4), 'ItemReward')
+gen_ItemNew_xlsx(get_design_df('ItemNew', 'C:E', 4), 'ItemNew')
+gen_Offline_xlsx(get_design_df('Offline', 'P:R', 4), 'Offline')
+gen_OfflineAD_xlsx(get_design_df('OfflineAD', 'V:W', 4), 'OfflineAD')
 
-
-gen_ItemNew_xlsx(get_design_df('ItemNew', 'C:E', 3), 'ItemNew')
-gen_Offline_xlsx(get_design_df('Offline', 'AA:AD', 2), 'Offline')
-
-gen_Level_xlsx(get_design_df('LevelCostNew', 'AA:AH', 3),
+gen_Level_xlsx(get_design_df('LevelCostNew', 'AA:AH', 4),
                level_cost_desig_filed, level_cost_target_filed, 'LevelCostNew')
 
-gen_Level_xlsx(get_design_df('LevelRewardNew', 'I:R', 2),
+gen_Level_xlsx(get_design_df('LevelRewardNew', 'I:R', 4),
                level_reward_desig_filed, level_reward_target_filed, 'LevelRewardNew')
 
-gen_Turntable_xlsx(get_design_df('Turntable', 'I:BA', 3), 'Turntable')
+gen_Turntable_xlsx(get_design_df('Turntable', 'I:BA', 4), 'Turntable')
 
-gen_DailyGift_xlsx(get_design_df('DailyGift', 'F:R', 3), 'DailyGift')
+gen_DailyGift_xlsx(get_design_df('DailyGift', 'F:R', 4), 'DailyGift')
 
-gen_DailyGiftMF_xlsx(get_design_df('DailyGiftMF', 'U:AG', 3), 'DailyGiftMF')
+gen_DailyGiftMF_xlsx(get_design_df('DailyGiftMF', 'U:AG', 4), 'DailyGiftMF')
 
-gen_Shop_xlsx(get_design_df('Shop', 'F:S', 3), 'Shop')
+gen_Shop_xlsx(get_design_df('Shop', 'F:S', 4), 'Shop')
 
 gen_ShopFactor_xlsx(get_design_df('ShopFactor', 'AA:AK', 4), 'ShopFactor')
 
-gen_Purchase_xlsx(get_design_df('Purchase', 'C:J', 3), 'Purchase')
+gen_Purchase_xlsx(get_design_df('Purchase', 'C:J', 4), 'Purchase')
 
 gen_GiftBag_xlsx(get_design_df('GiftBag2', 'K:AD', 4),
                  get_design_df('GiftBag3', 'K:S', 4), 'GiftBag')
 
-gen_FunctionOpen_xlsx(get_design_df('FunctionOpen', 'C:J', 3), 'FunctionOpen')
+gen_FunctionOpen_xlsx(get_design_df('FunctionOpen', 'C:J', 4), 'FunctionOpen')
 
 gen_DefaultPlayerItem_xlsx(get_design_df(
-    'DefaultPlayerItem', 'D:AA', 3), 'DefaultPlayerItem')
+    'DefaultPlayerItem', 'D:AA', 4), 'DefaultPlayerItem')
 
-gen_LevelRewardFirst_xlsx(get_design_df('TutorialsReward', 'G:AA', 3),
+gen_LevelRewardFirst_xlsx(get_design_df('TutorialsReward', 'G:AA', 4),
                           get_design_df('LevelRewardFirst', 'D:AA', 4), 'LevelRewardFirst')
