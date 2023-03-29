@@ -8,7 +8,7 @@ import numpy as np
 
 out_xlsx_path = 'e:/project/desigin/Data/Excels/'
 test_xlsx_path = 'e:/project/desigin/Data/Test/Excels/'
-in_xlsx_file = 'E:/Fisker/Documents/Solitaire Colors/Solitaire Colors数值.xlsx'
+in_xlsx_file = 'E:/Fisker/Documents/Solitaire Colors/SolitaireColors数值.xlsx'
 
 
 def get_design_df(xlsx_name, design_cols, design_header):

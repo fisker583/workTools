@@ -9,7 +9,7 @@ import math
 
 out_xlsx_path = 'e:/project/desigin/Data/Excels/'
 test_xlsx_path = 'e:/project/desigin/Data/Test/Excels/'
-in_xlsx_file = 'E:/Fisker/Documents/Solitaire Colors/Solitaire Colors数值.xlsx'
+in_xlsx_file = 'E:/github/workTools/SolitaireColors/Excel/SolitaireColors数值.xlsx'
 
 
 def write_xlxs(write_df, xlsx_name):
@@ -239,21 +239,22 @@ def get_Turntable_reward(df, type_str):
 
 def gen_Turntable_xlsx(df, file_name):
     result_df = pd.DataFrame()
-    free_df = df.iloc[0:, 10:18]
-    pay_df_1 = df.iloc[0:, 20:31]
-    pay_df_2 = df.iloc[0:, 33:45]
+    free_df = df.iloc[0:, 15:23]
+    pay_df_1 = df.iloc[0:, 25:36]
+    pay_df_2 = df.iloc[0:, 38:50]
+    logging.warning(pay_df_2)
     result_df = get_Turntable_reward(free_df, 'Free')
     pay_1_reward = get_Turntable_reward(pay_df_1, 'Pay')
     pay_2_reward = get_Turntable_reward(pay_df_2, 'Pay')
 
     PurchaseID = 11
     result_df.insert(0, 'PurchaseID', PurchaseID)
-    result_df.insert(0, 'Level', df.iloc[3:, 5:6])
-    result_df.insert(0, 'NeedPoint', df.iloc[3:, 2:3])
+    result_df.insert(0, 'Level', df.iloc[3:, 9:10])
+    result_df.insert(0, 'NeedPoint', df.iloc[3:, 4:5])
     result_df.reset_index(drop=True, inplace=True)
 
-    pay_1_reward.insert(0, 'Level', df.iloc[3:, 5:6])
-    pay_2_reward.insert(0, 'Level', df.iloc[3:, 5:6])
+    pay_1_reward.insert(0, 'Level', df.iloc[3:, 9:10])
+    pay_2_reward.insert(0, 'Level', df.iloc[3:, 9:10])
 
     # 合并不同等级段付费转盘
     pay_reward = pd.concat([pay_1_reward[pay_1_reward['Level'] < 168],
@@ -305,7 +306,7 @@ def gen_DailyGiftMF_xlsx(df, file_name):
 def gen_Shop_xlsx(df, file_name):
     result_df = pd.DataFrame()
     config_id = get_config_id(file_name)
-    result_df = get_reward_df(result_df, df.iloc[1:, 9:], config_id)
+    result_df = get_reward_df(result_df, df.iloc[1:, 11:], config_id)
     result_df['PurchaseID'] = df.iloc[1:, df.columns.get_loc(
         '内购')].fillna(0).astype('int')
     result_df['Type'] = df.iloc[1:, df.columns.get_loc(
@@ -573,15 +574,15 @@ gen_Level_xlsx(get_design_df('LevelCostNew', 'AA:AH', 4),
 gen_Level_xlsx(get_design_df('LevelRewardNew', 'I:R', 4),
                level_reward_desig_filed, level_reward_target_filed, 'LevelRewardNew')
 
-gen_Turntable_xlsx(get_design_df('Turntable', 'I:BA', 4), 'Turntable')
+gen_Turntable_xlsx(get_design_df('Turntable', 'I:BG', 4), 'Turntable')
 
 gen_DailyGift_xlsx(get_design_df('DailyGift', 'F:R', 4), 'DailyGift')
 
 gen_DailyGiftMF_xlsx(get_design_df('DailyGiftMF', 'U:AG', 4), 'DailyGiftMF')
 
-gen_Shop_xlsx(get_design_df('Shop', 'F:S', 4), 'Shop')
+gen_Shop_xlsx(get_design_df('Shop', 'F:U', 4), 'Shop')
 
-gen_ShopFactor_xlsx(get_design_df('ShopFactor', 'AA:AK', 4), 'ShopFactor')
+gen_ShopFactor_xlsx(get_design_df('ShopFactor', 'AC:AM', 4), 'ShopFactor')
 
 gen_Purchase_xlsx(get_design_df('Purchase', 'C:J', 4), 'Purchase')
 
