@@ -8,7 +8,7 @@ import numpy as np
 
 out_xlsx_path = 'e:/project/desigin/Data/Excels/'
 test_xlsx_path = 'e:/project/desigin/Data/Test/Excels/'
-in_xlsx_file = 'E:/Fisker/Documents/Solitaire Colors/SolitaireColors数值.xlsx'
+in_xlsx_file = 'E:/github/workTools/SolitaireColors/Excel/SolitaireColors数值.xlsx'
 
 
 def get_design_df(xlsx_name, design_cols, design_header):
@@ -236,23 +236,4 @@ ini_coin = 10000
 level_end = 200
 level = Level(level_id, level_mode, 101, day, rete)
 
-# out_columns = {
-#     '关卡',
-#     '时间_天',
-#     '通关率',
-#     '消耗_挑战',
-#     '消耗_通关',
-#     '奖励_通关',
-#     '奖励_失败',
-#     '余额_通关前',
-#     '余额_通关后',
-#     '损耗_通关',
-#     '奖励_离线',
-#     '余额_离线',
-#     '奖励_免费转盘',
-#     '余额_免费转盘',
-#     '奖励_签到',
-#     '余额_签到'
-# }
-
-level_series,day,level_rate,cost_level,cost_level_win,reward_win,reward_fail,surplus_level_start,surplus_level_win,loss_level,= []
+print(level.reward_win)

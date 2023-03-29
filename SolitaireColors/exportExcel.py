@@ -430,7 +430,7 @@ def gen_GiftBag_xlsx(gif_bag_level, gif_bag_time, file_name):
     gif_bag_time_pay_df['ConditionValue1'] = gif_bag_time['配置关卡']
     gif_bag_time_pay_df['Type'] = 2
     gif_bag_time_pay_df['Sort'] = 1
-    gif_bag_time_pay_df['Discount'] = gif_bag_time['配置原始金币'].fillna(
+    gif_bag_time_pay_df['Discount'] = gif_bag_time['折扣预留'].fillna(
         0).astype('int')
 
     result_df = pd.concat([gif_bag_level_df, gif_bag_time_pay_df])
