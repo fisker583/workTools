@@ -265,6 +265,11 @@ def gen_Turntable_xlsx(df, file_name):
     result_df = pd.concat([result_df, pay_reward], axis=1)
 
     result_df.insert(0, 'ID', result_df.index+1)
+    # 第1个转盘特殊权重必中第3个
+
+    result_df.loc[(result_df['Level'] == 18) | (
+        result_df['NeedPoint'] == 5), 'FreeWeight'] = '0|0|100|0|0|0|0|0'
+
     logger.warning(file_name)
     logger.debug(result_df)
     write_xlxs(result_df, file_name)
@@ -491,15 +496,20 @@ def gen_LevelRewardFirst_xlsx(fuc_data, level_data, file_name):
     result_df = pd.DataFrame()
 
     # 功能引导奖励
-    fuc_df = fuc_data.iloc[1:,].dropna(
+    fuc_df = fuc_data.dropna(
         axis=1, how='all').set_index('配置关卡', drop=True)
-    fuc_df.drop(fuc_df.columns[0], axis=1, inplace=True)
+    # fuc_df.drop(fuc_df.columns[0], axis=1, inplace=True)
     fuc_df.dropna(axis=0, how='all', inplace=True)
+    fuc_df.fillna(0, inplace=True)
+    fuc_df = fuc_df.astype('int').astype('str')
+    fuc_df.rename(columns=lambda x: str(x), inplace=True)
+    fuc_df.replace('0', np.nan, inplace=True)
     fuc_df['ShowType'] = 0
 
     # 首次通关奖励
     level_df = level_data.iloc[1:,].dropna(
         axis=1, how='all').set_index('配置关卡', drop=True)
+    level_df.rename(columns=lambda x: str(x), inplace=True)
     level_df.drop(level_df.columns[:4], axis=1, inplace=True)
     level_df['ShowType'] = 1
 
@@ -510,16 +520,20 @@ def gen_LevelRewardFirst_xlsx(fuc_data, level_data, file_name):
     fuc_df.fillna(0, inplace=True)
 
     # 关卡奖励去重
-    result_df = fuc_df.groupby(['Level']).sum()
+    # logger.debug(fuc_df)
+    # result_df = fuc_df.groupby(['Level']).sum()
+    result_df = fuc_df
     result_df = result_df.astype('str')
     result_df.replace('0', np.nan, inplace=True)
-    result_df['Level'] = result_df.index
+    # result_df['Level'] = result_df.index
     result_df.reset_index(drop=True, inplace=True)
     config_id = 0
     result_df = get_reward_df(
         result_df, result_df.iloc[0:, 0:-2], config_id)
 
     result_df['ShowText'] = 'LevelRewardFirst.des'
+    result_df['Level'] = result_df['Level'].astype('int')
+    result_df.sort_values(by=['Level'], inplace=True)
     result_df.fillna(0, inplace=True)
     result_df.reset_index(drop=True, inplace=True)
     result_df.insert(0, 'ID', result_df.index+1)
@@ -547,7 +561,7 @@ design_data_sheet = {
     'Purchase': '内购',
     'FunctionOpen': '功能开启',
     'DefaultPlayerItem': '初始资源',
-    'TutorialsReward': '功能开启奖励',
+    'TutorialsReward': '功能开启Test',
     'LevelRewardFirst': '关卡进度奖励'
 }
 logger = my_logger()
@@ -594,5 +608,5 @@ gen_FunctionOpen_xlsx(get_design_df('FunctionOpen', 'C:J', 4), 'FunctionOpen')
 gen_DefaultPlayerItem_xlsx(get_design_df(
     'DefaultPlayerItem', 'D:AA', 4), 'DefaultPlayerItem')
 
-gen_LevelRewardFirst_xlsx(get_design_df('TutorialsReward', 'G:AA', 4),
-                          get_design_df('LevelRewardFirst', 'D:AA', 4), 'LevelRewardFirst')
+gen_LevelRewardFirst_xlsx(get_design_df('TutorialsReward', 'G:Q', 4), get_design_df(
+    'LevelRewardFirst', 'D:AA', 4), 'LevelRewardFirst')
