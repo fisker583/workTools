@@ -466,12 +466,10 @@ def gen_GiftBag_xlsx(gif_bag_level, gif_bag_time, file_name):
 
 def gen_FunctionOpen_xlsx(df, file_name):
     result_df = pd.DataFrame()
-    result_df = df.iloc[1:,]
+    result_df = df
     result_df.rename(columns={
                      '功能名称': 'Name', '开启关卡': 'OpenLevel', '开启限制天数': 'OpenLoginDays'}, inplace=True)
-    result_df.iloc[0:, 3:].fillna(0).astype('int')
-
-    reward = df.iloc[1:, 3:]
+    reward = df.iloc[0:, 3:]
     reward.rename(columns=lambda x: str(x), inplace=True)
     reward.fillna(0, inplace=True)
     reward = reward.astype('int').astype('str')
@@ -481,7 +479,7 @@ def gen_FunctionOpen_xlsx(df, file_name):
     result_df = get_reward_df(
         result_df, reward, config_id)
     result_df.rename(columns={
-                     'RewardNum': 'OpenRewardItem', 'RewardItem': 'OpenRewardItemNum'}, inplace=True)
+                     'RewardNum': 'OpenRewardItemNum', 'RewardItem': 'OpenRewardItem'}, inplace=True)
     result_df.reset_index(drop=True, inplace=True)
     result_df.insert(0, 'ID', result_df.index+1)
     logger.warning(file_name)
@@ -515,6 +513,7 @@ def gen_LevelRewardFirst_xlsx(fuc_data, level_data, file_name):
     fuc_df.rename(columns=lambda x: str(x), inplace=True)
     fuc_df.replace('0', np.nan, inplace=True)
     fuc_df['ShowType'] = 0
+    fuc_df.drop([3], inplace=True)
 
     # 首次通关奖励
     level_df = level_data.iloc[1:,].dropna(
@@ -571,7 +570,7 @@ design_data_sheet = {
     'Purchase': '内购',
     'FunctionOpen': '功能开启',
     'DefaultPlayerItem': '初始资源',
-    'TutorialsReward': '功能开启', #临时
+    'TutorialsReward': '功能开启',  # 临时
     'LevelRewardFirst': '关卡进度奖励'
 }
 logger = my_logger()
