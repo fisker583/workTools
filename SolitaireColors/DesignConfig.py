@@ -48,7 +48,8 @@ def item_data(df):
     result_df['ItemType'] = df['类型']
     result_df['ItemName'] = df['道具名称']
     result_df.reset_index(drop=True, inplace=True)
-    return(result_df)
+    return (result_df)
+
 
 def reward_offline(df):
     result_df = pd.DataFrame()
@@ -181,9 +182,10 @@ def reward_concat(df):
 def reward_clean(df):
     df.fillna(0, inplace=True)
     df.rename(columns=lambda x: str(x), inplace=True)
-    df.rename(columns={'101': 'coin', '302': 'plus5', '301':  'undo'},inplace=True)
+    df.rename(columns={'101': 'coin', '302': 'plus5',
+              '301':  'undo', '303':  'wild'}, inplace=True)
     df.reset_index(drop=True, inplace=True)
-    return(df)
+    return (df)
 
 
 class Config():
@@ -247,7 +249,8 @@ class Config():
 
     def reward_wheel_by_val(self, val):
         # 按进度值 转盘奖励系数
-        reward = self._reward_wheel[self._reward_wheel['sum_val'] <= val].tail(1)
+        reward = self._reward_wheel[self._reward_wheel['sum_val'] <= val].tail(
+            1)
         reward['mf'] = self._reward_wheel_mf
         return (reward)
 

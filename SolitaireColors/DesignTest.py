@@ -57,10 +57,10 @@ logger.setLevel(logging.WARNING)
 config = Config()
 ini_res = config.reward_default_by_res()
 
-col_name = ['win_times', 'fail_times', 'win_percent']
+col_name = ['win_times', 'fail_times', 'win_percent','plus5_count']
 row_prefix = 'by_plus5_'
 level_play = pd.DataFrame(
-    [(3, 2, round(1/3, 2))], index=[row_prefix+str(2)], columns=col_name)
+    [(3, 2, round(1/3, 2),1)], columns=col_name)
 logging.warning(level_play)
 
 
@@ -69,6 +69,10 @@ row_name = ['start', 'win']
 level_cost = pd.DataFrame(index=row_name, columns=col_name)
 logging.warning(level_cost)
 
-level_cost_start =config.cost_level_by_level_mode(100,1)
+level_cost_start =config.cost_level_by_level_mode(25,1)
 level_cost_start.rename(index={0: 'start'},inplace=True)
 logging.warning(level_cost_start)
+
+
+current_res = config.reward_default_by_res()
+logging.warning(current_res)
