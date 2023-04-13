@@ -239,11 +239,15 @@ def get_Turntable_reward(df, type_str):
 
 def gen_Turntable_xlsx(df, file_name):
     result_df = pd.DataFrame()
+    free_df_first = df.iloc[0:5, 52:60]
     free_df = df.iloc[0:, 15:23]
     pay_df_1 = df.iloc[0:, 25:36]
     pay_df_2 = df.iloc[0:, 38:50]
-    logging.warning(pay_df_2)
+    free_first =get_Turntable_reward(free_df_first, 'Free') 
+    logging.warning(free_first)
     result_df = get_Turntable_reward(free_df, 'Free')
+    result_df.iloc[0:2,:]  = free_first.iloc[0:2,:]
+
     pay_1_reward = get_Turntable_reward(pay_df_1, 'Pay')
     pay_2_reward = get_Turntable_reward(pay_df_2, 'Pay')
 
@@ -466,10 +470,10 @@ def gen_GiftBag_xlsx(gif_bag_level, gif_bag_time, file_name):
 
 def gen_FunctionOpen_xlsx(df, file_name):
     result_df = pd.DataFrame()
-    result_df = df.iloc[:17,:]
+    result_df = df.dropna(subset=['功能名称'])
     result_df.rename(columns={
                      '功能名称': 'Name', '开启关卡': 'OpenLevel', '开启限制天数': 'OpenLoginDays'}, inplace=True)
-    reward = df.iloc[0:17, 3:]
+    reward = df.iloc[:, 3:]
     reward.rename(columns=lambda x: str(x), inplace=True)
     reward.fillna(0, inplace=True)
     reward = reward.astype('int').astype('str')
@@ -597,7 +601,7 @@ gen_Level_xlsx(get_design_df('LevelCostNew', 'AA:AH', 4),
 gen_Level_xlsx(get_design_df('LevelRewardNew', 'I:R', 4),
                level_reward_desig_filed, level_reward_target_filed, 'LevelRewardNew')
 
-gen_Turntable_xlsx(get_design_df('Turntable', 'I:BG', 4), 'Turntable')
+gen_Turntable_xlsx(get_design_df('Turntable', 'I:BP', 4), 'Turntable')
 
 gen_DailyGift_xlsx(get_design_df('DailyGift', 'F:R', 4), 'DailyGift')
 
