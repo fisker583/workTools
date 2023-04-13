@@ -170,7 +170,7 @@ def reward_wheel_mf(df):
 
 
 def reward_concat(df):
-    col_names = ['coin', 'plus5', 'undo']
+    col_names = ['coin', 'plus5', 'undo','wild']
     result = pd.DataFrame(columns=col_names)
     result = pd.concat([result, df])
     if result.empty == True:
@@ -254,6 +254,6 @@ class Config():
         reward['mf'] = self._reward_wheel_mf
         return (reward)
 
-    def reward_default_by_res(self):
+    def reward_default_by_item(self):
         # 按资源 初始资源
         return (reward_concat(self._reward_default))

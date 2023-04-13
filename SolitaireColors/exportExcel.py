@@ -9,7 +9,7 @@ import math
 
 out_xlsx_path = 'e:/project/desigin/Data/Excels/'
 test_xlsx_path = 'e:/project/desigin/Data/Test/Excels/'
-in_xlsx_file = 'E:/github/workTools/SolitaireColors/Excel/SolitaireColors数值.xlsx'
+in_xlsx_file = 'e:/project/desigin/Documents/SolitaireColors数值.xlsx'
 
 
 def write_xlxs(write_df, xlsx_name):
@@ -265,10 +265,10 @@ def gen_Turntable_xlsx(df, file_name):
     result_df = pd.concat([result_df, pay_reward], axis=1)
 
     result_df.insert(0, 'ID', result_df.index+1)
-    # 第1个转盘特殊权重必中第3个
-
-    result_df.loc[(result_df['Level'] == 18) | (
-        result_df['NeedPoint'] == 5), 'FreeWeight'] = '0|0|100|0|0|0|0|0'
+    # 第1,2个转盘特殊权重必中
+    result_df.loc[(result_df['ID'] == 1), 'FreeWeight'] = '0|0|100|0|0|0|0|0'
+    
+    result_df.loc[(result_df['ID'] == 2), 'FreeWeight'] = '0|0|0|100|0|0|0|0'
 
     logger.warning(file_name)
     logger.debug(result_df)
@@ -466,10 +466,10 @@ def gen_GiftBag_xlsx(gif_bag_level, gif_bag_time, file_name):
 
 def gen_FunctionOpen_xlsx(df, file_name):
     result_df = pd.DataFrame()
-    result_df = df
+    result_df = df.iloc[:17,:]
     result_df.rename(columns={
                      '功能名称': 'Name', '开启关卡': 'OpenLevel', '开启限制天数': 'OpenLoginDays'}, inplace=True)
-    reward = df.iloc[0:, 3:]
+    reward = df.iloc[0:17, 3:]
     reward.rename(columns=lambda x: str(x), inplace=True)
     reward.fillna(0, inplace=True)
     reward = reward.astype('int').astype('str')

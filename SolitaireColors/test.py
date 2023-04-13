@@ -732,3 +732,7 @@ with pd.ExcelWriter('styled.xlsx', engine='xlsxwriter') as writer:
     # worksheet = writer.sheets['data']
     # for k, v in enumerate(targe_df_first_row):
     #     worksheet.write_string(0, k, str(v))
+col_name = ['coin', 'plus5', 'undo', 'wild', 'coin_plus5', 'coin_undo']
+level_cost_start = tuple(0 for _ in range(len(col_name)))
+
+print(level_cost_start)
