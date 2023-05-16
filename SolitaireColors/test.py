@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import shutil
 import math
 import os
+import json
 
 df = pd.DataFrame([[1, 2, 3], [4, 5, 6]], columns=list('abc'))
 
@@ -737,12 +738,34 @@ logger = my_logger()
 
 # print(level_cost_start)
 
-df1 = pd.DataFrame(index=range(10), columns=['A','B','C'])
-df2 = pd.DataFrame(index=range(2), columns=['A','B','C'])
-df1.fillna(0,inplace=True)
-df2.fillna(2,inplace=True)
-logging.debug(df1)
-logging.debug(df2)
+# df1 = pd.DataFrame(index=range(10), columns=['A','B','C'])
+# df2 = pd.DataFrame(index=range(2), columns=['A','B','C'])
+# df1.fillna(0,inplace=True)
+# df2.fillna(2,inplace=True)
+# logging.debug(df1)
+# logging.debug(df2)
 
-df1.iloc[0:2,:]  = df2.iloc[0:2,:]
-logging.debug(df1)
+# df1.iloc[0:2,:]  = df2.iloc[0:2,:]
+# logging.debug(df1)
+
+in_xlsx_file = 'E:/Fisker/Downloads/test.xlsx'
+
+
+def read_file(file):
+    with open('./Configs/' + file + '.json', 'r') as f:
+        logger.warning(file)
+        return eval(
+            f.read()
+            .replace('null', 'None')
+            .replace('true', 'True')
+            .replace('false', 'False')
+        )
+
+df = pd.read_excel(in_xlsx_file)
+data2 = eval(df['数据明细'].to_json())
+
+
+print(data2)
+data3 = json.loads(data2)
+print(data3)
+# df2 = pd.json_normalize(json.loads(data2))

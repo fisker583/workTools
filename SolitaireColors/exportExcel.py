@@ -133,6 +133,9 @@ def gen_Offline_xlsx(df, file_name):
 
     result_df['ADReward'] = result_df['Reward']
 
+    result_df = pd.concat([result_df.head(1), result_df])
+    result_df.iloc[0, result_df.columns.get_loc('Level')] = 0
+    result_df.reset_index(drop=True, inplace=True)
     result_df.insert(0, 'ID', result_df.index+1)
     logger.warning(file_name)
     logger.debug(result_df)
@@ -239,26 +242,27 @@ def get_Turntable_reward(df, type_str):
 
 def gen_Turntable_xlsx(df, file_name):
     result_df = pd.DataFrame()
-    free_df_first = df.iloc[0:5, 52:60]
-    free_df = df.iloc[0:, 15:23]
-    pay_df_1 = df.iloc[0:, 25:36]
-    pay_df_2 = df.iloc[0:, 38:50]
-    free_first =get_Turntable_reward(free_df_first, 'Free') 
-    logging.warning(free_first)
+    free_df_first = df.iloc[0:5, -8:]
+    free_df = df.iloc[0:, 11:11+8]
+    pay_df_1 = df.iloc[0:, 21:21+11]
+    pay_df_2 = df.iloc[0:, 34:34+12]
+    free_first = get_Turntable_reward(free_df_first, 'Free')
+    # logging.warning(free_df)
     result_df = get_Turntable_reward(free_df, 'Free')
-    result_df.iloc[0:2,:]  = free_first.iloc[0:2,:]
+    result_df.iloc[0:2, :] = free_first.iloc[0:2, :]
 
     pay_1_reward = get_Turntable_reward(pay_df_1, 'Pay')
     pay_2_reward = get_Turntable_reward(pay_df_2, 'Pay')
 
     PurchaseID = 11
+    result_df.insert(0, 'IsOpenPay', df.iloc[3:, 7:8])
     result_df.insert(0, 'PurchaseID', PurchaseID)
-    result_df.insert(0, 'Level', df.iloc[3:, 9:10])
+    result_df.insert(0, 'Level', df.iloc[3:, 5:6])
     result_df.insert(0, 'NeedPoint', df.iloc[3:, 4:5])
     result_df.reset_index(drop=True, inplace=True)
 
-    pay_1_reward.insert(0, 'Level', df.iloc[3:, 9:10])
-    pay_2_reward.insert(0, 'Level', df.iloc[3:, 9:10])
+    pay_1_reward.insert(0, 'Level', df.iloc[3:, 5:6])
+    pay_2_reward.insert(0, 'Level', df.iloc[3:, 5:6])
 
     # 合并不同等级段付费转盘
     pay_reward = pd.concat([pay_1_reward[pay_1_reward['Level'] < 168],
@@ -271,7 +275,7 @@ def gen_Turntable_xlsx(df, file_name):
     result_df.insert(0, 'ID', result_df.index+1)
     # 第1,2个转盘特殊权重必中
     result_df.loc[(result_df['ID'] == 1), 'FreeWeight'] = '0|0|100|0|0|0|0|0'
-    
+
     result_df.loc[(result_df['ID'] == 2), 'FreeWeight'] = '0|0|0|100|0|0|0|0'
 
     logger.warning(file_name)
@@ -342,6 +346,11 @@ def gen_Shop_xlsx(df, file_name):
     result_df.reset_index(drop=True, inplace=True)
     result_df.insert(0, 'ID', result_df.index+1)
     logger.warning(file_name)
+
+    # 暂时隐藏第1个1.99
+    result_df.loc[(result_df['PurchaseID'] == 1), 'Condition'] = 2
+    result_df.loc[(result_df['PurchaseID'] == 1), 'ConditionValue'] = 999
+
     logger.debug(result_df)
     write_xlxs(result_df, file_name)
 
@@ -367,6 +376,8 @@ def gen_Purchase_xlsx(df, file_name):
     result_df['Price'] = (round(df['内购价格'].astype('float')*100)).astype('int')
     result_df['ProductID'] = 'goods.' + result_df['ID'].astype('str')
     result_df['PurchaseName'] = 'goods.name.' + result_df['ID'].astype('str')
+    result_df['AppleSKU'] = df['AppleSKU']
+    result_df['GoogleSKU'] = df['GoogleSKU']
 
     result_df.reset_index(drop=True, inplace=True)
     logger.warning(file_name)
@@ -409,38 +420,56 @@ def gen_GiftBag_xlsx(gif_bag_level, gif_bag_time, file_name):
     gif_bag_level_free_df['Type'] = 3
     gif_bag_level_free_df['Sort'] = 1
 
+    logging.debug(gif_bag_level_free_df)
     # 付费进度礼包
-    gif_bag_level_pay_data = gif_bag_level.iloc[2:, 15:]
-    gif_bag_level_PurchaseID = 12
+    gif_bag_level_pay_data = gif_bag_level.iloc[2:, -8:]
+    # gif_bag_level_PurchaseID = gif_bag_level_pay_data['礼包价格']
     gif_bag_level_pay_df = pd.DataFrame()
     config_id = get_config_id('GiftBag2')
     gif_bag_level_pay_df = get_reward_df(
-        gif_bag_level_pay_df, gif_bag_level_pay_data.iloc[0:, 0:], config_id)
-    gif_bag_level_pay_df['PurchaseID'] = gif_bag_level_PurchaseID
+        gif_bag_level_pay_df, gif_bag_level_pay_data.iloc[0:, 1:], config_id)
+    gif_bag_level_pay_df['PurchaseID'] = gif_bag_level_pay_data['礼包价格']
+    gif_bag_level_pay_df.loc[(
+        gif_bag_level_pay_df['PurchaseID'] == 1.99), 'PurchaseID'] = 12
+    gif_bag_level_pay_df.loc[(
+        gif_bag_level_pay_df['PurchaseID'] == 2.99), 'PurchaseID'] = 13
+    gif_bag_level_pay_df.loc[(
+        gif_bag_level_pay_df['PurchaseID'] == 4.99), 'PurchaseID'] = 14
+
     gif_bag_level_pay_df['Condition1'] = 1
     gif_bag_level_pay_df['ConditionValue1'] = gif_bag_level_free_data['配置关卡']
     gif_bag_level_pay_df['Type'] = 3
     gif_bag_level_pay_df['Sort'] = 2
+
+    logging.debug(gif_bag_level_pay_df)
 
     gif_bag_level_df = pd.concat([gif_bag_level_free_df, gif_bag_level_pay_df])
     gif_bag_level_df['Discount'] = 0
     gif_bag_level_df = gif_bag_level_df.sort_values(
         by=['ConditionValue1', 'Sort'])
 
+    logging.debug(gif_bag_level_df)
+
     # 付费限时礼包
     gif_bag_time_pay_data = gif_bag_time.iloc[2:, 4:]
-    gif_bag_time_PurchaseID = 13
+    # gif_bag_time_PurchaseID = 13
     gif_bag_time_pay_df = pd.DataFrame()
     config_id = get_config_id('GiftBag3')
     gif_bag_time_pay_df = get_reward_df(
-        gif_bag_time_pay_df, gif_bag_time_pay_data.iloc[0:, 0:], config_id)
-    gif_bag_time_pay_df['PurchaseID'] = gif_bag_time_PurchaseID
+        gif_bag_time_pay_df, gif_bag_time_pay_data.iloc[0:, 4:], config_id)
+    gif_bag_time_pay_df['PurchaseID'] = gif_bag_time_pay_data['礼包价格']
+    gif_bag_time_pay_df.loc[(
+        gif_bag_time_pay_df['PurchaseID'] == 3.99), 'PurchaseID'] = 15
+    gif_bag_time_pay_df.loc[(
+        gif_bag_time_pay_df['PurchaseID'] == 9.99), 'PurchaseID'] = 16
+    gif_bag_time_pay_df.loc[(
+        gif_bag_time_pay_df['PurchaseID'] == 13.99), 'PurchaseID'] = 17
+
     gif_bag_time_pay_df['Condition1'] = 1
     gif_bag_time_pay_df['ConditionValue1'] = gif_bag_time['配置关卡']
     gif_bag_time_pay_df['Type'] = 2
     gif_bag_time_pay_df['Sort'] = 1
-    gif_bag_time_pay_df['Discount'] = gif_bag_time['折扣预留'].fillna(
-        0).astype('int')
+    gif_bag_time_pay_df['Discount'] = 0
 
     result_df = pd.concat([gif_bag_level_df, gif_bag_time_pay_df])
     result_df['Frequency'] = 1
@@ -458,8 +487,14 @@ def gen_GiftBag_xlsx(gif_bag_level, gif_bag_time, file_name):
     result_df['NextID'] = 0
     result_df.loc[(result_df['PurchaseID'] == 0) & (
         result_df['Type'] == 3), 'NextID'] = (result_df['ID'] + 2).astype('int')
+
     result_df.loc[(result_df['NextID'] ==
                    result_df['NextID'].max()), 'NextID'] = 0
+
+    # # 前置限时礼包
+    # result_df.loc[(result_df['PurchaseID'] == 16) & (
+    #     result_df['Type'] == 2), 'NextID'] = (result_df['ID'] + 2).astype('int')
+
     # 不同类型礼包分组
     result_df['Group'] = result_df.apply(
         lambda row: math.floor((row.ID-1)/(row.Type-1))+1, axis=1)
@@ -601,7 +636,7 @@ gen_Level_xlsx(get_design_df('LevelCostNew', 'AA:AH', 4),
 gen_Level_xlsx(get_design_df('LevelRewardNew', 'I:R', 4),
                level_reward_desig_filed, level_reward_target_filed, 'LevelRewardNew')
 
-gen_Turntable_xlsx(get_design_df('Turntable', 'I:BP', 4), 'Turntable')
+gen_Turntable_xlsx(get_design_df('Turntable', 'I:BL', 4), 'Turntable')
 
 gen_DailyGift_xlsx(get_design_df('DailyGift', 'F:R', 4), 'DailyGift')
 
@@ -611,10 +646,10 @@ gen_Shop_xlsx(get_design_df('Shop', 'F:U', 4), 'Shop')
 
 gen_ShopFactor_xlsx(get_design_df('ShopFactor', 'AC:AM', 4), 'ShopFactor')
 
-gen_Purchase_xlsx(get_design_df('Purchase', 'C:J', 4), 'Purchase')
+gen_Purchase_xlsx(get_design_df('Purchase', 'C:K', 4), 'Purchase')
 
-gen_GiftBag_xlsx(get_design_df('GiftBag2', 'K:AD', 4),
-                 get_design_df('GiftBag3', 'K:S', 4), 'GiftBag')
+# gen_GiftBag_xlsx(get_design_df('GiftBag2', 'P:AK', 4),
+#                  get_design_df('GiftBag3', 'O:AD', 4), 'GiftBag')
 
 gen_FunctionOpen_xlsx(get_design_df('FunctionOpen', 'F:R', 4), 'FunctionOpen')
 
@@ -622,4 +657,4 @@ gen_DefaultPlayerItem_xlsx(get_design_df(
     'DefaultPlayerItem', 'D:AA', 4), 'DefaultPlayerItem')
 
 gen_LevelRewardFirst_xlsx(get_design_df('TutorialsReward', 'G:R', 4), get_design_df(
-    'LevelRewardFirst', 'D:AA', 4), 'LevelRewardFirst')
+    'LevelRewardFirst', 'D:T', 4), 'LevelRewardFirst')
