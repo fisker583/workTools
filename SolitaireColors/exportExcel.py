@@ -625,7 +625,7 @@ level_reward_target_filed = [
 
 config_df = get_design_df('ItemReward', 'B:C', 4)
 
-gen_ItemReward_xlsx(get_design_df('ItemReward', 'B:AA', 4), 'ItemReward')
+# gen_ItemReward_xlsx(get_design_df('ItemReward', 'B:AA', 4), 'ItemReward')
 gen_ItemNew_xlsx(get_design_df('ItemNew', 'C:E', 4), 'ItemNew')
 gen_Offline_xlsx(get_design_df('Offline', 'P:R', 4), 'Offline')
 gen_OfflineAD_xlsx(get_design_df('OfflineAD', 'V:W', 4), 'OfflineAD')
