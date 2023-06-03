@@ -59,76 +59,15 @@ def get_table_colum(df_table,df_table_cells,df_table_cashier):
     df_table_cells['internetBankAt'] = pd.to_datetime(df_table_cashier['internetBankAt'], unit='ms')
     return df_table_cells
 
-# sourcery skip: avoid-builtin-shadow
-logger = my_logger()
-logger.setLevel(logging.WARNING)
-
-
-df_receipt = pd.read_excel('./hans/OcrmReceiptEntity.xlsx')
-df_receipt_table = pd.read_excel('./hans/OcrmReceiptTableEntity.xlsx')
-df_cashier = pd.read_excel('./hans/OcrmCashierRecEntity.xlsx')
-df_cashier_receipt = df_cashier[(df_cashier['receiptType'] !=3 )]
-df_cashier_expense = df_cashier[(df_cashier['receiptType'] ==3 )]
-df_expense = pd.read_excel('./hans/OcrmExpenseEntity.xlsx')
-df_expense_table = pd.read_excel('./hans/OcrmExpenseTableEntity.xlsx')
-df_bank = pd.read_excel('./hans/OcrmCustomEntity.xlsx')
-
-#R/P
-list_receipt_table_cells = df_receipt_table['cells'].to_list()
-df_receipt_table_cells = get_cells_df(df_receipt,list_receipt_table_cells)
-
-receipt_float_colums = ['orgGathered.$numberInt', 'orgPay.$numberInt', 'usdGathered.$numberInt','usdPay.$numberInt', 'orgPay', 'usdPay', 'orgGathered', 'usdGathered']
-receipt_int_colums = ['isDiscard', 'receiptObjId','receiptType', 'isDiscard.$numberInt', 'receipt_id']
-
-df_receipt_table_cells[receipt_float_colums] = df_receipt_table_cells[receipt_float_colums].astype(float)
-df_receipt_table_cells[receipt_int_colums] = df_receipt_table_cells[receipt_int_colums].astype(int)
-
-df_receipt_table_cells['orgGathered_test'] = df_receipt_table_cells['orgGathered.$numberInt'] + df_receipt_table_cells['orgGathered']
-df_receipt_table_cells['usdGathered_test'] = df_receipt_table_cells['usdGathered.$numberInt'] + df_receipt_table_cells['usdGathered']
-df_receipt_table_cells['orgPay_test'] = df_receipt_table_cells['orgPay.$numberInt'] + df_receipt_table_cells['orgPay']
-df_receipt_table_cells['usdPay_test'] = df_receipt_table_cells['usdPay.$numberInt'] + df_receipt_table_cells['usdPay']
-df_receipt_table_cells['isDiscard_test'] = df_receipt_table_cells['isDiscard.$numberInt'] + df_receipt_table_cells['isDiscard']
-
-df_receipt_table_cells.drop(df_receipt_table_cells[receipt_float_colums],axis=1, inplace=True)
-df_receipt_table_cells.drop(df_receipt_table_cells[['isDiscard','isDiscard.$numberInt']],axis=1, inplace=True)
-
-df_receipt_table_cells = get_table_colum(df_receipt,df_receipt_table_cells,df_cashier_receipt)
-
-logging.debug(df_receipt_table_cells)
-df_receipt_table_cells.to_excel('./hans/df_receipt_table_cells.xlsx',index=False)
-
-#E
-list_expense_table_cells = df_expense_table['cells'].to_list()
-df_expense_table_cells = get_cells_df(df_expense_table,list_expense_table_cells)
-
-expense_float_colums = ['payAmount.$numberInt', 'payAmount']
-df_expense_table_cells[expense_float_colums] = df_expense_table_cells[expense_float_colums].astype(float)
-df_expense_table_cells['payAmount_test'] = df_expense_table_cells['payAmount.$numberInt'] + df_expense_table_cells['payAmount']
-
-df_expense_table_cells.drop(df_expense_table_cells[expense_float_colums],axis=1, inplace=True)
-df_expense_table_cells = get_table_colum(df_expense,df_expense_table_cells,df_cashier_expense)
-
-logging.debug(df_expense_table_cells)
-df_expense_table_cells.to_excel('./hans/df_expense_table_cells.xlsx',index=False)
-
-#C
-df_cashier['createAt'] = pd.to_datetime(df_cashier['createAt'], unit='ms')
-df_cashier['internetBankAt'] = pd.to_datetime(df_cashier['internetBankAt'], unit='ms')
-df_cashier.drop(df_cashier[['attachFiles','remarks','updateAt']],axis=1, inplace=True)
-
-logging.debug(df_cashier)
-df_cashier.to_excel('./hans/df_cashier.xlsx',index=False)
-
-
-def  get_df_bank_detail(bank_name,bank_currencyName,bank_iniAmount):
+def get_df_bank_detail(bank_name,bank_currencyName,bank_iniAmount):
     df_bank_detail = pd.DataFrame()
     df_bank_detail = pd.concat([df_bank_detail, df_receipt_table_cells[(df_receipt_table_cells['bankAcc'] == bank_name ) & (df_receipt_table_cells['isPay'] == True )]])
     df_bank_detail = pd.concat([df_bank_detail, df_expense_table_cells[(df_expense_table_cells['bankAcc'] == bank_name ) & (df_expense_table_cells['isPay'] == True )]])
 
     df_cashier_serviceCharge = df_cashier[(df_cashier['bankAcc'] == bank_name ) & (df_cashier['serviceCharge'] != 0 )].copy()
     df_cashier_serviceCharge.rename(columns={'receiptObjId': 'receiptId','serviceCharge': 'payAmount'}, inplace=True)
-    df_cashier_serviceCharge['fundCategory'] = 'serviceCharge'
-    df_cashier_serviceCharge['content'] = 'serviceCharge'
+    df_cashier_serviceCharge['fundCategory'] = '手续费'
+    df_cashier_serviceCharge['content'] = '手续费'
 
     df_bank_detail = pd.concat([df_bank_detail, df_cashier_serviceCharge])
 
@@ -139,6 +78,8 @@ def  get_df_bank_detail(bank_name,bank_currencyName,bank_iniAmount):
     df_bank_ini['bankAcc'] = bank_name
     df_bank_ini['currencyName'] = bank_currencyName
     df_bank_ini['receiveAmount'] = bank_iniAmount
+    df_bank_ini['fundCategory'] = '初始余额'
+    df_bank_ini['content'] = '初始余额'
     df_bank_ini['internetBankAt'] = pd.to_datetime(0, unit='ms')
 
     df_bank_detail = pd.concat([df_bank_ini, df_bank_detail])
@@ -161,21 +102,160 @@ def  get_df_bank_detail(bank_name,bank_currencyName,bank_iniAmount):
     df_bank_detail = df_bank_detail[bank_detail_columns]
     return (df_bank_detail)
 
-#B
-df_bank_detail_taget_receipt_rename = {
-    'receipt_id': 'receiptId',
-    'usdGathered_test': 'receiveAmount',
-    'usdPay_test': 'payAmount'
+def get_df_excel_rename(df,name_dict):
+    df_excel = df.copy()
+    if 'receiptType' in df_excel.columns:
+        df_excel['receiptType'] = df_excel['receiptType'].map(receipt_type_dict)
+    if 'verifyStatus' in df_excel.columns:
+        df_excel['verifyStatus'] = df_excel['verifyStatus'].map(receipt_status_dict)
+    df_excel.rename(columns=name_dict, inplace=True)
+    return (df_excel)
+# sourcery skip: avoid-builtin-shadow
+logger = my_logger()
+logger.setLevel(logging.WARNING)
+receipt_table_excel_name_dict = {
+    'fundCategory': '资金类别',
+    'content': '备注内容',
+    'receipt_id': '单据单号',
+    'receiptType': '单据类型',
+    'orgGathered_test': '收款金额',
+    'usdGathered_test': '借方金额',
+    'orgPay_test': '付款金额',
+    'usdPay_test': '贷方金额',
+    'isDiscard_test': '是否废弃',
+    'applyAt': '单据时间',
+    'currencyName': '单据币种',
+    'verifyStatus': '审核步骤',
+    'isPay': '是否已付款',
+    'isSelfClose': '是否自己已关闭',
+    'bankAcc': '是否自己已关闭',
+    'internetBankAt': '银行日期'
+}
+expense_table_excel_name_dict = {
+    'fundCategory': '资金类别',
+    'content': '备注内容',
+    'receipt_id': '单据单号',
+    'payAmount_test': '贷方金额',
+    'applyAt': '单据时间',
+    'currencyName': '单据币种',
+    'receiptType': '单据类型',
+    'verifyStatus': '审核步骤',
+    'isPay': '是否已付款',
+    'isSelfClose': '是否自己已关闭',
+    'bankAcc': '银行账号',
+    'internetBankAt': '银行日期'
+}
+cashier_excel_name_dict = {
+    '_id': '序号',
+    'bankAcc': '银行账号',
+    'createAt': '创建时间',
+    'currencyName': '银行币种',
+    'gatheredTotal': '出纳金额',
+    'internetBankAt': '银行日期',
+    'receiptObjId': '单据单号',
+    'receiptType': '单据类型',
+    'serviceCharge': '手续费金额'
+}
+bank_detail_excel_name_dict = {
+    'bankAcc': '银行账号',
+    'currencyName': '资金币种',
+    'receiptId': '单据单号',
+    'receiptType': '单据类型',
+    'fundCategory': '资金类别',
+    'content': '备注内容',
+    'internetBankAt': '银行日期',
+    'receiveAmount': '借方金额',
+    'payAmount': '贷方金额',
+    'overAmount': '当前余额'
+}
+receipt_type_dict = {
+    0: '无',
+    1: '收款单',
+    2: '付款单',
+    3: '报销单'
+}
+receipt_status_dict = {
+    0: '无',
+    1: '未送审',
+    2: '部门复核中',
+    3: '业务经理审核中',
+    4: '公司批复中',
+    5: '财务经理审核中',
+    6: '出纳审核中',
+    7: '总经理审核中',
+    8: '出纳完成中',
+    9: '已关闭',
+    10: '驳回中'
 }
 
-df_bank_detail_taget_expense_rename = {
-    'receipt_id': 'receiptId',
-    'payAmount_test': 'payAmount'
-}
-df_receipt_table_cells.rename(columns=df_bank_detail_taget_receipt_rename, inplace=True)
-df_expense_table_cells.rename(columns=df_bank_detail_taget_expense_rename, inplace=True)
+df_receipt = pd.read_excel('./hans/OcrmReceiptEntity.xlsx')
+df_receipt_table = pd.read_excel('./hans/OcrmReceiptTableEntity.xlsx')
+df_cashier = pd.read_excel('./hans/OcrmCashierRecEntity.xlsx')
+df_cashier_receipt = df_cashier[(df_cashier['receiptType'] !=3 )]
+df_cashier_expense = df_cashier[(df_cashier['receiptType'] ==3 )]
+df_expense = pd.read_excel('./hans/OcrmExpenseEntity.xlsx')
+df_expense_table = pd.read_excel('./hans/OcrmExpenseTableEntity.xlsx')
+df_custom = pd.read_excel('./hans/OcrmCustomEntity.xlsx')
+df_bank = df_custom[(df_custom['type'] ==5 )]
+
+#R/P
+list_receipt_table_cells = df_receipt_table['cells'].to_list()
+df_receipt_table_cells = get_cells_df(df_receipt,list_receipt_table_cells)
+
+receipt_float_colums = ['orgGathered.$numberInt', 'orgPay.$numberInt', 'usdGathered.$numberInt','usdPay.$numberInt', 'orgPay', 'usdPay', 'orgGathered', 'usdGathered']
+receipt_int_colums = ['isDiscard', 'receiptObjId','receiptType', 'isDiscard.$numberInt', 'receipt_id']
+
+df_receipt_table_cells[receipt_float_colums] = df_receipt_table_cells[receipt_float_colums].astype(float)
+df_receipt_table_cells[receipt_int_colums] = df_receipt_table_cells[receipt_int_colums].astype(int)
+
+df_receipt_table_cells['orgGathered_test'] = df_receipt_table_cells['orgGathered.$numberInt'] + df_receipt_table_cells['orgGathered']
+df_receipt_table_cells['usdGathered_test'] = df_receipt_table_cells['usdGathered.$numberInt'] + df_receipt_table_cells['usdGathered']
+df_receipt_table_cells['orgPay_test'] = df_receipt_table_cells['orgPay.$numberInt'] + df_receipt_table_cells['orgPay']
+df_receipt_table_cells['usdPay_test'] = df_receipt_table_cells['usdPay.$numberInt'] + df_receipt_table_cells['usdPay']
+df_receipt_table_cells['isDiscard_test'] = df_receipt_table_cells['isDiscard.$numberInt'] + df_receipt_table_cells['isDiscard']
+
+df_receipt_table_cells.drop(df_receipt_table_cells[receipt_float_colums],axis=1, inplace=True)
+df_receipt_table_cells.drop(df_receipt_table_cells[['isDiscard','isDiscard.$numberInt']],axis=1, inplace=True)
+
+df_receipt_table_cells = get_table_colum(df_receipt,df_receipt_table_cells,df_cashier_receipt)
+df_receipt_table_cells.drop(df_receipt_table_cells[['receiptObjId']],axis=1, inplace=True)
+logging.debug(df_receipt_table_cells)
+
+df_receipt_table_cells_excel = get_df_excel_rename(df_receipt_table_cells,receipt_table_excel_name_dict)
+df_receipt_table_cells_excel.to_excel('./hans/df_receipt_table_cells.xlsx',index=False)
+
+#E
+list_expense_table_cells = df_expense_table['cells'].to_list()
+df_expense_table_cells = get_cells_df(df_expense_table,list_expense_table_cells)
+
+expense_float_colums = ['payAmount.$numberInt', 'payAmount']
+df_expense_table_cells[expense_float_colums] = df_expense_table_cells[expense_float_colums].astype(float)
+df_expense_table_cells['payAmount_test'] = df_expense_table_cells['payAmount.$numberInt'] + df_expense_table_cells['payAmount']
+
+df_expense_table_cells.drop(df_expense_table_cells[expense_float_colums],axis=1, inplace=True)
+df_expense_table_cells = get_table_colum(df_expense,df_expense_table_cells,df_cashier_expense)
+
+logging.debug(df_expense_table_cells)
+
+df_expense_table_cells_excel = get_df_excel_rename(df_expense_table_cells,expense_table_excel_name_dict)
+df_expense_table_cells_excel.to_excel('./hans/df_expense_table_cells.xlsx',index=False)
+
+#C
+df_cashier['createAt'] = pd.to_datetime(df_cashier['createAt'], unit='ms')
+df_cashier['internetBankAt'] = pd.to_datetime(df_cashier['internetBankAt'], unit='ms')
+df_cashier.drop(df_cashier[['attachFiles','remarks','updateAt']],axis=1, inplace=True)
+
+logging.debug(df_cashier)
+
+df_cashier_excel = get_df_excel_rename(df_cashier,cashier_excel_name_dict)
+df_cashier_excel.to_excel('./hans/df_cashier.xlsx',index=False)
+
+#B
+df_receipt_table_cells.rename(columns={'receipt_id': 'receiptId','usdGathered_test': 'receiveAmount','usdPay_test': 'payAmount'}, inplace=True)
+df_expense_table_cells.rename(columns={'receipt_id': 'receiptId','payAmount_test': 'payAmount'}, inplace=True)
 df_receipt_table_cells.reset_index(drop=True, inplace=True)
 df_expense_table_cells.reset_index(drop=True, inplace=True)
+
 df_bank['total'] = df_bank['total'].astype(float)
 
 file_name = './hans/df_bank_detail.xlsx'
@@ -191,18 +271,7 @@ for bank in bank_list:
     df_bank_detail = get_df_bank_detail(bank_name,bank_currencyName,bank_iniAmount)
 
     logging.warning(df_bank_detail)
-    df_bank_detail_excel_name = {
-        'bankAcc',
-        'currencyName',
-        'receiptId',
-        'receiptType',
-        'fundCategory',
-        'content',
-        'internetBankAt',
-        'receiveAmount',
-        'payAmount',
-        'overAmount',
-    }
+    df_bank_detail_excel = get_df_excel_rename(df_bank_detail,bank_detail_excel_name_dict)
     with pd.ExcelWriter(file_name, mode='a',engine='openpyxl') as writer:
         sheet_name = bank.replace("/", '_')
-        df_bank_detail.to_excel(writer, sheet_name=sheet_name[:30], index=False)
+        df_bank_detail_excel.to_excel(writer, sheet_name=sheet_name[:30], index=False)
