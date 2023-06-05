@@ -46,13 +46,15 @@ def get_table_colum(df_table,df_table_cells,df_table_cashier):
     df_table.set_index('_id', drop=False, inplace=True)
     df_table_cells['applyAt'] = pd.to_datetime(df_table['applyAt'], unit='ms')
         
-
     df_table_cells['currencyName'] = df_table['currencyName']
     df_table_cells['receiptType'] = df_table['receiptType']
     df_table_cells['verifyStatus'] = df_table['verifyStatus']
     df_table_cells['isPay'] = df_table['isPay']
     df_table_cells['isSelfClose'] = df_table['isSelfClose']
-
+    if 'receiptRate' not in df_table.columns:
+        df_table_cells['receiptRate'] = 1
+    else:
+        df_table_cells['receiptRate'] = df_table['receiptRate']
     df_table_cashier.set_index('receiptObjId', drop=False, inplace=True)
     df_table_cashier.rename_axis('receipt_id',inplace=True)
     df_table_cells['bankAcc'] = df_table_cashier['bankAcc']
@@ -98,6 +100,7 @@ def get_df_bank_detail(bank_name,bank_currencyName,bank_iniAmount):
         'receiveAmount',
         'payAmount',
         'overAmount',
+        'receiptRate'
     ]
     df_bank_detail = df_bank_detail[bank_detail_columns]
     return (df_bank_detail)
@@ -129,7 +132,9 @@ receipt_table_excel_name_dict = {
     'isPay': '是否已付款',
     'isSelfClose': '是否自己已关闭',
     'bankAcc': '是否自己已关闭',
-    'internetBankAt': '银行日期'
+    'internetBankAt': '银行日期',
+    'receiptRate':'单据汇率'
+
 }
 expense_table_excel_name_dict = {
     'fundCategory': '资金类别',
@@ -143,7 +148,8 @@ expense_table_excel_name_dict = {
     'isPay': '是否已付款',
     'isSelfClose': '是否自己已关闭',
     'bankAcc': '银行账号',
-    'internetBankAt': '银行日期'
+    'internetBankAt': '银行日期',
+    'receiptRate':'单据汇率'
 }
 cashier_excel_name_dict = {
     '_id': '序号',
@@ -166,7 +172,9 @@ bank_detail_excel_name_dict = {
     'internetBankAt': '银行日期',
     'receiveAmount': '借方金额',
     'payAmount': '贷方金额',
-    'overAmount': '当前余额'
+    'overAmount': '当前余额',
+    'receiptRate':'单据汇率'
+
 }
 receipt_type_dict = {
     0: '无',
@@ -201,6 +209,7 @@ df_bank = df_custom[(df_custom['type'] ==5 )]
 #R/P
 list_receipt_table_cells = df_receipt_table['cells'].to_list()
 df_receipt_table_cells = get_cells_df(df_receipt,list_receipt_table_cells)
+df_receipt_table_cells = get_table_colum(df_receipt,df_receipt_table_cells,df_cashier_receipt)
 
 receipt_float_colums = ['orgGathered.$numberInt', 'orgPay.$numberInt', 'usdGathered.$numberInt','usdPay.$numberInt', 'orgPay', 'usdPay', 'orgGathered', 'usdGathered']
 receipt_int_colums = ['isDiscard', 'receiptObjId','receiptType', 'isDiscard.$numberInt', 'receipt_id']
@@ -209,15 +218,14 @@ df_receipt_table_cells[receipt_float_colums] = df_receipt_table_cells[receipt_fl
 df_receipt_table_cells[receipt_int_colums] = df_receipt_table_cells[receipt_int_colums].astype(int)
 
 df_receipt_table_cells['orgGathered_test'] = df_receipt_table_cells['orgGathered.$numberInt'] + df_receipt_table_cells['orgGathered']
-df_receipt_table_cells['usdGathered_test'] = df_receipt_table_cells['usdGathered.$numberInt'] + df_receipt_table_cells['usdGathered']
+df_receipt_table_cells['usdGathered_test'] = (df_receipt_table_cells['orgGathered.$numberInt'] + df_receipt_table_cells['orgGathered']) * df_receipt_table_cells['receiptRate']
 df_receipt_table_cells['orgPay_test'] = df_receipt_table_cells['orgPay.$numberInt'] + df_receipt_table_cells['orgPay']
-df_receipt_table_cells['usdPay_test'] = df_receipt_table_cells['usdPay.$numberInt'] + df_receipt_table_cells['usdPay']
+df_receipt_table_cells['usdPay_test'] = (df_receipt_table_cells['orgPay.$numberInt'] + df_receipt_table_cells['orgPay'])* df_receipt_table_cells['receiptRate']
 df_receipt_table_cells['isDiscard_test'] = df_receipt_table_cells['isDiscard.$numberInt'] + df_receipt_table_cells['isDiscard']
 
 df_receipt_table_cells.drop(df_receipt_table_cells[receipt_float_colums],axis=1, inplace=True)
 df_receipt_table_cells.drop(df_receipt_table_cells[['isDiscard','isDiscard.$numberInt']],axis=1, inplace=True)
 
-df_receipt_table_cells = get_table_colum(df_receipt,df_receipt_table_cells,df_cashier_receipt)
 df_receipt_table_cells.drop(df_receipt_table_cells[['receiptObjId']],axis=1, inplace=True)
 logging.debug(df_receipt_table_cells)
 
@@ -227,13 +235,13 @@ df_receipt_table_cells_excel.to_excel('./hans/df_receipt_table_cells.xlsx',index
 #E
 list_expense_table_cells = df_expense_table['cells'].to_list()
 df_expense_table_cells = get_cells_df(df_expense_table,list_expense_table_cells)
+df_expense_table_cells = get_table_colum(df_expense,df_expense_table_cells,df_cashier_expense)
 
 expense_float_colums = ['payAmount.$numberInt', 'payAmount']
 df_expense_table_cells[expense_float_colums] = df_expense_table_cells[expense_float_colums].astype(float)
 df_expense_table_cells['payAmount_test'] = df_expense_table_cells['payAmount.$numberInt'] + df_expense_table_cells['payAmount']
 
 df_expense_table_cells.drop(df_expense_table_cells[expense_float_colums],axis=1, inplace=True)
-df_expense_table_cells = get_table_colum(df_expense,df_expense_table_cells,df_cashier_expense)
 
 logging.debug(df_expense_table_cells)
 
