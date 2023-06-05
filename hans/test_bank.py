@@ -54,7 +54,7 @@ def get_table_colum(df_table,df_table_cells,df_table_cashier):
     if 'receiptRate' not in df_table.columns:
         df_table_cells['receiptRate'] = 1
     else:
-        df_table_cells['receiptRate'] = df_table['receiptRate']
+        df_table_cells['receiptRate'] = df_table['receiptRate'].astype(float)
     df_table_cashier.set_index('receiptObjId', drop=False, inplace=True)
     df_table_cashier.rename_axis('receipt_id',inplace=True)
     df_table_cells['bankAcc'] = df_table_cashier['bankAcc']
@@ -100,7 +100,11 @@ def get_df_bank_detail(bank_name,bank_currencyName,bank_iniAmount):
         'receiveAmount',
         'payAmount',
         'overAmount',
-        'receiptRate'
+        'receiptRate',
+        'isPay',
+        'verifyStatus',
+        'isDiscard_test'
+        
     ]
     df_bank_detail = df_bank_detail[bank_detail_columns]
     return (df_bank_detail)
@@ -131,7 +135,7 @@ receipt_table_excel_name_dict = {
     'verifyStatus': '审核步骤',
     'isPay': '是否已付款',
     'isSelfClose': '是否自己已关闭',
-    'bankAcc': '是否自己已关闭',
+    'bankAcc': '银行账号',
     'internetBankAt': '银行日期',
     'receiptRate':'单据汇率'
 
@@ -173,7 +177,10 @@ bank_detail_excel_name_dict = {
     'receiveAmount': '借方金额',
     'payAmount': '贷方金额',
     'overAmount': '当前余额',
-    'receiptRate':'单据汇率'
+    'receiptRate':'单据汇率',
+    'isPay':'单据是否已付款',
+    'verifyStatus':'单据审核状态',
+    'isDiscard_test':'单据是否已废弃'
 
 }
 receipt_type_dict = {
@@ -251,6 +258,7 @@ df_expense_table_cells_excel.to_excel('./hans/df_expense_table_cells.xlsx',index
 #C
 df_cashier['createAt'] = pd.to_datetime(df_cashier['createAt'], unit='ms')
 df_cashier['internetBankAt'] = pd.to_datetime(df_cashier['internetBankAt'], unit='ms')
+
 df_cashier.drop(df_cashier[['attachFiles','remarks','updateAt']],axis=1, inplace=True)
 
 logging.debug(df_cashier)
