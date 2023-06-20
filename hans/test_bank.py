@@ -65,31 +65,29 @@ def get_df_bank_detail(bank_name,bank_currencyName,bank_iniAmount):
     df_bank_detail = pd.DataFrame()
     df_bank_detail = pd.concat([df_bank_detail, df_receipt_table_cells[(df_receipt_table_cells['bankAcc'] == bank_name ) & (df_receipt_table_cells['isPay'] == True )]])
     df_bank_detail = pd.concat([df_bank_detail, df_expense_table_cells[(df_expense_table_cells['bankAcc'] == bank_name ) & (df_expense_table_cells['isPay'] == True )]])
+    df_bank_detail['bank_receiveAmount'] = df_bank_detail.apply(lambda row: row.orgGathered if bank_currencyName == row.currencyName else row.orgGathered / row.receiptRate, axis=1)
+    df_bank_detail['bank_payAmount'] = df_bank_detail.apply(lambda row: row.orgPay if bank_currencyName == row.currencyName else row.orgPay / row.receiptRate, axis=1)
 
     df_cashier_serviceCharge = df_cashier[(df_cashier['bankAcc'] == bank_name ) & (df_cashier['serviceCharge'] != 0 )].copy()
-    df_cashier_serviceCharge.rename(columns={'receiptObjId': 'receiptId','serviceCharge': 'payAmount'}, inplace=True)
+    df_cashier_serviceCharge.rename(columns={'receiptObjId': 'receiptId','serviceCharge': 'bank_payAmount'}, inplace=True)
     df_cashier_serviceCharge['fundCategory'] = '手续费'
     df_cashier_serviceCharge['content'] = '手续费'
     df_cashier_serviceCharge['receiptRate'] = 1.0
-
     df_bank_detail = pd.concat([df_bank_detail, df_cashier_serviceCharge])
-
     df_bank_detail.sort_values(by=['internetBankAt', 'receiptId','receiptType'],inplace=True)
     df_bank_detail.fillna(0,inplace=True)
 
     df_bank_ini = pd.DataFrame([[0] * len(df_bank_detail.columns)], columns=df_bank_detail.columns)
     df_bank_ini['bankAcc'] = bank_name
     df_bank_ini['bankCurrencyName'] = bank_currencyName
-    df_bank_ini['receiveAmount'] = bank_iniAmount
+    df_bank_ini['bank_receiveAmount'] = bank_iniAmount
     df_bank_ini['fundCategory'] = '初始余额'
     df_bank_ini['content'] = '初始余额'
     df_bank_ini['receiptRate'] = 1.0
     df_bank_ini['internetBankAt'] = pd.to_datetime(0, unit='ms')
-
     df_bank_detail = pd.concat([df_bank_ini, df_bank_detail])
     df_bank_detail.reset_index(drop=True, inplace=True)
-    df_bank_detail['bank_receiveAmount'] = df_bank_detail.apply(lambda row: row.orgGathered if row.bankCurrencyName == row.currencyName else row.orgGathered / row.receiptRate, axis=1)
-    df_bank_detail['bank_payAmount'] = df_bank_detail.apply(lambda row: row.orgPay if row.bankCurrencyName == row.currencyName else row.orgPay / row.receiptRate, axis=1)
+
     df_bank_detail['diffAmount'] = df_bank_detail['bank_receiveAmount'] - df_bank_detail['bank_payAmount']
     df_bank_detail['overAmount'] = df_bank_detail['diffAmount'].cumsum()
     df_bank_detail = df_bank_detail[test_bank_config.bank_detail_columns]
@@ -150,7 +148,7 @@ df_expense_table_cells = get_cells_df(df_expense_table,list_expense_table_cells)
 df_expense_table_cells = get_table_colum(df_expense,df_expense_table_cells,df_cashier_expense)
 
 df_expense_table_cells[['payAmount.$numberInt', 'payAmount']] = df_expense_table_cells[['payAmount.$numberInt', 'payAmount']].astype(float)
-df_expense_table_cells['payAmount'] = df_expense_table_cells['payAmount.$numberInt'] + df_expense_table_cells['payAmount']
+df_expense_table_cells['orgPay'] = df_expense_table_cells['payAmount.$numberInt'] + df_expense_table_cells['payAmount']
 
 df_expense_table_cells.drop(df_expense_table_cells[['payAmount.$numberInt']],axis=1, inplace=True)
 
@@ -170,6 +168,17 @@ logging.debug(df_cashier)
 df_cashier_excel = get_df_excel_rename(df_cashier,test_bank_config.cashier_excel_name_dict)
 df_cashier_excel.to_excel('./hans/df_cashier.xlsx',index=False)
 
+
+# R/P- C
+# df_cashier['indexType'] = df_cashier['receiptType']*1000000 + df_cashier['receiptObjId']
+# df_receipt_table_cells['indexType'] = df_receipt_table_cells['receiptType']*1000000 + df_receipt_table_cells['receipt_id']
+# df_cashier_new = df_cashier.set_index('indexType', drop=False)
+# df_receipt_table_cells_new = df_receipt_table_cells.set_index('indexType', drop=False)
+# df_receipt_table_cells_new = pd.concat([df_receipt_table_cells_new,df_cashier_new],axis=1)
+# logging.warning(df_receipt_table_cells_new)
+# df_receipt_table_cells_new = get_df_excel_rename(df_receipt_table_cells_new,test_bank_config.receipt_table_excel_name_dict)
+# df_receipt_table_cells_new.to_excel('./hans/df_receipt_table_cells_new.xlsx',index=False)
+
 #B
 df_receipt_table_cells.rename(columns={'receipt_id': 'receiptId','usdGathered': 'receiveAmount','usdPay': 'payAmount'}, inplace=True)
 df_expense_table_cells.rename(columns={'receipt_id': 'receiptId','payAmount': 'payAmount'}, inplace=True)
@@ -177,13 +186,27 @@ df_receipt_table_cells.reset_index(drop=True, inplace=True)
 df_expense_table_cells.reset_index(drop=True, inplace=True)
 
 df_bank['total'] = df_bank['total'].astype(float)
-
-file_name = './hans/df_bank_detail.xlsx'
-if os.path.exists(file_name):
-    os.remove(file_name)
-pd.DataFrame().to_excel(file_name)
-
 bank_list = df_bank['name'].to_list()
+
+# file_name = './hans/df_bank_detail.xlsx'
+# if os.path.exists(file_name):
+#     os.remove(file_name)
+# pd.DataFrame().to_excel(file_name)
+# for bank in bank_list:
+#     bank_name = bank
+#     bank_currencyName = df_bank.loc[df_bank['name'] == bank_name, 'currencyName'].values
+#     bank_iniAmount = df_bank.loc[df_bank['name'] == bank_name, 'total'].values
+#     df_bank_detail = get_df_bank_detail(bank_name,bank_currencyName,bank_iniAmount)
+
+#     logging.debug(df_bank_detail)
+#     df_bank_detail_excel = get_df_excel_rename(df_bank_detail,test_bank_config.bank_detail_excel_name_dict)
+#     with pd.ExcelWriter(file_name, mode='a',engine='openpyxl') as writer:
+#         sheet_name = bank.replace("/", '_')
+#         logging.warning(sheet_name)
+#         df_bank_detail_excel.to_excel(writer, sheet_name=sheet_name[:30], index=False)
+
+df_bank_detail_all = pd.DataFrame()
+
 for bank in bank_list:
     bank_name = bank
     bank_currencyName = df_bank.loc[df_bank['name'] == bank_name, 'currencyName'].values
@@ -191,8 +214,21 @@ for bank in bank_list:
     df_bank_detail = get_df_bank_detail(bank_name,bank_currencyName,bank_iniAmount)
 
     logging.debug(df_bank_detail)
-    df_bank_detail_excel = get_df_excel_rename(df_bank_detail,test_bank_config.bank_detail_excel_name_dict)
-    with pd.ExcelWriter(file_name, mode='a',engine='openpyxl') as writer:
-        sheet_name = bank.replace("/", '_')
-        logging.warning(sheet_name)
-        df_bank_detail_excel.to_excel(writer, sheet_name=sheet_name[:30], index=False)
+    df_bank_detail_all = pd.concat([df_bank_detail_all, df_bank_detail])
+
+df_bank_detail_all.sort_values(by=['internetBankAt', 'bankAcc'],inplace=True)
+df_bank_detail_all = get_df_excel_rename(df_bank_detail_all,test_bank_config.bank_detail_excel_name_dict)
+# df_bank_detail_all.to_excel('./hans/df_bank_detail_all.xlsx',index=False)
+
+
+file_name = './hans/hans_all.xlsx'
+if os.path.exists(file_name):
+    os.remove(file_name)
+pd.DataFrame().to_excel(file_name)
+
+with pd.ExcelWriter(file_name, mode='a',engine='openpyxl') as writer:
+
+        df_receipt_table_cells_excel.to_excel(writer, sheet_name='receipt', index=False)
+        df_expense_table_cells_excel.to_excel(writer, sheet_name='expense', index=False)
+        df_cashier_excel.to_excel(writer, sheet_name='cashier', index=False)
+        df_bank_detail_all.to_excel(writer, sheet_name='bank', index=False)
