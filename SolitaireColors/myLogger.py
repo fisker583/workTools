@@ -17,8 +17,8 @@ def my_logger():
     }
 
     formatter = logging.Formatter(
-        format_color['reset']+'%(levelname)s - %(asctime)s - %(name)s \n' + format_color['reset'] \
-        + format_color['red']+'%(message)s' + format_color['red'])
+        format_color['bold_red']+'%(levelname)s - %(asctime)s - %(name)s \n' + format_color['bold_red'] \
+        + format_color['reset']+'%(message)s' + format_color['reset'])
     handler.setFormatter(formatter)
     logger.addHandler(handler)
     return (logger)

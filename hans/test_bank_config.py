@@ -7,7 +7,7 @@ receipt_table_excel_name_dict = {
     'usdGathered': '借方金额',
     'orgPay': '付款金额',
     'usdPay': '贷方金额',
-    'isDiscard': '是否废弃',
+    # 'isDiscard': '是否废弃',
     'applyAt': '单据时间',
     'currencyName': '单据币种',
     'verifyStatus': '审核步骤',
@@ -61,8 +61,8 @@ bank_detail_columns = [
     'overAmount',
     'receiptRate',
     'isPay',
-    'verifyStatus',
-    'isDiscard'
+    'verifyStatus'
+    # 'isDiscard'
 ]
 bank_detail_excel_name_dict = {
     'bankAcc': '银行账号',
@@ -80,8 +80,8 @@ bank_detail_excel_name_dict = {
     'overAmount': '当前余额',
     'receiptRate': '单据汇率',
     'isPay': '单据是否已付款',
-    'verifyStatus': '单据审核状态',
-    'isDiscard': '单据是否已废弃'
+    'verifyStatus': '单据审核状态'
+    # 'isDiscard': '单据是否已废弃'
 
 }
 receipt_type_dict = {

@@ -51,6 +51,13 @@ def get_table_colum(df_table,df_table_cells,df_table_cashier):
     df_table_cells['verifyStatus'] = df_table['verifyStatus']
     df_table_cells['isPay'] = df_table['isPay']
     df_table_cells['isSelfClose'] = df_table['isSelfClose']
+    # if 'isDiscard' not in df_table.columns:
+    #     df_table_cells['isDiscard'] = 0
+    #     df_table_cells['isDiscard.$numberInt'] = 0
+    # else:
+    #     df_table_cells['isDiscard'] = df_table['isDiscard']
+    #     df_table_cells['isDiscard.$numberInt'] = df_table['isDiscard.$numberInt']
+
     if 'receiptRate' not in df_table.columns:
         df_table_cells['receiptRate'] = 1
     else:
@@ -120,7 +127,8 @@ df_receipt_table_cells = get_cells_df(df_receipt,list_receipt_table_cells)
 df_receipt_table_cells = get_table_colum(df_receipt,df_receipt_table_cells,df_cashier_receipt)
 
 receipt_float_colums = ['orgGathered.$numberInt', 'orgPay.$numberInt', 'usdGathered.$numberInt','usdPay.$numberInt', 'orgPay', 'usdPay', 'orgGathered', 'usdGathered']
-receipt_int_colums = ['isDiscard', 'receiptObjId','receiptType', 'isDiscard.$numberInt', 'receipt_id']
+# receipt_int_colums = ['isDiscard', 'receiptObjId','receiptType', 'isDiscard.$numberInt', 'receipt_id']
+receipt_int_colums = ['receiptObjId','receiptType', 'isDiscard.$numberInt', 'receipt_id']
 
 df_receipt_table_cells[receipt_float_colums] = df_receipt_table_cells[receipt_float_colums].astype(float)
 df_receipt_table_cells[receipt_int_colums] = df_receipt_table_cells[receipt_int_colums].astype(int)
@@ -131,10 +139,10 @@ df_receipt_table_cells['usdGathered'] = df_receipt_table_cells['orgGathered'] / 
 df_receipt_table_cells['orgPay'] = df_receipt_table_cells['orgPay.$numberInt'] + df_receipt_table_cells['orgPay']
 df_receipt_table_cells['usdPay'] = df_receipt_table_cells['orgPay'] / df_receipt_table_cells['receiptRate']
 
-df_receipt_table_cells['isDiscard'] = df_receipt_table_cells['isDiscard.$numberInt'] + df_receipt_table_cells['isDiscard']
+# df_receipt_table_cells['isDiscard'] = df_receipt_table_cells['isDiscard.$numberInt'] + df_receipt_table_cells['isDiscard']
 
 df_receipt_table_cells.drop(df_receipt_table_cells[['orgGathered.$numberInt', 'orgPay.$numberInt', 'usdGathered.$numberInt','usdPay.$numberInt']],axis=1, inplace=True)
-df_receipt_table_cells.drop(df_receipt_table_cells[['isDiscard.$numberInt']],axis=1, inplace=True)
+# df_receipt_table_cells.drop(df_receipt_table_cells[['isDiscard.$numberInt']],axis=1, inplace=True)
 
 df_receipt_table_cells.drop(df_receipt_table_cells[['receiptObjId']],axis=1, inplace=True)
 logging.debug(df_receipt_table_cells)
@@ -216,7 +224,7 @@ for bank in bank_list:
     logging.debug(df_bank_detail)
     df_bank_detail_all = pd.concat([df_bank_detail_all, df_bank_detail])
 
-df_bank_detail_all.sort_values(by=['internetBankAt', 'bankAcc'],inplace=True)
+df_bank_detail_all.sort_values(by=[ 'bankAcc','internetBankAt'],inplace=True)
 df_bank_detail_all = get_df_excel_rename(df_bank_detail_all,test_bank_config.bank_detail_excel_name_dict)
 # df_bank_detail_all.to_excel('./hans/df_bank_detail_all.xlsx',index=False)
 

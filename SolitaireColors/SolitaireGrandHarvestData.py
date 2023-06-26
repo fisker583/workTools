@@ -352,24 +352,21 @@ def map_StarLimits(df, data):
     return (df)
 
 
-def map_Levels(config_df, config_Playfield_df, data, config_g):
-    level_id = data['LevelIndex']
-    logger.debug(level_id)
+def map_Levels(config_df, config_Playfield_df, data, config_g, i_map, i_level):
     level_df = pd.json_normalize(data)
-
     level_df['StackNum'] = len(
         data['Stack'])
     level_df['PlayfieldNum'] = len(
         data['Playfield'])
+
+    level_df.insert(0, 'i_level', i_level)
+    level_df.insert(0, 'i_map', i_map)
 
     level_df = map_CodeBreakers(
         level_df, data['CodeBreakers'])
 
     level_df = map_Streaks(
         level_df, data['Streaks'])
-
-    level_Playfield_df = pd.json_normalize(
-        data['Playfield'])
 
     level_df = map_BoneRewards(
         level_df, data['BoneRewards'])
@@ -380,11 +377,16 @@ def map_Levels(config_df, config_Playfield_df, data, config_g):
     level_Playfield_df = pd.json_normalize(
         data['Playfield'])
 
+    level_Playfield_df.insert(0, 'LevelIndex', level_df.loc[0, 'LevelIndex'])
+    level_Playfield_df.insert(0, 'Name', level_df.loc[0, 'Name'])
+    level_Playfield_df.insert(0, 'i_level', i_level)
+    level_Playfield_df.insert(0, 'i_map', i_map)
+
     level_Groups_df = map_Groups(data['Groups'])
     level_Groups_df['LevelIndex'] = level_df.loc[0, 'LevelIndex']
-    level_Playfield_df['LevelIndex'] = level_df.loc[0,
-                                                    'LevelIndex']
-    level_Playfield_df['Name'] = level_df.loc[0, 'Name']
+    level_Groups_df.insert(0, 'i_level', i_level)
+    level_Groups_df.insert(0, 'i_map', i_map)
+    
 
     level_df = level_df.drop(
         columns=[
@@ -407,22 +409,32 @@ def gen_map_xlsx(config_key):
     config_Playfield_df_B = pd.DataFrame()
     config_g_A = pd.DataFrame()
     config_g_B = pd.DataFrame()
-    for v_config in config_key:
+    for i_config, v_config in enumerate(config_key):
         config_data = read_file(v_config)
-        for v_map in config_data['mapLevelData']['CropFields']:
-            for v_level in v_map['Levels']:
+        for i_map, v_map in enumerate(config_data['mapLevelData']['CropFields']):
+            for i_level, v_level in enumerate(v_map['Levels']):
                 plan = v_level['Original']
                 config_df_A, config_Playfield_df_A, config_g_A = map_Levels(
-                    config_df_A, config_Playfield_df_A, plan, config_g_A)
+                    config_df_A, config_Playfield_df_A, plan, config_g_A, i_map, i_level)
+
                 if len(v_level['Alternatives']) > 0:
                     plan = v_level['Alternatives'][0]
                     config_df_B, config_Playfield_df_B, config_g_B = map_Levels(
-                        config_df_B, config_Playfield_df_B, plan, config_g_B)
+                        config_df_B, config_Playfield_df_B, plan, config_g_B, i_map, i_level)
     config_df_A = config_df_A.loc[:,
                                   (config_df_A != config_df_A.iloc[0]).any()]
     config_df_B = config_df_B.loc[:,
                                   (config_df_B != config_df_B.iloc[0]).any()]
     # logger.debug(config_df)
+    config_Playfield_df_A['CardSuit'] = config_Playfield_df_A['CardSuit'].map(
+        CardSuit)
+    config_Playfield_df_A['CardFace'] = config_Playfield_df_A['CardFace'].map(
+        CardFace)
+
+    config_Playfield_df_B['CardSuit'] = config_Playfield_df_B['CardSuit'].map(
+        CardSuit)
+    config_Playfield_df_B['CardFace'] = config_Playfield_df_B['CardFace'].map(
+        CardFace)
     return (config_df_A, config_Playfield_df_A, config_df_B, config_Playfield_df_B, config_g_A, config_g_B)
 
 
@@ -446,6 +458,27 @@ def gen_Streaks(config_key):
     return (Streaks_A, Streaks_B)
 
 
+def gen_Challenge(config_key):
+    df_A = pd.DataFrame()
+    df_B = pd.DataFrame()
+    for v_config in config_key:
+        config_data = read_file(v_config)
+        for i_map, v_map in enumerate(config_data['mapLevelData']['CropFields']):
+            for i_level, v_level in enumerate(v_map['Levels']):
+                plan = v_level['Original']
+                df_A = map_Challenge(df_A,  plan, i_map, i_level)
+                if len(v_level['Alternatives']) > 0:
+                    plan = v_level['Alternatives'][0]
+                    df_B = map_Challenge(df_B, plan, i_map, i_level)
+    df_A['CardColor'] = df_A['CardColor'].map(CardColor)
+    df_A['CardSuit'] = df_A['CardSuit'].map(CardSuit)
+    df_A['CardFace'] = df_A['CardFace'].map(CardFace)
+    df_B['CardColor'] = df_B['CardColor'].map(CardColor)
+    df_B['CardSuit'] = df_B['CardSuit'].map(CardSuit)
+    df_B['CardFace'] = df_B['CardFace'].map(CardFace)
+    return (df_A, df_B)
+
+
 def map_Streaks_BoneRewards(config_df, data):
     level_df = pd.DataFrame()
     if len(data['BoneRewards']) > 0:
@@ -456,6 +489,20 @@ def map_Streaks_BoneRewards(config_df, data):
     level_df.insert(0, 'Level', int(data['LevelIndex']))
     level_df.insert(0, 'Task_index', level_df.index+1)
     level_df['RestoredBoneRewards'] = pd.DataFrame(data['RestoredBoneRewards'])
+    logger.warning(int(data['LevelIndex']))
+    config_df = pd.concat(
+        [config_df, level_df])
+    return (config_df)
+
+
+def map_Challenge(config_df, data, i_map, i_level):
+    level_df = pd.DataFrame()
+    if len(data['Challenge']['CardValues']) > 0:
+        level_df = pd.json_normalize(data['Challenge']['CardValues'])
+    level_df.insert(0, 'Name', data['Name'])
+    level_df.insert(0, 'Level', int(data['LevelIndex']))
+    level_df.insert(0, 'i_level', i_level)
+    level_df.insert(0, 'i_map', i_map)
     logger.warning(int(data['LevelIndex']))
     config_df = pd.concat(
         [config_df, level_df])
@@ -492,13 +539,21 @@ configs = {
     'my_farm_loot_config': '宝石掉落'
 }
 map_config = [
-    'MapConfig_1',
+    'GladeConfig_1',
     'MapConfig_2',
     'MapConfig_3',
     'MapConfig_4'
 ]
+glade_config = [
+    'GladeConfig_1',
+    'GladeConfig_2',
+    'GladeConfig_3',
+    'GladeConfig_4'
+]
 
 map_columns_names = {
+    'i_map':'地图索引',
+    'i_level':'地图关卡索引',
     'LevelIndex': '关卡',
     'Name': '关卡名称',
     'StackNum': '手牌数量',
@@ -540,6 +595,36 @@ map_columns_names = {
     'UnfoldCenter.y': 'UnfoldCenter.y',
     'UUID': 'UUID'
 
+}
+
+CardColor = {
+    -1: '无',
+    0: '黑',
+    1: '红',
+    2: '任意'
+}
+CardSuit = {
+    -1: '任意',
+    0: '梅花',
+    1: '方片',
+    2: '红桃',
+    3: '黑桃'
+}
+CardFace = {
+    -1: '任意',
+    1: '2',
+    2: '3',
+    3: '4',
+    4: '5',
+    5: '6',
+    6: '7',
+    7: '8',
+    8: '9',
+    9: '10',
+    10: 'J',
+    11: 'Q',
+    12: 'K',
+    0: 'A'
 }
 
 logger = my_logger()
@@ -622,10 +707,30 @@ logger.setLevel(logging.WARNING)
 #     my_farm_loot_df.to_excel(
 #         writer, sheet_name='宝石掉落', index=False)
 
-with pd.ExcelWriter('./Excel/'+'HarvestMap'+str(time.strftime("%Y-%m-%d %H_%M_%S", time.localtime()))+'.xlsx') as writer:
+# with pd.ExcelWriter('./Excel/'+'HarvestMap'+str(time.strftime("%Y-%m-%d %H_%M_%S", time.localtime()))+'.xlsx') as writer:
+
+#     map_df_A, map_playfield_df_A, map_df_B, map_playfield_df_B, config_g_A, config_g_B = gen_map_xlsx(
+#         map_config[:3]
+#     )
+#     map_df_A = map_df_rename(map_df_A)
+#     map_df_B = map_df_rename(map_df_B)
+
+#     map_df_A.to_excel(writer, sheet_name='关卡概要_A', index=False)
+#     map_playfield_df_A.to_excel(writer, sheet_name='关卡场牌_A', index=False)
+#     config_g_A.to_excel(writer, sheet_name='关卡牌组_A', index=False)
+
+#     map_df_B.to_excel(writer, sheet_name='关卡概要_B', index=False)
+#     map_playfield_df_B.to_excel(writer, sheet_name='关卡场牌_B', index=False)
+#     config_g_B.to_excel(writer, sheet_name='关卡牌组_B', index=False)
+
+#     Streaks_A, Streaks_B = gen_Streaks(map_config[:3])
+#     Streaks_A.to_excel(writer, sheet_name='骨头关卡奖励_A', index=False)
+#     Streaks_B.to_excel(writer, sheet_name='骨头关卡奖励_B', index=False)
+
+with pd.ExcelWriter('./Excel/'+'HarvestGlade'+str(time.strftime("%Y-%m-%d %H_%M_%S", time.localtime()))+'.xlsx') as writer:
 
     map_df_A, map_playfield_df_A, map_df_B, map_playfield_df_B, config_g_A, config_g_B = gen_map_xlsx(
-        map_config[:3]
+        glade_config[:]
     )
     map_df_A = map_df_rename(map_df_A)
     map_df_B = map_df_rename(map_df_B)
@@ -638,6 +743,6 @@ with pd.ExcelWriter('./Excel/'+'HarvestMap'+str(time.strftime("%Y-%m-%d %H_%M_%S
     map_playfield_df_B.to_excel(writer, sheet_name='关卡场牌_B', index=False)
     config_g_B.to_excel(writer, sheet_name='关卡牌组_B', index=False)
 
-    Streaks_A, Streaks_B = gen_Streaks(map_config[:3])
-    Streaks_A.to_excel(writer, sheet_name='骨头关卡奖励_A', index=False)
-    Streaks_B.to_excel(writer, sheet_name='骨头关卡奖励_B', index=False)
+    Streaks_A, Streaks_B = gen_Challenge(glade_config[:3])
+    Streaks_A.to_excel(writer, sheet_name='挑战目标_A', index=False)
+    Streaks_B.to_excel(writer, sheet_name='挑战目标_B', index=False)
