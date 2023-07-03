@@ -15,7 +15,8 @@ receipt_table_excel_name_dict = {
     'isSelfClose': '是否自己已关闭',
     'bankAcc': '银行账号',
     'internetBankAt': '银行日期',
-    'receiptRate': '单据汇率'
+    'receiptRate': '单据汇率',
+    'voyagesName':'航次'
 
 }
 expense_table_excel_name_dict = {

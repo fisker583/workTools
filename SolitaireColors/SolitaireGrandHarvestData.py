@@ -154,7 +154,7 @@ def gen_score_xlsx(config_key):
 def gen_recognition_xlsx(config_key):
     config_data = read_file(config_key)
     config_df = pd.DataFrame()
-    for i_mode, v_mode in enumerate(config_data['queue'][0:2]):
+    for i_mode, v_mode in enumerate(config_data['queue'][:2]):
         mode_df = pd.json_normalize(v_mode['value']['popups'])
         mode_df = mode_df.drop(['triggerType'], axis=1)
         mode_df.rename(columns=lambda x: x.replace(
@@ -250,7 +250,7 @@ def gen_crop_master_xlsx(config_key):
 def gen_farmer_pass_xlsx(config_key):
     config_data = read_file(config_key)
     config_df = pd.DataFrame()
-    for i_mode, v_mode in enumerate(config_data['queue'][0:1]):
+    for v_mode in config_data['queue'][:1]:
         mode_df = pd.json_normalize(v_mode['value']['milestones'])
         # mode_df.rename(columns=lambda x: x + '_' + str(i_mode+1), inplace=True)
         mode_df.reset_index(drop=True, inplace=True)
@@ -265,7 +265,7 @@ def gen_farmer_pass_xlsx(config_key):
 def gen_album_level_xlsx(config_key):
     config_data = read_file(config_key)
     config_df = pd.DataFrame()
-    for i_mode, v_mode in enumerate(config_data['queue'][0:2]):
+    for i_mode, v_mode in enumerate(config_data['queue'][:2]):
         mode_df = pd.json_normalize(v_mode['value']['modes'])
         mode_df.rename(columns=lambda x: x + '_' + str(i_mode+1), inplace=True)
         mode_df.reset_index(drop=True, inplace=True)
@@ -340,8 +340,7 @@ def map_Streaks(df, data):
 
 
 def map_Groups(data):
-    groups_df = pd.json_normalize(data)
-    return (groups_df)
+    return pd.json_normalize(data)
 
 
 def map_StarLimits(df, data):
@@ -409,7 +408,7 @@ def gen_map_xlsx(config_key):
     config_Playfield_df_B = pd.DataFrame()
     config_g_A = pd.DataFrame()
     config_g_B = pd.DataFrame()
-    for i_config, v_config in enumerate(config_key):
+    for v_config in config_key:
         config_data = read_file(v_config)
         for i_map, v_map in enumerate(config_data['mapLevelData']['CropFields']):
             for i_level, v_level in enumerate(v_map['Levels']):

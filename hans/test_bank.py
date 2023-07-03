@@ -62,6 +62,10 @@ def get_table_colum(df_table,df_table_cells,df_table_cashier):
         df_table_cells['receiptRate'] = 1
     else:
         df_table_cells['receiptRate'] = df_table['receiptRate'].astype(float)
+    if 'voyagesName' not in df_table.columns:
+        df_table_cells['voyagesName'] = 1
+    else:
+        df_table_cells['voyagesName'] = df_table['voyagesName'].astype(str)
     df_table_cashier.set_index('receiptObjId', drop=False, inplace=True)
     df_table_cashier.rename_axis('receipt_id',inplace=True)
     df_table_cells['bankAcc'] = df_table_cashier['bankAcc']
@@ -142,7 +146,7 @@ df_receipt_table_cells['usdPay'] = df_receipt_table_cells['orgPay'] / df_receipt
 # df_receipt_table_cells['isDiscard'] = df_receipt_table_cells['isDiscard.$numberInt'] + df_receipt_table_cells['isDiscard']
 
 df_receipt_table_cells.drop(df_receipt_table_cells[['orgGathered.$numberInt', 'orgPay.$numberInt', 'usdGathered.$numberInt','usdPay.$numberInt']],axis=1, inplace=True)
-# df_receipt_table_cells.drop(df_receipt_table_cells[['isDiscard.$numberInt']],axis=1, inplace=True)
+df_receipt_table_cells.drop(df_receipt_table_cells[['isDiscard','isDiscard.$numberInt']],axis=1, inplace=True)
 
 df_receipt_table_cells.drop(df_receipt_table_cells[['receiptObjId']],axis=1, inplace=True)
 logging.debug(df_receipt_table_cells)

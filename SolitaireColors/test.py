@@ -748,24 +748,43 @@ logger = my_logger()
 # df1.iloc[0:2,:]  = df2.iloc[0:2,:]
 # logging.debug(df1)
 
-in_xlsx_file = 'E:/Fisker/Downloads/test.xlsx'
+# in_xlsx_file = 'E:/Fisker/Downloads/test.xlsx'
 
 
-def read_file(file):
-    with open('./Configs/' + file + '.json', 'r') as f:
-        logger.warning(file)
-        return eval(
-            f.read()
-            .replace('null', 'None')
-            .replace('true', 'True')
-            .replace('false', 'False')
-        )
+# def read_file(file):
+#     with open('./Configs/' + file + '.json', 'r') as f:
+#         logger.warning(file)
+#         return eval(
+#             f.read()
+#             .replace('null', 'None')
+#             .replace('true', 'True')
+#             .replace('false', 'False')
+#         )
 
-df = pd.read_excel(in_xlsx_file)
-data2 = eval(df['数据明细'].to_json())
+# df = pd.read_excel(in_xlsx_file)
+# data2 = eval(df['数据明细'].to_json())
 
 
-print(data2)
-data3 = json.loads(data2)
-print(data3)
-# df2 = pd.json_normalize(json.loads(data2))
+# print(data2)
+# data3 = json.loads(data2)
+# print(data3)
+# # df2 = pd.json_normalize(json.loads(data2))
+
+a = [20,
+50,
+90,
+150,
+220,
+330,
+450,
+600,
+780,
+1050
+     ]
+
+b = [i + 1 for i in range(len(a))]
+
+print(a,b)
+c = np.polyfit(b,a,2)
+
+print(c)
