@@ -591,6 +591,76 @@ def gen_LevelRewardFirst_xlsx(fuc_data, level_data, file_name):
     write_xlxs(result_df, file_name)
 
 
+def gen_MissionsRewardDefault_xlsx(df, file_name):
+    result_df = pd.DataFrame()
+
+    result_df['Type'] = df['奖励类型'].astype('int')
+    result_df['RewardLevel'] = df['奖励等级'].astype('int')
+    result_df['NeedExp'] = df['等级进度'].astype('int')
+    result_df['FreeRewardType'] = 0
+    result_df['PayRewardItem'] = 0
+    result_df['PayRewardType'] = 0
+    result_df['PayRewardNum'] = 0
+
+    reward = df.iloc[:, 10:]
+    reward.rename(columns=lambda x: str(x), inplace=True)
+    reward.fillna(0, inplace=True)
+    reward = reward.astype('int').astype('str')
+    reward.replace('0', np.nan, inplace=True)
+
+    config_id = 2
+    result_df = get_reward_df(
+        result_df, reward, config_id)
+    result_df.rename(columns={'RewardNum': 'FreeRewardNum',
+                     'RewardItem': 'FreeRewardItem'}, inplace=True)
+
+    result_df.reset_index(drop=True, inplace=True)
+    result_df.insert(0, 'ID', result_df.index+1)
+
+    logger.warning(file_name)
+    logger.debug(result_df)
+    write_xlxs(result_df, file_name)
+
+
+def gen_MissionsReward_xlsx(df, file_name):
+    result_df = pd.DataFrame()
+
+    result_df['Type'] = df['奖励类型'].astype('int')
+    result_df['RewardLevel'] = df['奖励等级'].astype('int')
+    result_df['NeedExp'] = df['等级进度'].astype('int')
+    result_df['FreeRewardType'] = 0
+    result_df['PayRewardType'] = 0
+
+    reward_free = df.iloc[:, 12:21]
+    reward_free.rename(columns=lambda x: str(x), inplace=True)
+    reward_free.fillna(0, inplace=True)
+    reward_free = reward_free.astype('int').astype('str')
+    reward_free.replace('0', np.nan, inplace=True)
+
+    config_id = 2
+    result_df = get_reward_df(
+        result_df, reward_free, config_id)
+    result_df.rename(columns={'RewardNum': 'FreeRewardNum',
+                     'RewardItem': 'FreeRewardItem'}, inplace=True)
+
+    reward_pay = df.iloc[:, 21:30]
+    reward_pay.rename(columns=lambda x: str(x), inplace=True)
+    reward_pay.fillna(0, inplace=True)
+    reward_pay = reward_pay.astype('int').astype('str')
+    reward_pay.replace('0', np.nan, inplace=True)
+
+    result_df = get_reward_df(
+        result_df, reward_pay, config_id)
+    result_df.rename(columns={'RewardNum': 'PayRewardNum',
+                     'RewardItem': 'PayRewardItem'}, inplace=True)
+    result_df.reset_index(drop=True, inplace=True)
+    result_df.insert(0, 'ID', result_df.index+1)
+
+    logger.warning(file_name)
+    logger.warning(result_df)
+    write_xlxs(result_df, file_name)
+
+
 design_data_sheet = {
     'Offline': '离线奖励',
     'OfflineAD': '离线奖励',
@@ -610,7 +680,9 @@ design_data_sheet = {
     'FunctionOpen': '功能开启',
     'DefaultPlayerItem': '初始资源',
     'TutorialsReward': '功能开启',  # 临时
-    'LevelRewardFirst': '关卡进度奖励'
+    'LevelRewardFirst': '关卡进度奖励',
+    'MissionsReward': '赛季通行证',
+    'MissionsRewardDefault': '基础免费通行证'
 }
 logger = my_logger()
 logger.setLevel(logging.DEBUG)
@@ -626,35 +698,40 @@ level_reward_target_filed = [
 config_df = get_design_df('ItemReward', 'B:C', 4)
 
 # gen_ItemReward_xlsx(get_design_df('ItemReward', 'B:AA', 4), 'ItemReward')
-gen_ItemNew_xlsx(get_design_df('ItemNew', 'C:E', 4), 'ItemNew')
-gen_Offline_xlsx(get_design_df('Offline', 'P:R', 4), 'Offline')
-gen_OfflineAD_xlsx(get_design_df('OfflineAD', 'V:W', 4), 'OfflineAD')
+# gen_ItemNew_xlsx(get_design_df('ItemNew', 'C:E', 4), 'ItemNew')
+# gen_Offline_xlsx(get_design_df('Offline', 'P:R', 4), 'Offline')
+# gen_OfflineAD_xlsx(get_design_df('OfflineAD', 'V:W', 4), 'OfflineAD')
 
-gen_Level_xlsx(get_design_df('LevelCostNew', 'AA:AH', 4),
-               level_cost_desig_filed, level_cost_target_filed, 'LevelCostNew')
+# gen_Level_xlsx(get_design_df('LevelCostNew', 'AA:AH', 4),
+#                level_cost_desig_filed, level_cost_target_filed, 'LevelCostNew')
 
-gen_Level_xlsx(get_design_df('LevelRewardNew', 'I:R', 4),
-               level_reward_desig_filed, level_reward_target_filed, 'LevelRewardNew')
+# gen_Level_xlsx(get_design_df('LevelRewardNew', 'I:R', 4),
+#                level_reward_desig_filed, level_reward_target_filed, 'LevelRewardNew')
 
-gen_Turntable_xlsx(get_design_df('Turntable', 'I:BL', 4), 'Turntable')
+# gen_Turntable_xlsx(get_design_df('Turntable', 'I:BL', 4), 'Turntable')
 
-gen_DailyGift_xlsx(get_design_df('DailyGift', 'F:R', 4), 'DailyGift')
+# gen_DailyGift_xlsx(get_design_df('DailyGift', 'F:R', 4), 'DailyGift')
 
-gen_DailyGiftMF_xlsx(get_design_df('DailyGiftMF', 'U:AG', 4), 'DailyGiftMF')
+# gen_DailyGiftMF_xlsx(get_design_df('DailyGiftMF', 'U:AG', 4), 'DailyGiftMF')
 
-gen_Shop_xlsx(get_design_df('Shop', 'F:U', 4), 'Shop')
+# gen_Shop_xlsx(get_design_df('Shop', 'F:U', 4), 'Shop')
 
-gen_ShopFactor_xlsx(get_design_df('ShopFactor', 'AC:AM', 4), 'ShopFactor')
+# gen_ShopFactor_xlsx(get_design_df('ShopFactor', 'AC:AM', 4), 'ShopFactor')
 
-gen_Purchase_xlsx(get_design_df('Purchase', 'C:K', 4), 'Purchase')
+# gen_Purchase_xlsx(get_design_df('Purchase', 'C:K', 4), 'Purchase')
 
-# gen_GiftBag_xlsx(get_design_df('GiftBag2', 'P:AK', 4),
-#                  get_design_df('GiftBag3', 'O:AD', 4), 'GiftBag')
+# # gen_GiftBag_xlsx(get_design_df('GiftBag2', 'P:AK', 4),
+# #                  get_design_df('GiftBag3', 'O:AD', 4), 'GiftBag')
 
-gen_FunctionOpen_xlsx(get_design_df('FunctionOpen', 'F:R', 4), 'FunctionOpen')
+# gen_FunctionOpen_xlsx(get_design_df('FunctionOpen', 'F:R', 4), 'FunctionOpen')
 
-gen_DefaultPlayerItem_xlsx(get_design_df(
-    'DefaultPlayerItem', 'D:AA', 4), 'DefaultPlayerItem')
+# gen_DefaultPlayerItem_xlsx(get_design_df(
+#     'DefaultPlayerItem', 'D:AA', 4), 'DefaultPlayerItem')
 
-gen_LevelRewardFirst_xlsx(get_design_df('TutorialsReward', 'G:R', 4), get_design_df(
-    'LevelRewardFirst', 'D:T', 4), 'LevelRewardFirst')
+# gen_LevelRewardFirst_xlsx(get_design_df('TutorialsReward', 'G:R', 4), get_design_df(
+#     'LevelRewardFirst', 'D:T', 4), 'LevelRewardFirst')
+
+gen_MissionsRewardDefault_xlsx(get_design_df(
+    'MissionsRewardDefault', 'I:Z', 6), 'MissionsRewardDefault')
+gen_MissionsReward_xlsx(get_design_df(
+    'MissionsReward', 'I:AR', 6), 'MissionsReward')

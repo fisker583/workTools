@@ -138,9 +138,11 @@ df_receipt_table_cells[receipt_float_colums] = df_receipt_table_cells[receipt_fl
 df_receipt_table_cells[receipt_int_colums] = df_receipt_table_cells[receipt_int_colums].astype(int)
 
 df_receipt_table_cells['orgGathered'] = df_receipt_table_cells['orgGathered.$numberInt'] + df_receipt_table_cells['orgGathered']
+df_receipt_table_cells['db_usdGathered'] = df_receipt_table_cells['usdGathered.$numberInt'] + df_receipt_table_cells['orgGathered']
 df_receipt_table_cells['usdGathered'] = df_receipt_table_cells['orgGathered'] / df_receipt_table_cells['receiptRate']
 
 df_receipt_table_cells['orgPay'] = df_receipt_table_cells['orgPay.$numberInt'] + df_receipt_table_cells['orgPay']
+df_receipt_table_cells['db_usdPay'] = df_receipt_table_cells['usdPay.$numberInt'] + df_receipt_table_cells['usdPay']
 df_receipt_table_cells['usdPay'] = df_receipt_table_cells['orgPay'] / df_receipt_table_cells['receiptRate']
 
 # df_receipt_table_cells['isDiscard'] = df_receipt_table_cells['isDiscard.$numberInt'] + df_receipt_table_cells['isDiscard']
